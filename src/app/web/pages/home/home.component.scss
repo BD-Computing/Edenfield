@@ -1,0 +1,99 @@
+.landing {
+  height: 40vh;
+  .container {
+    height: inherit;
+    .row {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 2fr 2fr;
+      column-gap: 50px;
+      .left {
+        height: inherit;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-size: 45px;
+          color: #fff;
+        }
+        p {
+          margin-top: 10px;
+          margin-bottom: 20px;
+          color: #fff;
+        }
+        .buttons {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 50px;
+          button {
+            padding: 16px 20px;
+            border: 1px solid var(--secondary);
+            cursor: pointer;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: var(--secondary);
+            color: #fff;
+            font-weight: 700;
+            &.tutorial {
+              background-color: transparent;
+
+              i {
+                color: var(--secondary);
+              }
+            }
+          }
+        }
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        img {
+          max-width: 800px;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}
+.intro {
+  background-color: var(--background);
+  padding: 20px auto !important;
+  min-height: 100px !important;
+  height: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: initial;
+  .content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px initial;
+
+      h2 {
+        padding: 0;
+        margin: 0;
+        font-size: 45px;
+        color: var(--secondary);
+        line-height: 50px;
+      }
+    }
+    .content-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 50px;
+    }
+  }
+}

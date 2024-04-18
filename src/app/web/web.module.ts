@@ -1,0 +1,25 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { WebRoutingModule } from './web-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
+import { FeaturesComponent } from './pages/features/features.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { WebLayoutComponent } from './web-layout.component';
+import { DemoComponent } from './pages/demo/demo.component';
+
+@NgModule({
+  declarations: [
+    WebLayoutComponent,
+    HomeComponent,
+    AboutComponent,
+    PricingComponent,
+    FeaturesComponent,
+    ContactComponent,
+    DemoComponent,
+  ],
+  imports: [CommonModule, WebRoutingModule],
+})
+export class WebModule {}
