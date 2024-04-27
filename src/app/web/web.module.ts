@@ -7,18 +7,18 @@ import { AboutComponent } from './pages/about/about.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { FeaturesComponent } from './pages/features/features.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { WebLayoutComponent } from './web-layout.component';
 import { DemoComponent } from './pages/demo/demo.component';
+import { WrapperComponent } from './wrapper.component';
 
 @NgModule({
   declarations: [
-    WebLayoutComponent,
     HomeComponent,
     AboutComponent,
     PricingComponent,
     FeaturesComponent,
     ContactComponent,
     DemoComponent,
+    WrapperComponent,
   ],
   imports: [CommonModule, WebRoutingModule],
 })

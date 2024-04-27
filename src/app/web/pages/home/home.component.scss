@@ -1,5 +1,5 @@
 .landing {
-  height: 40vh;
+  height: 50vh;
   .container {
     height: inherit;
     .row {
@@ -11,17 +11,15 @@
         height: inherit;
         display: flex;
         align-items: flex-start;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: column;
         gap: 10px;
         h1 {
           font-size: 45px;
-          color: #fff;
         }
         p {
           margin-top: 10px;
           margin-bottom: 20px;
-          color: #fff;
         }
         .buttons {
           display: flex;
@@ -42,6 +40,7 @@
             font-weight: 700;
             &.tutorial {
               background-color: transparent;
+              color: var(--secondary);
 
               i {
                 color: var(--secondary);
@@ -54,11 +53,12 @@
       .right {
         display: flex;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
         flex-direction: column;
         img {
-          max-width: 800px;
-          border-radius: 20px;
+          max-width: 600px;
+          mix-blend-mode: multiply;
+          width: 100%;
         }
       }
     }
@@ -85,9 +85,10 @@
       h2 {
         padding: 0;
         margin: 0;
-        font-size: 45px;
+        font-size: 35px;
         color: var(--secondary);
-        line-height: 50px;
+        line-height: 35px;
+        margin-bottom: 20px;
       }
     }
     .content-inner {

@@ -6,12 +6,12 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 import { DemoComponent } from './pages/demo/demo.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { WebLayoutComponent } from './web-layout.component';
+import { WrapperComponent } from './wrapper.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: WebLayoutComponent,
+    component: WrapperComponent,
     children: [
       {
         path: '',

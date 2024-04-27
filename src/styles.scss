@@ -1,9 +1,120 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://db.onlinewebfonts.com/c/d863218d588265bf96f8febaadafdd18?family=Trip+Sans");
+
 :root {
-  --primary: #5eb34e;
-  --secondary: #011847;
+  --primary: #011847;
+  --primary-green: #71b548;
+  --error: #f44900;
+  --secondary: #f0772e;
+  --dark: #13263c;
+  --light: whitesmoke;
+  --border: #e2e2e2;
+  --text: #484848;
+  --white: #ffffff;
+  --light-bg: #f8fafa;
+  --yellow: #d1e273;
   --pale-yellow: #9fbd48;
+  --green: #71b548;
+}
+.bg-secondary {
+  background: linear-gradient(
+    90deg,
+    var(--green) 0%,
+    var(--primary) 100%
+  ) !important;
+
+  color: #fff !important;
+
+  * {
+    color: #fff !important;
+  }
+}
+
+.bg-dark {
+  background-color: #011847 !important;
+}
+
+.bg-primary {
+  background: linear-gradient(
+    90deg,
+    var(--pale-yellow) 0%,
+    var(--green) 100%
+  ) !important;
+
+  * {
+    color: #fff !important;
+  }
+}
+
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    var(--pale-yellow) 0%,
+    var(--green) 100%
+  ) !important;
+
+  * {
+    color: #fff !important;
+  }
+
+  transition: all ease-in-out 300ms;
+
+  &:hover {
+    background: linear-gradient(
+      90deg,
+      var(--pale-yellow) 0%,
+      var(--primary) 100%
+    ) !important;
+
+    * {
+      color: #fff !important;
+    }
+  }
+}
+
+.btn-primary-blue {
+  background-color: var(--primary);
+  color: #fff !important;
+
+  i {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: var(--dark);
+
+    * {
+      color: aliceblue !important;
+    }
+  }
+}
+
+.btn-primary-green {
+  background: var(--green); /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    var(--yellow),
+    var(--green)
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    var(--yellow),
+    var(--green)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #fff !important;
+
+  i {
+    color: #fff;
+  }
+
+  &:hover {
+    background-color: var(--dark);
+
+    * {
+      color: aliceblue !important;
+    }
+  }
 }
 
 * {
@@ -44,14 +155,11 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background-color: var(--primary) !important;
   box-sizing: border-box;
   padding: 0 !important;
   margin: 0 !important;
-  overflow: auto;
-  overflow-x: hidden;
-
-  font-family: "Red Hat Display", sans-serif;
+  // overflow: auto;
+  // overflow-x: hidden;
   font-optical-sizing: auto;
   h1,
   h2,
@@ -60,13 +168,13 @@ body {
   h5,
   h6,
   p {
-    font-family: "Red Hat Display", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Trip Sans", Roboto, sans-serif !important;
+    font-optical-sizing: auto !important;
   }
 }
 
 .container {
-  max-width: 90%;
+  max-width: 1300px;
   margin: 0 auto;
 
   @media screen and (min-width: 1440px) {

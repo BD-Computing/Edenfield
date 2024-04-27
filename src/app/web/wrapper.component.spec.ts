@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WebLayoutComponent } from './web-layout.component';
+import { WrapperComponent } from './wrapper.component';
 
-describe('WebLayoutComponent', () => {
-  let component: WebLayoutComponent;
-  let fixture: ComponentFixture<WebLayoutComponent>;
+describe('WrapperComponent', () => {
+  let component: WrapperComponent;
+  let fixture: ComponentFixture<WrapperComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [WebLayoutComponent]
+      declarations: [WrapperComponent]
     });
-    fixture = TestBed.createComponent(WebLayoutComponent);
+    fixture = TestBed.createComponent(WrapperComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
