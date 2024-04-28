@@ -1,5 +1,5 @@
 .landing {
-  height: 50vh;
+  height: 60vh;
   .container {
     height: inherit;
     .row {
@@ -16,6 +16,10 @@
         gap: 10px;
         h1 {
           font-size: 45px;
+          line-height: 48px;
+          span {
+            color: var(--green);
+          }
         }
         p {
           margin-top: 10px;
@@ -27,23 +31,23 @@
           justify-content: flex-start;
           gap: 50px;
           button {
+            border: none;
             padding: 16px 20px;
-            border: 1px solid var(--secondary);
             cursor: pointer;
             border-radius: 12px;
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 10px;
-            background-color: var(--secondary);
             color: #fff;
             font-weight: 700;
             &.tutorial {
+              border: 1px solid var(--green);
               background-color: transparent;
-              color: var(--secondary);
+              color: var(--green);
 
               i {
-                color: var(--secondary);
+                color: var(--green);
               }
             }
           }
@@ -56,7 +60,6 @@
         justify-content: center;
         flex-direction: column;
         img {
-          max-width: 600px;
           mix-blend-mode: multiply;
           width: 100%;
         }
@@ -65,7 +68,7 @@
   }
 }
 .intro {
-  background-color: var(--background);
+  background-color: var(--green);
   padding: 20px auto !important;
   min-height: 100px !important;
   height: max-content;
@@ -86,7 +89,7 @@
         padding: 0;
         margin: 0;
         font-size: 35px;
-        color: var(--secondary);
+        color: var(--primary) !important;
         line-height: 35px;
         margin-bottom: 20px;
       }
@@ -95,6 +98,43 @@
       display: grid;
       grid-template-columns: 1fr;
       column-gap: 50px;
+      p {
+        color: var(--primary) !important;
+      }
+    }
+  }
+}
+
+.login-mock {
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  .left {
+    img {
+      width: 100%;
+    }
+  }
+  .right {
+    padding-top: 50px;
+
+    h3 {
+      font-size: 35px;
+      font-weight: bold;
+    }
+  }
+}
+
+pre {
+  height: 200px;
+}
+
+.code {
+  .container {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    .right {
+      img {
+        width: 100%;
+      }
     }
   }
 }

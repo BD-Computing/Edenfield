@@ -1,6 +1,12 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 @import url("https://db.onlinewebfonts.com/c/d863218d588265bf96f8febaadafdd18?family=Trip+Sans");
-
+@font-face {
+  font-family: "Axiforma";
+  src: url("assets/fonts/axiforma/Kastelov-Axiforma-Regular.otf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   --primary: #011847;
   --primary-green: #71b548;
@@ -15,6 +21,25 @@
   --yellow: #d1e273;
   --pale-yellow: #9fbd48;
   --green: #71b548;
+}
+pre {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
+  background: var(--dark);
+  color: #fff;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  // &:focus,
+  // &:hover {
+  //   width: min-content;
+  // }
+}
+i {
+  &.bi {
+    font-size: 20px;
+  }
 }
 .bg-secondary {
   background: linear-gradient(
@@ -168,7 +193,7 @@ body {
   h5,
   h6,
   p {
-    font-family: "Trip Sans", Roboto, sans-serif !important;
+    font-family: Axiforma, "Trip Sans", Roboto, sans-serif !important;
     font-optical-sizing: auto !important;
   }
 }
