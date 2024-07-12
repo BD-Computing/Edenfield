@@ -9,6 +9,7 @@ import { FeaturesComponent } from './pages/features/features.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { DemoComponent } from './pages/demo/demo.component';
 import { WrapperComponent } from './wrapper.component';
+import { PricingTableComponent } from './widgets/pricing-table/pricing-table.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { WrapperComponent } from './wrapper.component';
     ContactComponent,
     DemoComponent,
     WrapperComponent,
+    PricingTableComponent,
   ],
   imports: [CommonModule, WebRoutingModule],
 })
