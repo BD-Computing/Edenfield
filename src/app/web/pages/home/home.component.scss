@@ -7,3 +7,36 @@
     font-weight: initial;
   }
 }
+
+#intro-pulse {
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: #777777;
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px #0000001a;
+    background-color: #8ffab3;
+  }
+
+  .pulse {
+    animation: pulse-animation 2s infinite;
+  }
+
+  @keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(#66ff99, 0.2);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(#66ff99, 0);
+    }
+  }
+}

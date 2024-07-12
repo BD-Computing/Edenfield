@@ -219,6 +219,10 @@
                   <input
                     type="email"
                     class="form-control rounded-pill"
+                    style="
+                      padding-top: 10px !important;
+                      padding-bottom: 10px !important;
+                    "
                     id="exampleInputEmail1"
                     placeholder="Enter email address"
                     aria-describedby="emailHelp"
@@ -226,8 +230,9 @@
                   <button
                     type="button"
                     class="btn ripple_circle scale rounded-circle btn_subscribe"
+                    style="background-color: var(--green)"
                   >
-                    <i class="tio send"></i>
+                    <i class="bi bi-send-check" style="color: #fff"></i>
                   </button>
                 </div>
               </div>
@@ -236,10 +241,10 @@
         </div>
       </div>
 
-      <div class="col-12 text-center padding-t-6" style="padding-bottom: 30px">
+      <div class="col-12 text-center padding-t-6" style="padding-top: 30px">
         <div class="copyright">
           <span
-            >© 2024
+            >© {{ year }} {{ appName }} - Powered by
             <a href="https://bimatrust.com" target="_blank"
               >BD Computing Limited.</a
             >

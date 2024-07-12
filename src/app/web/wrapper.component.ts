@@ -8,4 +8,5 @@ import { AppName } from '../constants';
 })
 export class WrapperComponent {
   appName = AppName;
+  year = new Date().getFullYear();
 }
