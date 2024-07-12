@@ -10,6 +10,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { DemoComponent } from './pages/demo/demo.component';
 import { WrapperComponent } from './wrapper.component';
 import { PricingTableComponent } from './widgets/pricing-table/pricing-table.component';
+import { NavbarComponent } from './widgets/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PricingTableComponent } from './widgets/pricing-table/pricing-table.com
     DemoComponent,
     WrapperComponent,
     PricingTableComponent,
+    NavbarComponent,
   ],
   imports: [CommonModule, WebRoutingModule],
 })
