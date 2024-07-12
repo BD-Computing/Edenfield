@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppName } from 'src/app/constants';
+import { MetaService } from 'src/app/shared/services/meta.service';
 
 @Component({
   selector: 'app-home',
@@ -40,4 +41,8 @@ export class HomeComponent {
       description: `Access your data to see, report, and improve. As more submissions, quotes, and policies are generated, you need an aggregate view of transactions.`,
     },
   ];
+
+  constructor(private readonly metaService: MetaService) {
+    this.metaService.updateMetaData({ title: 'Home' });
+  }
 }
