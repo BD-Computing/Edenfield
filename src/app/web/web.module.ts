@@ -11,6 +11,7 @@ import { WrapperComponent } from './wrapper.component';
 import { PricingTableComponent } from './widgets/pricing-table/pricing-table.component';
 import { NavbarComponent } from './widgets/navbar/navbar.component';
 import { FeaturesComponent } from './widgets/features/features.component';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,6 @@ import { FeaturesComponent } from './widgets/features/features.component';
     PricingTableComponent,
     NavbarComponent,
   ],
-  imports: [CommonModule, WebRoutingModule],
+  imports: [CommonModule, WebRoutingModule, SharedModule],
 })
 export class WebModule {}

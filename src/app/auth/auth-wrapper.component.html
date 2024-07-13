@@ -1,0 +1,26 @@
+<main>
+  <app-gradient-background
+    [height]="'100%'"
+    [width]="'100%'"
+  ></app-gradient-background>
+
+  <div class="wrapper container">
+    <div class="row d-flex">
+      <div class="col-lg-7 col-sm-12 col-xl-7 col-md-7">
+        <div class="card1">
+          <div class="row justify-content-center mt-4 mb-5 border-line">
+            <!-- <img src="/assets/mockups/dash.png" class="image" /> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-12 col-xl-5 col-md-5 auth-card">
+        <div class="content py-5">
+          <div class="row">
+            <img src="/assets/logos/dark.png" class="logo" />
+          </div>
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
