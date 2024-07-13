@@ -81,3 +81,12 @@ body {
     display: none;
   }
 }
+
+input,
+select,
+textarea {
+  &::placeholder {
+    color: rgb(156, 156, 156) !important;
+    font-style: italic !important;
+  }
+}
