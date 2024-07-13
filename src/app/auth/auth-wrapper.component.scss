@@ -5,6 +5,10 @@ main {
     background-color: #fff;
     border-radius: 12px;
   }
+  a {
+    color: var(--green);
+    text-decoration: none !important;
+  }
 }
 
 .wrapper {
@@ -20,20 +24,18 @@ main {
 }
 
 .logo {
-  width: 200px;
+  width: 250px;
 }
 
 .image {
   width: 90%;
 }
-
 .line {
   height: 1px;
   width: 45%;
   background-color: #e0e0e0;
-  margin-top: 10px;
+  margin-top: 5px;
 }
-
 .or {
   width: 10%;
   font-weight: bold;
