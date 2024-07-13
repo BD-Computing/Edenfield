@@ -1,0 +1,73 @@
+<section class="container">
+  <div
+    class="card"
+    style="
+      padding: 50px;
+      margin-bottom: 50px;
+      background-color: var(--primary);
+      color: #fff;
+    "
+  >
+    <div class="row">
+      <div
+        class="col-sm-12 col-md-3 col-xl-3 col-lg-3 has-border-right"
+        style="border-right: 1px solid #fff"
+      >
+        <div class="our-features-title">
+          <p style="padding: 0 !important; margin: 0 !important">
+            OUR FEATURES
+          </p>
+        </div>
+
+        <h2>Built for scalability, optimized for efficiency</h2>
+        <p style="font-size: 12px">
+          {{ appName }}'s award-winning platform is fully configurable,
+          flexible, highly secure and delivers unparalleled performance.
+        </p>
+        <i class="bi bi-hdd-network-fill" style="font-size: 50px"></i>
+      </div>
+      <div class="col-sm-12 col-md-9 col-xl-9 col-lg-9">
+        <div class="row" style="padding-left: 10px; padding-right: 10px">
+          <div class="col-12" style="margin-bottom: 20px">
+            <div class="inner-container-small text-left">
+              <span
+                class="bg-light heading-color small rounded-3 px-3 py-2"
+                style="color: var(--primary); font-size: 12px"
+              >
+                🚀 Innovative features, Measurable results
+              </span>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-4 col-lg-4 col-xl-4"
+            *ngFor="let feature of features"
+          >
+            <div
+              style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: #fff;
+                margin-bottom: 10px;
+              "
+            >
+              <i
+                class="bi"
+                [className]="feature.icon"
+                style="font-size: 25px; color: var(--primary)"
+              ></i>
+            </div>
+            <h6>{{ feature.title }}</h6>
+            <p style="font-size: 12px">
+              {{ feature.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
