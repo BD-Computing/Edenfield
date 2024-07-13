@@ -6,6 +6,7 @@ import { PricingComponent } from './pages/pricing/pricing.component';
 import { DemoComponent } from './pages/demo/demo.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { WrapperComponent } from './wrapper.component';
+import { IntegrationsComponent } from './pages/integrations/integrations.component';
 
 const routes: Routes = [
   {
@@ -20,7 +21,10 @@ const routes: Routes = [
         path: 'about',
         component: AboutComponent,
       },
-
+      {
+        path: 'integrations',
+        component: IntegrationsComponent,
+      },
       {
         path: 'pricing',
         component: PricingComponent,

@@ -43,6 +43,7 @@ export const AppFeaturesData: AppFeatureInterface[] = [
   },
 
   {
+    isNew: true,
     icon: 'bi-calendar-date',
     title: 'Internal Tasks Management',
     description: `Assign, track, and complete tasks efficiently, ensuring accountability and productivity. Streamline workflows and enhance team collaboration.`,

@@ -12,6 +12,9 @@ import { PricingTableComponent } from './widgets/pricing-table/pricing-table.com
 import { NavbarComponent } from './widgets/navbar/navbar.component';
 import { FeaturesComponent } from './widgets/features/features.component';
 import { SharedModule } from '../shared/shared.module';
+import { PaymentChannelsComponent } from './pages/payment-channels/payment-channels.component';
+import { PaymentChannelsWidgetComponent } from './widgets/payment-channels-widget/payment-channels-widget.component';
+import { IntegrationsComponent } from './pages/integrations/integrations.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +27,9 @@ import { SharedModule } from '../shared/shared.module';
     WrapperComponent,
     PricingTableComponent,
     NavbarComponent,
+    PaymentChannelsComponent,
+    PaymentChannelsWidgetComponent,
+    IntegrationsComponent,
   ],
   imports: [CommonModule, WebRoutingModule, SharedModule],
 })

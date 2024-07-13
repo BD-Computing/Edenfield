@@ -64,7 +64,7 @@
   width: 80px;
   height: 4px;
   border-radius: 10px;
-  background-color: #3f43fd;
+  background-color: var(--brown);
 }
 .single_price_plan .price {
   margin-bottom: 1.5rem;
@@ -84,19 +84,20 @@
     linear,
     left top,
     right top,
-    from(#e24997),
-    to(#2d2ed4)
+    from(var(--primary)),
+    to(var(--green))
   );
-  background-image: linear-gradient(90deg, #e24997, #2d2ed4);
+  background-image: linear-gradient(90deg, var(--primary), var(--green));
 }
 .single_price_plan .description {
   position: relative;
   margin-bottom: 1.5rem;
 }
 .single_price_plan .description p {
-  line-height: 16px;
+  font-size: 12px;
+  line-height: initial;
   margin: 0;
-  padding: 10px 0;
+  padding: 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,13 +143,28 @@
   height: 5px;
   margin: 30px auto 0;
   border-radius: 6px;
-  background: #2d2ed4;
+  background: var(--green);
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#e24997),
-    to(#2d2ed4)
+    from(var(--primary)),
+    to(var(--green))
   );
-  background: linear-gradient(to right, #e24997, #2d2ed4);
+  background: linear-gradient(to right, var(--primary), var(--green));
+}
+
+.btn {
+  border: none;
+  background-color: var(--green);
+
+  &.free {
+    background-color: var(--brown) !important;
+    color: var(--primary) !important;
+  }
+
+  &.enterprise {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+  }
 }

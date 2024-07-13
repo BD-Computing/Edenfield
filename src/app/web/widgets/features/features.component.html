@@ -61,7 +61,10 @@
                 style="font-size: 25px; color: var(--primary)"
               ></i>
             </div>
-            <h6>{{ feature.title }}</h6>
+            <h6>
+              {{ feature.title }}
+              <span class="badge new" *ngIf="feature.isNew">New</span>
+            </h6>
             <p style="font-size: 12px">
               {{ feature.description }}
             </p>

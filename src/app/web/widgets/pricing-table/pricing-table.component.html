@@ -39,22 +39,22 @@
           "
         >
           <div class="title">
-            <h3>Start Up</h3>
-            <p>Start a trial</p>
+            <h3>Free Trial</h3>
+            <p>Start a free trial</p>
             <div class="line"></div>
           </div>
           <div class="price">
-            <h4>$0</h4>
+            <h4>{{ 0 | currency : 0 }}</h4>
           </div>
           <div class="description">
-            <p><i class="lni lni-checkmark-circle"></i>Duration: 7days</p>
+            <p><i class="lni lni-checkmark-circle"></i> 7 days Free Trial</p>
             <p><i class="lni lni-checkmark-circle"></i>10 Features</p>
             <p><i class="lni lni-close"></i>No Hidden Fees</p>
             <p><i class="lni lni-close"></i>100+ Video Tuts</p>
             <p><i class="lni lni-close"></i>No Tools</p>
           </div>
           <div class="button">
-            <a class="btn btn-success btn-2" href="#">Get Started</a>
+            <a class="btn btn-success free" href="#">Get Started</a>
           </div>
         </div>
       </div>
@@ -72,7 +72,12 @@
         >
           <!-- Side Shape-->
           <div class="side-shape">
-            <img src="https://bootdey.com/img/popular-pricing.png" alt="" />
+            <img
+              src="/assets/logos/favicon.png"
+              alt="icon"
+              height="140"
+              style="opacity: 0.3"
+            />
           </div>
           <div class="title">
             <span>Popular</span>
@@ -81,10 +86,10 @@
             <div class="line"></div>
           </div>
           <div class="price">
-            <h4>$9.99</h4>
+            <h4>{{ 15000 | currency }}</h4>
           </div>
           <div class="description">
-            <p><i class="lni lni-checkmark-circle"></i>Duration: 3 Month</p>
+            <p><i class="lni lni-checkmark-circle"></i></p>
             <p><i class="lni lni-checkmark-circle"></i>50 Features</p>
             <p><i class="lni lni-checkmark-circle"></i>No Hidden Fees</p>
             <p><i class="lni lni-checkmark-circle"></i>150+ Video Tuts</p>
@@ -112,17 +117,19 @@
             <div class="line"></div>
           </div>
           <div class="price">
-            <h4>$49.99</h4>
+            <h4>Custom</h4>
           </div>
           <div class="description">
-            <p><i class="lni lni-checkmark-circle"></i>Duration: 1 year</p>
+            <p><i class="lni lni-checkmark-circle"></i>Custom Duration</p>
             <p><i class="lni lni-checkmark-circle"></i>Unlimited Features</p>
             <p><i class="lni lni-checkmark-circle"></i>No Hidden Fees</p>
-            <p><i class="lni lni-checkmark-circle"></i>Unlimited Video Tuts</p>
+            <p>
+              <i class="lni lni-checkmark-circle"></i>Dedicated Support Engineer
+            </p>
             <p><i class="lni lni-checkmark-circle"></i>Unlimited Tools</p>
           </div>
           <div class="button">
-            <a class="btn btn-info" href="#">Get Started</a>
+            <a class="btn enterprise" href="#">Contact Us</a>
           </div>
         </div>
       </div>
