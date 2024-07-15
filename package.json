@@ -1,6 +1,6 @@
 {
-  "name": "bimatrust-website",
-  "version": "0.0.0",
+  "name": "venture-africa-website",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
