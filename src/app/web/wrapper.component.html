@@ -1,155 +1,241 @@
 <header>
   <app-navbar></app-navbar>
 </header>
-<router-outlet></router-outlet>
-<section
-  class="mb-n7"
-  style="margin-bottom: 50px; margin-bottom: -130px; z-index: 10 !important"
->
-  <div class="container position-relative">
-    <div
-      class="bg-primary rounded position-relative overflow-hidden p-4 p-sm-5"
-      style="background-color: var(--green) !important"
-    >
-      <div class="row g-4 position-relative">
-        <!-- Title and inputs -->
-        <div class="col-lg-6">
-          <!-- Title -->
-          <h3 class="text-white">
-            Let's talk about your Insurance agency goals!
-          </h3>
+<div class="menu-backdrop"></div>
+<div class="hidden-bar">
+  <!-- Hidden Bar Wrapper -->
+  <div class="hidden-bar-wrapper">
+    <div class="hidden-bar-closer">
+      <span class="icon">
+        <svg class="icon-close" role="presentation" viewBox="0 0 16 14">
+          <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd"></path>
+        </svg>
+      </span>
+    </div>
+    <div class="nav-logo-box">
+      <!-- logo will be copied here ! -->
+    <div class="logo">
+            <a href="index.html" title="Travilo"><img src="assets/images/logo.png" alt="Travilo Logo" title="Travilo Logo"></a>
+          </div></div>
 
-          <!-- Search -->
-          <form class="col-md-10 bg-body rounded-2 p-2 mt-4">
-            <div class="input-group">
-              <input
-                class="form-control focus-shadow-none border-0 me-1"
-                type="email"
-                placeholder="Your email address"
-              />
-              <button type="button" class="btn btn-dark rounded-2">
-                Subscribe
-              </button>
-            </div>
-          </form>
+    <!-- .Side-menu -->
+    <nav class="side-menu">
+      <!-- main-menu will be copied here! -->
+    <ul class="navigation clearfix">
+                <li class="current dropdown">
+                  <a href="index.html">Home<button type="button" class="btn-expander"><i class="icon icon-arrow-down"></i></button></a>
+                  <ul style="display: none;">
+                    <li>
+                      <a href="index.html">Home 01</a>
+                    </li>
+                    <li>
+                      <a href="index-2.html">Home 02</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="tour-list.html">Tours<button type="button" class="btn-expander"><i class="icon icon-arrow-down"></i></button></a>
+                  <ul style="display: none;">
+                    <li>
+                      <a href="tour-list.html">Tours List</a>
+                    </li>
+                    <li>
+                      <a href="tour-packages.html">Tour Packages</a>
+                    </li>
+                    <li>
+                      <a href="tour-single.html">Tour Details</a>
+                    </li>
+                    <li>
+                      <a href="activities.html">Activities</a>
+                    </li>
+                    <li>
+                      <a href="activity-single.html">Activity Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="destinations.html">Destination<button type="button" class="btn-expander"><i class="icon icon-arrow-down"></i></button></a>
+                  <ul style="display: none;">
+                    <li>
+                      <a href="destinations.html">All Destinations</a>
+                    </li>
+                    <li>
+                      <a href="destination-single.html">Destination Single</a>
+                    </li>
+                    <li>
+                      <a href="hotels.html">Hotels</a>
+                    </li>
+                    <li>
+                      <a href="hotel-single.html">Hotel Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                </li>
+                <li class="dropdown">
+                  <a href="blog.html">News<button type="button" class="btn-expander"><i class="icon icon-arrow-down"></i></button></a>
+                  <ul style="display: none;">
+                    <li>
+                      <a href="blog.html">Our Blog</a>
+                    </li>
+                    <li>
+                      <a href="blog-single.html">Blog Details</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul></nav><!-- .side-menu -->
+
+    <div class="links-box clearfix">
+      <div class="clearfix">
+        <div class="link">
+          <a href="contact.html" class="theme-btn btn-style-one"><span>Login / Signup</span></a>
         </div>
+      </div>
+    </div>
+  </div>
+  <!-- / Hidden Bar Wrapper -->
+</div>
 
-        <!-- Content -->
-        <div class="col-lg-5 col-xl-4 ms-auto text-lg-end contact">
-          <ul class="list-group list-group-borderless mb-0">
-            <li class="list-group-item mb-0">
-              <a href="#" class="text-white fw-normal">
-                <i class="bi bi-headset me-1"></i> Call on: 0725 270 930
-              </a>
-            </li>
-            <li class="list-group-item text-white fw-normal mb-0">
-              <i class="bi bi-clock me-1"></i> Time: 9am to 5pm
-            </li>
-            <li class="list-group-item mb-0">
-              <a href="#" class="text-white fw-normal">
-                <i class="bi bi-envelope me-1"></i> Email: info@bimatrust.com
-              </a>
-            </li>
+<router-outlet></router-outlet>
+
+<footer class="main-footer">
+  <div class="upper-section">
+    <div class="auto-container">
+      <div class="content-box">
+        <div class="row clearfix">
+          <div class="footer-column col-xl-4 col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-widget about-widget">
+              <div class="footer-logo">
+                <a href="index.html" title="Travilo"><img src="assets/images/logo.png" alt="" title="Travilo"></a>
+              </div>
+              <div class="footer-info">
+                <ul class="info">
+                  <li class="address">
+                    <a href="#"><i class="icon fa fa-map-marker-alt"></i> Love Street,
+                      Muscat, Oman</a>
+                  </li>
+                  <li class="phone">
+                    <a href="tel:+96899999000"><i class="icon fa-solid fa-phone"></i>+968
+                      99999000</a>
+                  </li>
+                  <li class="email">
+                    <a href="mailto:hello@travilo.com"><i class="icon fa fa-envelope"></i>
+                      hello@travilo.com</a>
+                  </li>
+                </ul>
+                <ul class="social-links clearfix">
+                  <li>
+                    <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+            <div class="row clearfix">
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h4>Top Destination</h4>
+                  <div class="links">
+                    <ul>
+                      <li>
+                        <a href="#">New York</a>
+                      </li>
+                      <li>
+                        <a href="#">London</a>
+                      </li>
+                      <li>
+                        <a href="#">Rome</a>
+                      </li>
+                      <li>
+                        <a href="#">Mascot</a>
+                      </li>
+                      <li>
+                        <a href="#">Dhaka</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                <div class="footer-widget links-widget">
+                  <h4>Useful Links</h4>
+                  <div class="links">
+                    <ul>
+                      <li>
+                        <a href="#">About Us</a>
+                      </li>
+                      <li>
+                        <a href="#">Company Profile</a>
+                      </li>
+                      <li>
+                        <a href="#">Team Members</a>
+                      </li>
+                      <li>
+                        <a href="#">Support</a>
+                      </li>
+                      <li>
+                        <a href="#">Career</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-column col-xl-3 col-lg-3 col-md-6 col-sm-12">
+            <div class="footer-widget gallery-widget">
+              <h4>Featured Tours</h4>
+              <!--Logo-->
+              <div class="gallery">
+                <div class="gallery-item">
+                  <div class="image">
+                    <a href="#"><img src="assets/images/resources/thumbnails/oman-thumb.jpg" alt="Oman"></a>
+                  </div>
+                  <h6><a href="#">Adventure in Oman's Rimal Bani Wahiba</a></h6>
+                  <div class="price">Starts from <span class="amount">$399</span></div>
+                </div>
+                <div class="gallery-item">
+                  <div class="image">
+                    <a href="#"><img src="assets/images/resources/thumbnails/maldives-thumb.jpg" alt=""></a>
+                  </div>
+                  <h6><a href="#">Unveiling the Serenity of the Maldives</a></h6>
+                  <div class="price">Starts from <span class="amount">$459</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="f-bottom">
+    <div class="auto-container">
+      <div class="inner clearfix">
+        <div class="copyright">All rights researved <strong>Travilo</strong> © 2023</div>
+        <div class="bottom-links">
+          <ul class="clearfix">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li> <a href="#">Privacy Policy</a></li>
           </ul>
         </div>
       </div>
-      <!-- Row END -->
     </div>
-  </div>
-</section>
-<footer
-  class="default_footer dark padding-t-12"
-  id="Testimonial"
-  style="padding-top: 150px; padding-bottom: 40px; z-index: -1"
->
-  <div class="container">
-    <img class="shape_overlay" src="../../assets/img/shape-lines.svg" />
-
-    <!-- Start footer -->
-    <div class="defalut-footer padding-py-12">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-          <div class="item_about">
-            <a class="logo" href="#" routerLink="/">
-              <img src="../../assets/logos/light.png" alt="logo" height="80" />
-            </a>
-            <p>
-              Experience the power of integrated solutions that empower you to
-              focus on what truly matters with {{ appName }}
-            </p>
-            <div class="address">
-              <span>6040-30100, Ronald Ngala Street, Eldoret, KE</span>
-              <span
-                >Call us: <a href="tel:+254725270930">+254 725 270 930</a></span
-              >
-            </div>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-2 mt-3">
-          <div class="item_links">
-            <h4>Social</h4>
-            <a class="nav-link" href="">Blog</a>
-            <a class="nav-link" href="">Facebook</a>
-            <a class="nav-link" href="">Twitter</a>
-            <a class="nav-link" href="">Instagram</a>
-          </div>
-        </div>
-        <div class="col-6 col-md-6 col-lg-2 mt-3">
-          <div class="item_links">
-            <h4>Company</h4>
-            <a class="nav-link" href="">About</a>
-            <a class="nav-link" href="">Affiliates</a>
-            <a class="nav-link" href="">Careers</a>
-            <a class="nav-link" href="">Legal &amp; Privacy</a>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4 mt-3">
-          <div class="item_subscribe">
-            <h4>Subscribe</h4>
-            <p>
-              Subscribe to get the latest<br />
-              news form us
-            </p>
-            <form class="form-row">
-              <div class="col-md-11 form-group subscribebtn">
-                <div class="item_input">
-                  <input
-                    type="email"
-                    class="form-control rounded-pill"
-                    style="
-                      padding-top: 10px !important;
-                      padding-bottom: 10px !important;
-                    "
-                    id="exampleInputEmail1"
-                    placeholder="Enter email address"
-                    aria-describedby="emailHelp"
-                  />
-                  <button
-                    type="button"
-                    class="btn ripple_circle scale rounded-circle btn_subscribe"
-                    style="background-color: var(--green)"
-                  >
-                    <i class="bi bi-send-check" style="color: #fff"></i>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 text-center padding-t-6" style="padding-top: 30px">
-        <div class="copyright">
-          <span
-            >© {{ year }} {{ appName }} - Powered by
-            <a href="https://bimatrust.com" target="_blank"
-              >BD Computing Limited.</a
-            >
-            All Right Reseved</span
-          >
-        </div>
-      </div>
-    </div>
-    <!-- End Footer -->
   </div>
 </footer>
