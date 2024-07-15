@@ -5,13 +5,7 @@
 @import "./assets/css/style.css";
 @import "./assets/css/responsive.css";
 @import url("https://db.onlinewebfonts.com/c/d863218d588265bf96f8febaadafdd18?family=Trip+Sans");
-@font-face {
-  font-family: "Axiforma";
-  src: url("assets/fonts/axiforma/Kastelov-Axiforma-Regular.otf")
-    format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
+
 :root {
   --primary: #011847;
   --primary-green: #15c653;
@@ -67,7 +61,7 @@ body {
   h5,
   h6,
   p {
-    font-family: Axiforma, "Trip Sans", Roboto, sans-serif !important;
+    font-family: "Trip Sans", Roboto, sans-serif !important;
     font-optical-sizing: auto !important;
   }
 }
