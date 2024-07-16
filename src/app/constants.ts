@@ -1,1 +1,1 @@
-export const AppName = 'BimaTrust Workspace®';
+export const AppName = 'Venture Africa Safaris';

@@ -21,13 +21,12 @@ export class MetaService {
     this.metaTagService.addTags([
       {
         name: 'description',
-        content:
-          'Streamline your insurance tasks with BimaTrust Workspace®, the user-friendly, robust solution by BD Computing Limited. Enhance efficiency, accuracy, and productivity with our integrated tool for client management, policy tracking, claims processing, and reporting.',
+        content: `Experience the ultimate Kenyan safari adventure with Venture Africa Safaris. Explore the best safari tours in Kenya, including Masai Mara, Amboseli, and Tsavo National Parks. Enjoy luxury and affordable safari packages, tailored family safaris, honeymoon packages, and cultural tours. Discover Kenya's stunning wildlife, beautiful beaches, and vibrant culture. Perfect for adventure seekers, bird watchers, photographers, and nature enthusiasts. Book with trusted Kenya tour operators for unbeatable safari deals. Discover Kenya's national parks and the Big Five on an unforgettable safari holiday.`,
       },
       {
         name: 'keywords',
         content:
-          'BimaTrust Workspace, insurance brokers, insurance software, BD Computing Limited, client management, policy tracking, claims processing, insurance reporting, productivity tools, insurance technology, integrated solutions, streamline insurance tasks, enhance efficiency, improve accuracy, boost productivity, insurance brokerage, innovative insurance tools',
+          'Kenya Safari Tours, African Safari Holidays, Best Safari in Kenya, Kenya Wildlife Safaris, Masai Mara Safari, Kenya Tour Packages, Luxury Safari Kenya, Affordable Safaris in Kenya, Nairobi Safari Tours, Amboseli National Park Tours, Tsavo National Park Safari, Kenya Travel Guide, Kenya Beach Holidays, Kenya Adventure Tours, Kenya Cultural Tours, Kenya Honeymoon Packages, Family Safaris Kenya, Kenya Bird Watching Tours, Kenya Photography Safaris, Kenya Walking Safaris, Kenya Fly-in Safaris, Kenya Big Five Safari, Kenya Tour Operators, Kenya Safari Deals, Kenya National Parks',
       },
       { name: 'robots', content: 'index, follow' },
       { name: 'author', content: 'BD Computing Limited' },
