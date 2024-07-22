@@ -2,7 +2,7 @@
 	'use strict';
 
 	//Hide Loading Box (Preloader)
-	function handlePreloader() {
+  function handlePreloader() {
 		if ($('.loader-wrap').length) {
 			$('.loader-wrap').delay(300).fadeOut(300);
 		}
@@ -101,7 +101,7 @@
 
 	//Custom Scroll for Hidden Sidebar
 	if ($('.hidden-bar-wrapper').length) {
-
+console.log("here");
 		$('.hidden-bar-closer,.menu-backdrop').on('click', function () {
 			$('.hidden-bar,body').removeClass('visible-sidebar');
 			$('.side-menu ul li.dropdown ul').slideUp();
@@ -115,10 +115,17 @@
 			}
 		});
 		$('.hidden-bar-opener').on('click', function () {
+      console.log("Hamburger menu clicked");
 			$('.hidden-bar,body').addClass('visible-sidebar');
 		});
 	}
 
+
+
+// .bind('click', function () {
+//     console.log("Hamburger menu clicked");
+//     $('.hidden-bar,body').addClass('visible-sidebar');
+//   });
 	//Packages Carousel
 	if ($('.packages-carousel').length) {
 		$('.packages-carousel').slick({
@@ -592,7 +599,6 @@
 	//Default Masonry
 	function enableDefaultMasonry() {
 		if ($('.masonry-container').length) {
-
 			var winDow = $(window);
 			// Needed variables
 			var $container = $('.masonry-container');
@@ -797,4 +803,6 @@
 	$(window).on('resize', function () {
 		enableDefaultMasonry();
 	});
+
+
 })(window.jQuery);

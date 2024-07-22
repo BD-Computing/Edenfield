@@ -41,16 +41,14 @@
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/js/lib/jquery.min.js",
               "src/assets/js/lib/popper.min.js",
               "src/assets/js/lib/bootstrap/bootstrap.min.js",
-              "src/assets/js/lib/jquery-ui.min.js",
-              "src/assets/js/lib/jquery.fancybox.min.js",
               "src/assets/js/lib/isotope.min.js",
               "src/assets/js/lib/slick.min.js",
               "src/assets/js/lib/appear.min.js",
               "src/assets/js/lib/wow.min.js",
-              "src/assets/js/custom-script.js"
+              "src/assets/js/custom-script.js",
+              "src/assets/js/menu.js"
             ]
           },
           "configurations": {
