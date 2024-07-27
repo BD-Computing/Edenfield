@@ -1,24 +1,25 @@
-name: Create a new release on pushed tag
+name: 🚀 Deploy app to https://www.tjsboutiquehotel.co.ke on push to main
 
 on:
   push:
-    tags:
-      - "*"
-
-permissions:
-  contents: write
+    branches:
+      - main
 
 jobs:
-  release:
-    name: Release pushed tag
-    runs-on: ubuntu-22.04
+  web-deploy:
+    name: 🎉 Deploy to TJ's Boutique Cpanel
+    runs-on: ubuntu-latest
     steps:
-      - name: Create a new release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          tag: ${{ github.ref_name }}
-        run: |
-          gh release create "$GITHUB_REF_NAME" \
-              --repo="$GITHUB_REPOSITORY" \
-              --title="v${tag#v}" \
-              --generate-notes
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+      - run: npm install && npm run dev
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+
+        with:
+          server: ${{secrets.ftp_server}}
+          username: ${{ secrets.ftp_username}}
+          password: ${{ secrets.ftp_password }}
+          server-dir: ./
+          local-dir: ./
