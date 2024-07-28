@@ -7,7 +7,7 @@ on:
 
 jobs:
   web-deploy:
-    name: 🎉 Deploy to TJ's Boutique Cpanel
+    name: 🎉 Deploy to Cpanel
     runs-on: ubuntu-latest
     steps:
       - name: 🚚 Get latest code
