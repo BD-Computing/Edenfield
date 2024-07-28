@@ -9,102 +9,101 @@ class WebController extends Controller
 {
     public function index()
     {
-        return view('web.homepage');
+        return view('pages.homepage');
     }
-
 
     public function about()
     {
-        return view('web.about');
+        return view('pages.about');
     }
 
     public function services()
     {
-        return view('web.services');
+        return view('pages.services');
     }
 
 
     public function restaurant()
     {
-        return view('web.restaurant', compact('menus'));
+        return view('pages.restaurant', compact('menus'));
     }
 
     public function rooms()
     {
 
-        return view('web.rooms.rooms');
+        return view('pages.rooms.rooms');
     }
 
     public function availability($id)
     {
 
-        return view('web.rooms.booking', compact('id'));
+        return view('pages.rooms.booking', compact('id'));
     }
 
 
     public function room_details($id)
     {
-        return view('web.rooms.room-details', compact('id'));
+        return view('pages.rooms.room-details', compact('id'));
     }
 
     public function facilities()
     {
-        return view('web.facilities');
+        return view('pages.facilities');
     }
 
     public function gallery()
     {
-        return view('web.gallery');
+        return view('pages.gallery');
     }
 
     public function team()
     {
-        return view('web.team');
+        return view('pages.team');
     }
 
     public function pricing()
     {
-        return view('web.pricing');
+        return view('pages.pricing');
     }
 
     public function careers()
     {
         $careers = Career::findAll();
-        return view('web.careers', compact('careers'));
+        return view('pages.careers', compact('careers'));
     }
 
     public function career($id)
     {
         $career = Career::findById($id);
-        return view('web.career', compact('career'));
+        return view('pages.career', compact('career'));
     }
     public function faq()
     {
-        return view('web.faq');
+        return view('pages.faq');
     }
 
     public function contact()
     {
-        return view('web.contact');
+        return view('pages.contact');
     }
 
     // others
     public function errorpage()
     {
-        return view('web.errorpage');
+        return view('pages.errorpage');
     }
     public function comingsoon()
     {
-        return view('web.comingsoon');
+        return view('pages.comingsoon');
     }
 
     public function news()
     {
-        return view('web.news');
+        return view('pages.news');
     }
 
     public function post()
     {
-        return view('web.post');
+        return view('pages.post');
     }
 }

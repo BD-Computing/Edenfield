@@ -9,7 +9,7 @@
 
     <title>{{ $settings->companyName }} | @yield('title')</title>
 
-    <link rel="shortcut icon" href="{{ URL::asset('favicon.png') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" type="image/x-icon" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,6 +33,7 @@
     <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('assets/css/responsive.css') }}" rel="stylesheet">
     <link href="{{ URL::asset('assets/css/custom-animate.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles()
     @yield('css')
 </head>
@@ -46,13 +47,13 @@
                 <div id="handle-preloader" class="handle-preloader">
                     <div class="animation-preloader">
                         <div class="txt-loading">
-                            <span data-text-preloader="T" class="letters-loading">T</span>
-                            <span data-text-preloader="R" class="letters-loading">R</span>
-                            <span data-text-preloader="A" class="letters-loading">A</span>
                             <span data-text-preloader="V" class="letters-loading">V</span>
-                            <span data-text-preloader="I" class="letters-loading">I</span>
-                            <span data-text-preloader="L" class="letters-loading">L</span>
-                            <span data-text-preloader="O" class="letters-loading">O</span>
+                            <span data-text-preloader="E" class="letters-loading">E</span>
+                            <span data-text-preloader="N" class="letters-loading">N</span>
+                            <span data-text-preloader="T" class="letters-loading">T</span>
+                            <span data-text-preloader="U" class="letters-loading">U</span>
+                            <span data-text-preloader="R" class="letters-loading">R</span>
+                            <span data-text-preloader="E" class="letters-loading">E</span>
                         </div>
                     </div>
                 </div>
@@ -70,8 +71,9 @@
                         <!--Logo-->
                         <div class="logo-box">
                             <div class="logo">
-                                <a href="index.html" title="Travilo"><img src="assets/images/logo.png"
-                                        alt="Travilo Logo" title="Travilo Logo"></a>
+                                <a href="{{ route('web.homepage') }}" title="Logo">
+                                    <img src="images/logo.png" alt="Logo" title="Venture Logo">
+                                </a>
                             </div>
                         </div>
 
@@ -80,70 +82,41 @@
                             <div class="nav-outer clearfix">
                                 <nav class="main-menu">
                                     <ul class="navigation clearfix">
-                                        <li class="current dropdown">
-                                            <a href="index.html">Home</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="index.html">Home 01</a>
-                                                </li>
-                                                <li>
-                                                    <a href="index-2.html">Home 02</a>
-                                                </li>
-                                            </ul>
+                                        <li class="{{ Route::currentRouteName() == 'web.homepage' ? 'current' : '' }}">
+                                            <a href="{{ route('web.homepage') }}">Home</a>
+
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="tour-list.html">Tours</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="tour-list.html">Tours List</a>
-                                                </li>
-                                                <li>
-                                                    <a href="tour-packages.html">Tour Packages</a>
-                                                </li>
-                                                <li>
-                                                    <a href="tour-single.html">Tour Details</a>
-                                                </li>
-                                                <li>
-                                                    <a href="activities.html">Activities</a>
-                                                </li>
-                                                <li>
-                                                    <a href="activity-single.html">Activity Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="destinations.html">Destination</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="destinations.html">All Destinations</a>
-                                                </li>
-                                                <li>
-                                                    <a href="destination-single.html">Destination Single</a>
-                                                </li>
-                                                <li>
-                                                    <a href="hotels.html">Hotels</a>
-                                                </li>
-                                                <li>
-                                                    <a href="hotel-single.html">Hotel Details</a>
-                                                </li>
-                                            </ul>
+                                        @if (false)
+                                            <li class="dropdown">
+                                                <a href="tour-list.html">Tours</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="tour-list.html">Tours List</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="tour-packages.html">Tour Packages</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="tour-single.html">Tour Details</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="activities.html">Activities</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="activity-single.html">Activity Details</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        @endif
+
+                                        <li class="{{ Route::currentRouteName() == 'web.about' ? 'current' : '' }}">
+                                            <a href="{{ route('web.about') }}">About</a>
                                         </li>
                                         <li>
-                                            <a href="about.html">About</a>
+                                            <a href="#">News</a>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="blog.html">News</a>
-                                            <ul>
-                                                <li>
-                                                    <a href="blog.html">Our Blog</a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-single.html">Blog Details</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
+                                        <li class="{{ Route::currentRouteName() == 'web.contact' ? 'current' : '' }}">
+                                            <a href="{{ route('web.contact') }}">Contact</a>
                                         </li>
                                     </ul>
                                 </nav><!-- .main-menu -->
@@ -154,54 +127,39 @@
                         <!-- Hidden Nav Toggler -->
                         <div class="nav-toggler">
                             <button class="hidden-bar-opener">
-                                <span class="icon"><img src="assets/images/icons/menu-icon.svg"
-                                        alt=""></span>
+                                <span class="icon">
+                                    <img src="{{ URL::asset('assets/images/icons/menu-icon.svg') }}" alt="">
+                                </span>
                             </button>
                         </div>
 
                         <div class="links-box clearfix">
-                            <div class="link login">
-                                <a href="index.html#">Login / Signup</a>
-                            </div>
-                            <div class="link lang-box">
-                                <div class="lang-btn clearfix">
-                                    <span class="txt">En</span><span class="icon far fa-angle-down"></span>
+                            @if (false)
+                                <div class="link login">
+                                    <a href="#">Login / Signup</a>
                                 </div>
-                                <ul class="lang-list">
-                                    <li>
-                                        <a href="index.html#">Tur</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">Esp</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">Rus</a>
-                                    </li>
-                                    <li>
-                                        <a href="index.html#">Hin</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            @endif
                             <div class="link social">
                                 <ul class="social-links clearfix">
                                     <li>
-                                        <a href="index.html#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
                                     </li>
                                     <li>
-                                        <a href="index.html#" class="twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                                     </li>
                                     <li>
-                                        <a href="index.html#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                     <li>
-                                        <a href="index.html#" class="youtube"><i class="fab fa-youtube"></i></a>
+                                        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="link call-to">
-                                <a href="tel:+96899999000"><i class="icon fa-solid fa-phone"></i> Call Us <span
-                                        class="nmbr">+968
-                                        99999000</span></a>
+                                <a href="tel:+{{ $settings->phone }}">
+                                    <i class="icon fa-solid fa-phone"></i> Call Us
+                                    <span class="nmbr">+{{ $settings->phone }}</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -237,9 +195,11 @@
 
                 <div class="links-box clearfix">
                     <div class="clearfix">
-                        <div class="link">
-                            <a href="contact.html" class="theme-btn btn-style-one"><span>Login / Signup</span></a>
-                        </div>
+                        @if (false)
+                            <div class="link">
+                                <a href="contact.html" class="theme-btn btn-style-one"><span>Login / Signup</span></a>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -247,7 +207,9 @@
         </div>
         <!-- / Hidden Bar -->
 
-        @yield('content')
+        <div class="row mb-20" style="margin-bottom: 20px">
+            @yield('content')
+        </div>
 
         <!--Subscribe Section-->
         <div class="subscribe-section">
@@ -303,41 +265,45 @@
                             <div class="footer-column col-xl-4 col-lg-3 col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
-                                        <a href="index.html" title="Travilo"><img src="assets/images/logo.png"
-                                                alt="" title="Travilo"></a>
+                                        <a href="index.html" title="Venture">
+                                            <img src="images/logo.png" alt="" title="Venture">
+                                        </a>
                                     </div>
                                     <div class="footer-info">
                                         <ul class="info">
                                             <li class="address">
-                                                <a href="index.html#"><i class="icon fa fa-map-marker-alt"></i> Love
-                                                    Street,
-                                                    Muscat, Oman</a>
+                                                <a href="#"><i class="icon fa fa-map-marker-alt"></i>
+                                                    {{ $settings->boxAddress }}
+                                                    {{ $settings->code }} -
+                                                    {{ $settings->officeAddress }}
+                                                    {{ $settings->town }}, <br>
+                                                    {{ $settings->country }}
+                                                </a>
                                             </li>
                                             <li class="phone">
-                                                <a href="tel:+96899999000"><i class="icon fa-solid fa-phone"></i>+968
-                                                    99999000</a>
+                                                <a href="tel:{{ $settings->phone }}"><i
+                                                        class="icon fa-solid fa-phone"></i>{{ $settings->phone }}</a>
                                             </li>
                                             <li class="email">
-                                                <a href="mailto:hello@travilo.com"><i class="icon fa fa-envelope"></i>
-                                                    hello@travilo.com</a>
+                                                <a href="mailto:{{ $settings->email }}"><i
+                                                        class="icon fa fa-envelope"></i>
+                                                    {{ $settings->email }}</a>
                                             </li>
                                         </ul>
                                         <ul class="social-links clearfix">
                                             <li>
-                                                <a href="index.html#" class="facebook"><i
+                                                <a href="#" class="facebook"><i
                                                         class="fab fa-facebook-f"></i></a>
                                             </li>
                                             <li>
-                                                <a href="index.html#" class="twitter"><i
-                                                        class="fab fa-twitter"></i></a>
+                                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
                                             </li>
                                             <li>
-                                                <a href="index.html#" class="linkedin"><i
+                                                <a href="#" class="linkedin"><i
                                                         class="fab fa-linkedin-in"></i></a>
                                             </li>
                                             <li>
-                                                <a href="index.html#" class="youtube"><i
-                                                        class="fab fa-youtube"></i></a>
+                                                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -351,19 +317,19 @@
                                             <div class="links">
                                                 <ul>
                                                     <li>
-                                                        <a href="index.html#">New York</a>
+                                                        <a href="#">New York</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">London</a>
+                                                        <a href="#">London</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Rome</a>
+                                                        <a href="#">Rome</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Mascot</a>
+                                                        <a href="#">Mascot</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Dhaka</a>
+                                                        <a href="#">Dhaka</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -376,19 +342,19 @@
                                             <div class="links">
                                                 <ul>
                                                     <li>
-                                                        <a href="index.html#">About Us</a>
+                                                        <a href="#">About Us</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Company Profile</a>
+                                                        <a href="#">Company Profile</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Team Members</a>
+                                                        <a href="#">Team Members</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Support</a>
+                                                        <a href="#">Support</a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.html#">Career</a>
+                                                        <a href="#">Career</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -404,20 +370,20 @@
                                     <div class="gallery">
                                         <div class="gallery-item">
                                             <div class="image">
-                                                <a href="index.html#"><img
+                                                <a href="#"><img
                                                         src="assets/images/resources/thumbnails/oman-thumb.jpg"
                                                         alt="Oman"></a>
                                             </div>
-                                            <h6><a href="index.html#">Adventure in Oman's Rimal Bani Wahiba</a></h6>
+                                            <h6><a href="#">Adventure in Oman's Rimal Bani Wahiba</a></h6>
                                             <div class="price">Starts from <span class="amount">$399</span></div>
                                         </div>
                                         <div class="gallery-item">
                                             <div class="image">
-                                                <a href="index.html#"><img
+                                                <a href="#"><img
                                                         src="assets/images/resources/thumbnails/maldives-thumb.jpg"
                                                         alt=""></a>
                                             </div>
-                                            <h6><a href="index.html#">Unveiling the Serenity of the Maldives</a></h6>
+                                            <h6><a href="#">Unveiling the Serenity of the Maldives</a></h6>
                                             <div class="price">Starts from <span class="amount">$459</span></div>
                                         </div>
                                     </div>
@@ -431,11 +397,12 @@
             <div class="f-bottom">
                 <div class="auto-container">
                     <div class="inner clearfix">
-                        <div class="copyright">All rights researved <strong>Travilo</strong> &copy; 2023</div>
+                        <div class="copyright">All rights researved <strong>{{ $settings->companyName }}</strong>
+                            &copy; 2024</div>
                         <div class="bottom-links">
                             <ul class="clearfix">
-                                <li><a href="index.html#">Terms & Conditions</a></li>
-                                <li> <a href="index.html#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions</a></li>
+                                <li> <a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
