@@ -8,7 +8,6 @@ use App\Http\Controllers\API\V1\payments\mpesa\MpesaAPIController;
 use App\Http\Controllers\Client\ClientOrdersController;
 use App\Http\Controllers\Client\DashboardController as ClientDashboardController;
 use App\Http\Controllers\Client\ProfileController;
-use App\Http\Controllers\LandingImagesController;
 use App\Http\Controllers\Store\CartController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\TestController;
