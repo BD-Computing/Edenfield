@@ -3,13 +3,11 @@
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\JobsController;
 use App\Http\Controllers\Admin\OrdersController;
-use App\Http\Controllers\Admin\RoomsController;
 use App\Http\Controllers\Admin\SettingsController;
 use App\Http\Controllers\API\V1\payments\mpesa\MpesaAPIController;
 use App\Http\Controllers\Client\ClientOrdersController;
 use App\Http\Controllers\Client\DashboardController as ClientDashboardController;
 use App\Http\Controllers\Client\ProfileController;
-use App\Http\Controllers\FoodMenuController;
 use App\Http\Controllers\LandingImagesController;
 use App\Http\Controllers\Store\CartController;
 use App\Http\Controllers\StoreController;
@@ -29,10 +27,6 @@ Route::get('refund', [StoreController::class, 'refund'])->name('refund');
 //Hotel Pages
 Route::get('/about', [WebController::class, 'about'])->name('web.about');
 Route::get('/services', [WebController::class, 'services'])->name('web.services');
-Route::get('/restaurant', [WebController::class, 'restaurant'])->name('web.restaurant');
-Route::get('/rooms', [WebController::class, 'rooms'])->name('web.rooms');
-Route::get('room/{id}/availability/check', [WebController::class, 'availability'])->name('web.availability');
-Route::get('/room_details/{id}', [WebController::class, 'room_details'])->name('web.room-details');
 Route::get('/spa', [WebController::class, 'spa'])->name('web.spa');
 Route::get('/facilities', [WebController::class, 'facilities'])->name('web.facilities');
 Route::get('/gallery', [WebController::class, 'gallery'])->name('web.gallery');
@@ -73,23 +67,6 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'middleware' => ['auth', 'a
     Route::resource('users', UsersController::class);
     Route::get('users/update-password/{user}', [UpdatePasswordController::class, 'request'])->name('users.update-password-request');
     Route::post('users/update-password/{user}', [UpdatePasswordController::class, 'change'])->name('users.update-password');
-
-    // Rooms
-    Route::get('rooms', [RoomsController::class, 'index'])->name('rooms.index');
-
-    // Landing Images
-    Route::post('landing-images/create', [LandingImagesController::class, 'upload'])->name('landing-images.upload');
-    Route::get('landing-images/create', [LandingImagesController::class, 'create'])->name('landing-images.create');
-    Route::get('landing-images', [LandingImagesController::class, 'index'])->name('landing-images.index');
-    Route::get('landing-images/{id}', [LandingImagesController::class, 'show'])->name('landing-images.show');
-    Route::delete('landing-images/{id}', [LandingImagesController::class, 'delete'])->name('landing-images.delete');
-
-    // Food Menus
-    Route::get('food-menus/create', [FoodMenuController::class, 'create'])->name('food-menus.create');
-    Route::post('food-menus/create', [FoodMenuController::class, 'upload'])->name('food-menus.upload');
-    Route::get('food-menus', [FoodMenuController::class, 'index'])->name('food-menus.index');
-    Route::get('food-menus/{id}', [FoodMenuController::class, 'show'])->name('food-menus.show');
-    Route::delete('food-menus/{id}', [FoodMenuController::class, 'delete'])->name('food-menus.delete');
 
     // Careers
     Route::get('careers/create', [JobsController::class, 'create'])->name('careers.create');
