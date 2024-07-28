@@ -3,525 +3,1323 @@
 @section('title')
     Homepage
 @endsection
-@section('content')
-    <!-- Slider -->
-    <header class="header slider-fade">
-        <div class="owl-carousel owl-theme">
-            @foreach ($landingImages['images'] as $index => $landing)
-                @if ($landingImages['fromDB'] == true)
-                    <div class="text-center item bg-img" data-overlay-dark="2"
-                        data-background="{{ url($landing['imageLink']) }}">
-                    @else
-                        <div class="text-center item bg-img" data-overlay-dark="2"
-                            data-background="{{ URL::asset($landing['imageLink']) }}">
-                @endif
 
-                <div class="v-middle caption">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-10 offset-md-1">
-                                @include('layouts.partials.stars')
-                                <h4>{{ $landing['title'] }}</h4>
-                                <h1>{{ $landing['description'] }}</h1>
-                                <div class="butn-light mt-30 mb-30"> <a href="{{ route('web.rooms') }}"
-                                        data-scroll-nav="1"><span>Rooms &
-                                            Suites</span></a> </div>
+@section('content')
+    <!-- Banner Section -->
+    <div class="banner-section">
+        <div class="banner-container">
+            <div class="banner-arrow wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <img src="assets/images/background/banner-arrow.png" alt="" title="">
+            </div>
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <div class="left-col col-lg-6 col-md-12">
+                        <div class="inner">
+                            <div class="clearfix">
+                                <div class="content">
+                                    <div class="bg-image">
+                                        <img src="assets/images/background/bg-gradient-1.png" alt="" title="">
+                                    </div>
+                                    <h3>Start Travelling Now</h3>
+                                    <h1><i class="d-icon"><img src="assets/images/elements/yellow-1.png" alt=""
+                                                title=""></i>Explore the
+                                        Top Destination of Planet Earth</h1>
+                                    <p class="travilo-text">Embrace the journey; Travel with passion and purpose.
+                                    </p>
+                                    <div class="form-box site-form">
+                                        <form method="post" action="index.html">
+                                            <div class="row clearfix">
+                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="field-label">Destination</div>
+                                                    <div class="field-inner">
+                                                        <input type="text" name="field-name" value=""
+                                                            placeholder="Where to go?" required>
+                                                        <i class="alt-icon fa fa-map-marker-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="field-label">Check in</div>
+                                                    <div class="field-inner">
+                                                        <input class="datepicker" type="text" name="field-name"
+                                                            value="" placeholder="Check in" required>
+                                                        <i class="alt-icon fa fa-calendar-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="field-label">Check out</div>
+                                                    <div class="field-inner">
+                                                        <input class="datepicker" type="text" name="field-name"
+                                                            value="" placeholder="Check out" required>
+                                                        <i class="alt-icon fa fa-calendar-alt"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                    <div class="field-label">Guests</div>
+                                                    <div class="field-inner">
+                                                        <input type="text" name="field-name" value=""
+                                                            placeholder="Guests" required>
+                                                        <i class="alt-icon fa fa-user"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="theme-btn f-btn">
+                                                <span>Search <i class="fa-solid fa-search"></i></span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <p class="lower-text"><span>3200</span> tour packages waiting for you</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-col col-lg-6 col-md-12">
+                        <div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                            <div class="image-layer"
+                                style="background-image: url('assets/images/resources/misc/man-with-bag.jpg');">
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        @endforeach
-        </div>
-        <!-- slider reservation -->
-        <div class="reservation">
-            <a href="tel:+{!! $settings->salesPhoneNumber !!}">
-                <div class="icon d-flex justify-content-center align-items-center">
-                    <i class="flaticon-call"></i>
-                </div>
-                <div class="call" style="color: #fff;"><span style="color: #fff;">+{!! $settings->salesPhoneNumber !!}</span>
-                    <br>Reservation
-                </div>
-            </a>
-        </div>
-    </header>
-    <style>
-        .writeup {
-            background-color: #fff;
-            padding: 8px 20px;
-            border-radius: 4px;
-        }
-
-        .center {
-            display: block;
-        }
-
-        @media screen and (max-width: 768px) {
-            .center {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .booking-wrapper {}
-
-            form {
-                /* width: 90vw; */
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-direction: column;
-            }
-
-            .book-row {
-                display: grid;
-                grid-template-columns: 1fr;
-                align-items: center;
-            }
-
-            .book-row>div {
-                width: initial !important;
-            }
-
-            .btn-form1-submit {
-                width: 60vw !important;
-            }
-        }
-    </style>
-
-    <!-- Booking Search -->
-    <div class="booking-wrapper">
-        <div class="container">
-            <div class="booking-inner clearfix">
-
-                <form class="form1 clearfix">
-                    <div class="row book-row">
-                        <div class="col-6 center writeup">
-                            <p>
-                                Check our rooms on Booking.com
-                            </p>
-                        </div>
-                        <div class="col-3 center">
-                            <style>
-                                .book {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-
-                                .book:hover {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                }
-                            </style>
-                            <a class="btn-form1-submit book" href="{{ $settings->bookingComLink }}" target="_blank">Book
-                                Now</a>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
-    <!-- About -->
-    <section class="about section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
-                    @include('layouts.partials.stars')
-                    <div class="section-subtitle">TJ's Boutique Hotel</div>
-                    <div class="section-title">Stay Once Carry Memories</div>
-                    <p>We take pride in our modern luxury hotel which offers exquisite facilities with a touch of class.
-                    </p>
+    <!--End Banner Section -->
 
-                    <p>We offer a diverse and luxurious environment that suits the tastes of our esteemed customers in every
-                        occasion.
-                    </p>
-                    <!-- call -->
-                    <div class="reservations">
-                        <div class="icon"><span class="flaticon-call"></span></div>
-                        <div class="text">
-                            <p>Reservation</p> <a href="tel:+{!! $settings->salesPhoneNumber !!}">+{!! $settings->salesPhoneNumber !!}</a> <br>
-                            <a href="tel:{!! $settings->phone !!}">{!! $settings->phone !!}</a>
+    <!--Intro Section-->
+    <div class="intro-section">
+        <div class="auto-container">
+            <div class="row clearfix justify-content-center">
+                <!--Block-->
+                <div class="intro-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="icon">
+                            <span><img src="assets/images/icons/intro-1.png" alt=""></span>
+                        </div>
+                        <h4>Most Popular Destinations</h4>
+                        <p class="travilo-text">Discover the world's most sought-after destinations, from
+                            breathtaking wonders to
+                            vibrant cityscapes. Unveil iconic landmarks, immerse in diverse cultures, and create
+                            cherished memories
+                            on your journey of a lifetime.</p>
+                    </div>
+                </div>
+                <!--Block-->
+                <div class="intro-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="icon">
+                            <span><img src="assets/images/icons/intro-2.png" alt=""></span>
+                        </div>
+                        <h4>Budget Friendly Packages</h4>
+                        <p class="travilo-text">Travel doesn't have to break the bank! Explore our curated
+                            selection
+                            of
+                            budget-friendly packages, where you can experience incredible adventures without
+                            compromising on
+                            quality. Embrace wanderlust without the financial worry.</p>
+                    </div>
+                </div>
+                <!--Block-->
+                <div class="intro-block col-lg-4 col-md-6 col-sm-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="icon">
+                            <span><img src="assets/images/icons/intro-3.png" alt=""></span>
+                        </div>
+                        <h4>Satisfaction Guarranted</h4>
+                        <p class="travilo-text">Your satisfaction is our top priority. With meticulous planning and
+                            personalized
+                            service, we ensure your travel experiences exceed expectations. Book with confidence,
+                            knowing that your
+                            journey will be nothing short of exceptional.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About Us Section-->
+    <div class="about-section">
+        <div class="bg-grad-right">
+            <img src="assets/images/background/bg-gradient-2.png" alt="" title="">
+        </div>
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Text Col-->
+                <div class="text-col col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="d-elem-1">
+                            <img src="assets/images/elements/green-1.png" alt="">
+                        </div>
+                        <div class="title-box">
+                            <div class="subtitle">Let’s Explore the World</div>
+                            <h2><span>We Make Your Travel More Enjoyable</span></h2>
+                            <p class="travilo-text">Embrace a worry-free travel experience with us as we strive to
+                                make your journey more enjoyable. From seamless itineraries to handpicked
+                                accommodations, we take care of every detail, leaving you free to savor every moment
+                                and create unforgettable memories.</p>
+                        </div>
+                        <div class="features">
+                            <div class="row clearfix">
+                                <div class="f-block col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/f-icon-1.png" alt="">
+                                        </div>
+                                        <h6>Award winning tour & travel arranger</h6>
+                                    </div>
+                                </div>
+                                <div class="f-block col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/f-icon-2.png" alt="">
+                                        </div>
+                                        <h6>Most popular booking solution provider</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lower-text">
+                            <div class="travilo-text">
+                                <ul>
+                                    <li>Personalized Itineraries: Tailored to your preferences and interests.</li>
+                                    <li>Hand picked premium Accommodations that guarantee comfort and relaxation.
+                                    </li>
+                                    <li>Dedicated 24/7 support team ready to assist you at any moment.</li>
+                                </ul>
+                            </div>
+                            <div class="link-box">
+                                <a href="about.html" class="theme-btn btn-style-one"><span>Read More</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <style>
-                    .images {
-                        display: grid;
-                        grid-auto-columns: 1fr;
-                        grid-gap: 20px;
-                    }
-                </style>
-                <div class="col-6 images">
-                    <div class="row ">
-                        <div class="col-6">
-                            <img src="{{ URL::asset('hotel/img/rooms/8.jpg') }}" alt="">
+                <!--Image Col-->
+                <div class="image-col col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="bg-grad-left">
+                            <img src="assets/images/background/bg-gradient-26.png" alt="" title="">
                         </div>
-                        <div class="col-6">
-                            <img src="{{ URL::asset('hotel/img/rooms/22.jpg') }}" alt="">
+                        <div class="d-elem-1">
+                            <img src="assets/images/elements/yellow-3.png" alt="">
                         </div>
-                    </div>
-                    <div class="row ">
-                        <div class="col-6">
-                            <img src="{{ URL::asset('hotel/img/rooms/23.jpg') }}" alt="">
+                        <div class="d-elem-2">
+                            <img src="assets/images/elements/pink-4.png" alt="">
                         </div>
-                        <div class="col-6" style="height: 100%">
-                            <img src="{{ URL::asset('hotel/img/rooms/24.jpg') }}" alt="">
+                        <div class="image-box clearfix">
+                            <div class="image">
+                                <img src="assets/images/resources/misc/tickets.jpg" alt="Tickets" title="Tickets">
+                            </div>
+                            <div class="image">
+                                <img src="assets/images/resources/misc/man-hiking-2.jpg" alt="" title="">
+                            </div>
+                        </div>
+                        <div class="exp">
+                            <span class="count">10</span> Successful <br>Years
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Rooms -->
-    <section class="rooms1 section-padding bg-cream" data-scroll-index="1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle">{!! Str::upper($settings->companyName) !!}</div>
-                    <div class="section-title">Rooms & Suites</div>
+    </div>
+
+    @if (false)
+        <!--Trending Destinations Section-->
+        <div class="destination-section">
+            <div class="bg-grad-right">
+                <img src="assets/images/background/bg-gradient-3.png" alt="">
+            </div>
+            <div class="bg-grad-left">
+                <img src="assets/images/background/bg-gradient-4.png" alt="">
+            </div>
+            <div class="auto-container">
+                <div class="title-box centered">
+                    <div class="subtitle">Discover</div>
+                    <h2><i class="bg-vector"></i><span>Popular Destinations</span></h2>
+                </div>
+
+                <div class="gallery-box">
+                    <div class="masonry-container row clearfix">
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-1.jpg" alt="Gallery 1"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">India</a></h4>
+                                        <div class="tour-count">
+                                            <span>280 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item column-width col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-2.jpg" alt="Gallery 2"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">Morocco</a></h4>
+                                        <div class="tour-count">
+                                            <span>200 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item column-width col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-3.jpg" alt="Gallery 3"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">Istanbul</a></h4>
+                                        <div class="tour-count">
+                                            <span>140 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item column-width col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-12.jpg" alt="Gallery 12"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">London</a></h4>
+                                        <div class="tour-count">
+                                            <span>350 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-14.jpg" alt="Gallery  14"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">Rome</a></h4>
+                                        <div class="tour-count">
+                                            <span>240 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item column-width col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-15.jpg" alt="Gallery 15"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">Cairo</a></h4>
+                                        <div class="tour-count">
+                                            <span>512 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item column-width col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-6.jpg" alt="Gallery 6"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">Carribean</a></h4>
+                                        <div class="tour-count">
+                                            <span>99 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                        <!--Block-->
+                        <div class="dest-block-one masonry-item column-width col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                            <div class="inner-box wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
+                                <div class="image-box">
+                                    <a href="destination-single.html"><img
+                                            src="assets/images/resources/gallery/gallery-7.jpg" alt="Gallery  7"></a>
+                                </div>
+                                <div class="hvr-box">
+                                    <div class="hvr-inner">
+                                        <h4><a href="destination-single.html">Istanbul</a></h4>
+                                        <div class="tour-count">
+                                            <span>330 Tour Packages</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .dest-block-one -->
+
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                @foreach ($roomTypes as $index => $roomType)
-                    @if ($index + 1 < 4)
-                        <div class="col-md-4">
-                        @else
-                            <div class="col-md-6">
-                    @endif
-                    <div class="item">
-                        <div class="position-re o-hidden"> <img src="{{ URL::asset($roomType->mainImage) }}"
-                                alt="">
-                        </div> <span class="category"><a
-                                href="{{ route('web.room-details', ['id' => $roomType->id]) }}">Book</a></span>
-                        <div class="con">
-                            <h6><a href="{{ route('web.room-details', ['id' => $roomType->id]) }}">From @money($roomType->price)
-                                    /
-                                    Night</a></h6>
-                            <h5><a
-                                    href="{{ route('web.room-details', ['id' => $roomType->id]) }}">{!! $roomType->roomType !!}</a>
-                            </h5>
-                            <div class="line"></div>
-                            <div class="row facilities">
-                                <div class="col col-md-7">
-                                    <ul>
-                                        <li><i class="flaticon-bed"></i></li>
-                                        <li><i class="flaticon-bath"></i></li>
-                                        <li><i class="flaticon-breakfast"></i></li>
-                                        <li><i class="flaticon-towel"></i></li>
+        </div>
+    @endif
+
+    <!--Why Us Section-->
+    <div class="why-us">
+        <div class="bg-grad-left">
+            <img src="assets/images/background/bg-gradient-6.png" alt="" title="">
+        </div>
+        <div class="bg-grad-right">
+            <img src="assets/images/background/bg-gradient-5.png" alt="" title="">
+        </div>
+        <div class="auto-container">
+            <div class="row clearfix">
+                <!--Text Col-->
+                <div class="text-col col-lg-7 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="d-elem-1">
+                            <img src="assets/images/elements/purple-1.png" alt="">
+                        </div>
+                        <div class="title-box">
+                            <div class="subtitle">Why Choose Travello</div>
+                            <h2><span>We Let Your Sweet Memory Ever Unforgottable</span></h2>
+                        </div>
+                        <div class="features">
+                            <div class="row clearfix">
+
+                                <div class="f-block-two col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/f-icon-3.png" alt="">
+                                        </div>
+                                        <h4>Expert Travel Agent</h4>
+                                        <p class="travilo-text">Trust in the guidance of our seasoned travel
+                                            agents,
+                                            to curate your perfect journey.</p>
+                                    </div>
+                                </div><!-- .f-block-two -->
+
+                                <div class="f-block-two col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/f-icon-4.png" alt="">
+                                        </div>
+                                        <h4>Easy Booking Options</h4>
+                                        <p class="travilo-text">With our user-friendly booking platform, planning
+                                            your dream vacation becomes a breeze.</p>
+                                    </div>
+                                </div><!-- .f-block-two -->
+
+                                <div class="f-block-two col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/f-icon-5.png" alt="">
+                                        </div>
+                                        <h4>World Class Service</h4>
+                                        <p class="travilo-text">Immerse yourself in a world of unparalleled
+                                            service,
+                                            for unforgettable travel experience.</p>
+                                    </div>
+                                </div><!-- .f-block-two -->
+
+                                <div class="f-block-two col-lg-6 col-md-6 col-sm-12">
+                                    <div class="inner-box">
+                                        <div class="icon">
+                                            <img src="assets/images/icons/f-icon-6.png" alt="">
+                                        </div>
+                                        <h4>Total Secured Travel</h4>
+                                        <p class="travilo-text">Rest assured as we prioritize your safety and peace
+                                            of mind, your travel is fully protected.</p>
+                                    </div>
+                                </div><!-- .f-block-two -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Image Col-->
+                <div class="image-col col-lg-5 col-md-12 col-sm-12">
+                    <div class="inner wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms">
+                        <div class="d-elem-2">
+                            <img src="assets/images/elements/yellow-2.png" alt="">
+                        </div>
+                        <div class="image-box">
+                            <img src="assets/images/resources/misc/man-hiking.png" alt="" title="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Facts Section-->
+    <div class="facts-section">
+        <div class="video-box wow fadeInUp">
+            <div class="image-box">
+                <img src="assets/images/resources/misc/boats.jpg" alt="" title="">
+                <a href="https://www.youtube.com/watch?v=ZETY_l3GVQg&autoplay=1" class="lightbox-image vid-btn"><span
+                        class="icon fa fa-play"><i class="ripple"></i></span></a>
+            </div>
+        </div>
+        <div class="auto-container">
+            <div class="fact-counter">
+                <div class="row clearfix">
+
+                    <div class="fact-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner clearfix">
+                            <div class="fact-count">
+                                <div class="count-box">
+                                    <span class="count-text" data-stop="120" data-speed="2000">0</span><i>+</i>
+                                </div>
+                            </div>
+                            <div class="fact-title">Total <br>Destination</div>
+                        </div>
+                    </div><!-- .fact-block -->
+
+                    <div class="fact-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner clearfix">
+                            <div class="fact-count">
+                                <div class="count-box">
+                                    <span class="count-text" data-stop="500" data-speed="3000">0</span><i>+</i>
+                                </div>
+                            </div>
+                            <div class="fact-title">Travel <br>Packages</div>
+                        </div>
+                    </div><!-- .fact-block -->
+
+                    <div class="fact-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner clearfix">
+                            <div class="fact-count">
+                                <div class="count-box">
+                                    <span class="count-text" data-stop="12" data-speed="2000">0</span>K<i>+</i>
+                                </div>
+                            </div>
+                            <div class="fact-title">Total <br>Travelers</div>
+                        </div>
+                    </div><!-- .fact-block -->
+
+                    <div class="fact-block col-lg-3 col-md-6 col-sm-12">
+                        <div class="inner clearfix">
+                            <div class="fact-count">
+                                <div class="count-box">
+                                    <span class="count-text" data-stop="7" data-speed="2000">0</span>K<i>+</i>
+                                </div>
+                            </div>
+                            <div class="fact-title">Positive <br>Reviews</div>
+                        </div>
+                    </div><!-- .fact-block -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Testimonials Section-->
+    <div class="testimonials-section">
+        <div class="auto-container">
+            <div class="title-box centered">
+                <div class="subtitle">Testimonials</div>
+                <h2><span>What Travelers Say</span></h2>
+            </div>
+
+            <div class="carousel-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="bg-grad-left">
+                    <img src="assets/images/background/bg-gradient-8.png" alt="" title="">
+                </div>
+                <div class="bg-grad-right">
+                    <img src="assets/images/background/bg-gradient-7.png" alt="" title="">
+                </div>
+                <div class="d-elem-1">
+                    <img src="assets/images/elements/pink-2.png" alt="">
+                </div>
+                <div class="testimonial-carousel">
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">Wow! This travel website made our vacation planning a breeze!
+                                From finding the best hotels to booking local tours, everything was seamless and
+                                hassle-free. We had an unforgettable trip and can't wait to use this service again!
+                            </p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-1.jpg" alt="Testimonial 1">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">David Hustler</div>
+                                <div class="designation">Solo Traveler</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">Thank you for the fantastic experience! The personalized
+                                itinerary and insider tips helped us discover hidden gems in Japan. Our trip
+                                wouldn't have been the same without your expert guidance. Highly recommend!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-2.jpg" alt="Testimonial 2">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Mike Anderson</div>
+                                <div class="designation">Journalist</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">World-class service indeed! The team went above and beyond to
+                                accommodate our requests and ensure every aspect of our journey was perfect. We felt
+                                like VIPs throughout our vacation. Truly outstanding!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-3.jpg" alt="Testimonial 3">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Peter Rushfold</div>
+                                <div class="designation">Photographer</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">As a solo traveler, safety was paramount for me. I'm grateful
+                                for the total secured travel measures implemented by this website. It gave me the
+                                confidence to explore new destinations worry-free. Can't wait for my next
+                                adventure!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-4.jpg" alt="Testimonial 4">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Ritchard Covey</div>
+                                <div class="designation">Solo Adventurist</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">Easy booking options made planning our family vacation a joy.
+                                The website's user-friendly interface and extensive choices catered to everyone's
+                                preferences, creating a memorable trip for all ages. Highly recommended for
+                                families!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-5.jpg" alt="Testimonial 5">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Tim Smith</div>
+                                <div class="designation">Business Man</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">We were blown away by the service provided by this travel
+                                website. Our trip to Morocco was like a dream come true, with unique experiences and
+                                excellent accommodations. Thank you for making our vacation extraordinary!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-6.jpg" alt="Testimonial 6">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Michael Ford</div>
+                                <div class="designation">Teacher</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">We couldn't have asked for a better travel agent. Their
+                                expertise in creating bespoke itineraries for Brazil's jungle adventure exceeded our
+                                expectations. It was an immersive journey into nature we'll cherish
+                                forever.</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-7.jpg" alt="Testimonial 7">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Sam Nolan</div>
+                                <div class="designation">Engineer</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">From the white sandy beaches to the crystal-clear waters, the
+                                Maldives trip was pure paradise! This website helped us find the perfect island
+                                escape, making it a flawless tropical getaway. I'm recommedning it to all my
+                                friends!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-8.jpg" alt="Testimonial 8">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Carlos Jr.</div>
+                                <div class="designation">HR Manager</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                    <!--Block-->
+                    <div class="testi-block-one">
+                        <div class="inner-box">
+                            <div class="icon">
+                                <span class="flaticon-left-quote"></span>
+                            </div>
+                            <p class="travilo-text">Oman was a revelation! Thanks to this travel website, we
+                                discovered the true essence of Arabian hospitality and explored ancient wonders. It
+                                was an enriching cultural experience we'll forever treasure. Absolutely amazing!</p>
+                            <div class="info">
+                                <div class="image">
+                                    <img src="assets/images/resources/thumbnails/testi-9.jpg" alt="Testimonial 9">
+                                </div>
+                                <div class="rating">
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="name">Martin Fernandez</div>
+                                <div class="designation">Radiologist</div>
+                            </div>
+                        </div>
+                    </div><!-- .testi-block-one -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Partners Section -->
+    <div class="partners-section">
+        <div class="auto-container">
+            <div class="carousel-box">
+                <div class="partners-carousel">
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-1-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-2-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-3-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-4-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-5-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-1-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-2-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-3-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-4-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                    <!--Block-->
+                    <div class="partner-block">
+                        <div class="image">
+                            <a href="index.html#"><img src="assets/images/partners/partner-5-white.png"
+                                    alt=""></a>
+                        </div>
+                    </div><!-- .partner-block -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--News Section-->
+    <div class="news-section">
+        <div class="auto-container">
+            <div class="title-box centered">
+                <div class="subtitle">Updates</div>
+                <h2><span>From Our Blog</span></h2>
+            </div>
+
+            <div class="news-box">
+                <div class="bg-grad-left">
+                    <img src="assets/images/background/bg-gradient-9.png" alt="" title="">
+                </div>
+                <div class="bg-grad-right">
+                    <img src="assets/images/background/bg-gradient-10.png" alt="" title="">
+                </div>
+                <div class="masonry-container row clearfix">
+
+                    <!--Block-->
+                    <div class="news-item masonry-item col-xl-6 col-lg-12 col-md-12 col-sm-12 wow fadeInUp"
+                        data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="news-block-one">
+                            <div class="inner-box">
+                                <div class="image-layer"
+                                    style="background-image: url('assets/images/resources/posts/post-1.jpg')">
+                                </div>
+                                <div class="over-box">
+                                    <ul class="info clearfix">
+                                        <li>
+                                            <a href="index.html#"><i class="fa-solid fa-folder"></i>
+                                                Adventure</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#"><i class="fa-solid fa-clock"></i> June 17,
+                                                2022</a>
+                                        </li>
+                                        <li>
+                                            <a href="index.html#"><i class="fa-solid fa-comments"></i> 22</a>
+                                        </li>
                                     </ul>
-                                </div>
-                                <div class="col col-md-5 text-end">
-                                    <div class="permalink"><a
-                                            href="{{ route('web.room-details', ['id' => $roomType->id]) }}">Details <i
-                                                class="ti-arrow-right"></i></a></div>
+                                    <h3><a href="blog-single.html">Off the Beaten Path Travel Adventures</a></h3>
                                 </div>
                             </div>
                         </div>
-                    </div>
-            </div>
-            @endforeach
-        </div>
-        </div>
-    </section>
-    <!-- Pricing -->
-    @include('web.extraservices')
+                    </div><!-- .news-item .masonry-item -->
 
-    <!-- Promo Video -->
-    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="3"
-        data-background="{{ URL::asset('hotel/img/rooms/21.jpg') }}">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 offset-md-2 text-center">
-                    @include('layouts.partials.stars')
-                    <div class="section-subtitle"><span>TJ's Boutique Hotel</span></div>
-                    <div class="section-title"><span>Promotional Video</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="text-center col-md-12">
-                    <a class="vid" target="blank" href="https://youtu.be/S3BaKbvfIu8?si=mxncKjAKceNDcGLF">
-                        <div class="vid-butn">
-                            <span class="icon">
-                                <i class="ti-control-play"></i>
-                            </span>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Facilties -->
-    <section class="facilties section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle">Our Services</div>
-                    <div class="section-title">Hotel Facilities</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
-                        <span class="flaticon-world"></span>
-                        <h5>Pick Up & Drop</h5>
-                        <p>Our hotel offers seamless pick-up and drop-off services, ensuring your journey to and from our
-                            property is stress-free and convenient.</p>
-                        <div class="facility-shape"> <span class="flaticon-world"></span> </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
-                        <span class="flaticon-car"></span>
-                        <h5>Parking Space</h5>
-
-                        <p>Our hotel provides ample and secure parking space, ensuring hassle-free convenience for our
-                            guests during their stay with us.</p>
-                        <div class="facility-shape"> <span class="flaticon-car"></span> </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
-                        <span class="flaticon-bed"></span>
-                        <h5>Room Service</h5>
-                        <p>Indulge in our impeccable room service, offering a delectable array of dishes delivered to your
-                            door for a memorable stay.</p>
-                        <div class="facility-shape"> <span class="flaticon-bed"></span> </div>
-                    </div>
-                </div>
-                {{-- <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
-                        <span class="flaticon-swimming"></span>
-                        <h5>Swimming Pool</h5>
-                        <p>Dive into pure relaxation at our inviting swimming pool, a tranquil oasis for guests to unwind
-                            and soak up the sun.</p>
-                        <div class="facility-shape"> <span class="flaticon-swimming"></span> </div>
-                    </div>
-                </div> --}}
-                <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
-                        <span class="flaticon-wifi"></span>
-                        <h5>Fibre Internet</h5>
-                        <p>Experience lightning-fast Fibre Internet at our hotel, ensuring seamless connectivity for your
-                            work and leisure needs during your stay.</p>
-                        <div class="facility-shape"> <span class="flaticon-wifi"></span> </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-facility animate-box" data-animate-effect="fadeInUp">
-                        <span class="flaticon-breakfast"></span>
-                        <h5>Breakfast</h5>
-                        <p>Indulge in our sumptuous breakfast spread, featuring a variety of fresh and flavorful options to
-                            kickstart your day with delight.</p>
-                        <div class="facility-shape"> <span class="flaticon-breakfast"></span> </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    @include('web.testimonials')
-    {{--
-    <!-- Services -->
-    <section class="services section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="{{ route('web.restaurant') }}"><img
-                                src="{{ URL::asset('hotel/img/restaurant/1.jpg') }}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Discover</h6>
-                            </div>
-                            <h4>The Restaurant</h4>
-                            <p>Enjoy the serenity at our restaurant, located at the rooftop. Also, you will enjoy the
-                                beauty of the City of Champions from above. The beautiful view of the city offers
-                                tranquility during the day and at night.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.restaurant') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Modern</h6>
-                            </div>
-                            <h4>Fitness Center</h4>
-                            <p>Elevate your well-being at our state-of-the-art Fitness Center, equipped with cutting-edge
-                                equipment and expert trainers, ensuring a revitalizing stay.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/spa/2.jpg') }}"
-                                alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/spa/4.jpg') }}"
-                                alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Health</h6>
-                            </div>
-                            <h4>The Health Club</h4>
-                            <p>The hotel's Health Club offers a haven of well-being, featuring modern fitness equipment,
-                                rejuvenating spa services, and a tranquil ambiance for guests to nurture their physical and
-                                mental health.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Experiences</h6>
-                            </div>
-                            <h4>Luxury Suites</h4>
-                            <p> Our 22 units which include Luxury Suites offer a kingly and comfortable experience within a
-                                peaceful and chilled neighbourhood.</p>
-                            <p> TJ’s offers the perfect base for you while you are in Eldoret City for a Business, Workshop,
-                                or
-                                Family trip. Located only three minutes from the CBD.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/rooms/16.jpg') }}"
-                                alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> --}}
-    <!-- News -->
-    {{-- <section class="news section-padding bg-blck">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-subtitle"><span>Hotel Blog</span></div>
-                    <div class="section-title"><span>Our News</span></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ URL::asset('hotel/img/news/3.jpg') }}"
-                                    alt="">
-                                <div class="date">
-                                    <a href="{{ route('web.comingsoon') }}"> <span>Dec</span> <i>06</i> </a>
+                    <!--Block-->
+                    <div class="news-item masonry-item col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="news-block-one m-height">
+                            <div class="inner-box">
+                                <div class="image-layer"
+                                    style="background-image: url('assets/images/resources/posts/post-2.jpg')">
+                                </div>
+                                <div class="over-box">
+                                    <ul class="info clearfix">
+                                        <li>
+                                            <a href="index.html#"><i class="fa-solid fa-folder"></i> Culture</a>
+                                        </li>
+                                    </ul>
+                                    <h5><a href="blog-single.html">How to Experience the World without Breaking
+                                            the
+                                            Bank</a></h5>
                                 </div>
                             </div>
-                            <div class="con"> <span class="category">
-                                    <a href="{{ route('web.comingsoon') }}">Bathrooms</a>
-                                </span>
-                                <h5><a href="{{ route('web.comingsoon') }}">Hotel Bathroom Collections</a></h5>
-                            </div>
                         </div>
+                    </div><!-- .news-item .masonry-item -->
 
-
-                        <div class="item">
-                            <div class="position-re o-hidden"> <img src="{{ URL::asset('hotel/img/news/1.jpg') }}"
-                                    alt="">
-                                <div class="date">
-                                    <a href="{{ route('web.comingsoon') }}"> <span>Dec</span> <i>08</i> </a>
+                    <!--Block-->
+                    <div class="news-item masonry-item col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay="600ms" data-wow-duration="1500ms">
+                        <div class="news-block-one sm-height">
+                            <div class="inner-box">
+                                <div class="image-layer"
+                                    style="background-image: url('assets/images/resources/posts/post-3.jpg')">
+                                </div>
+                                <div class="over-box">
+                                    <ul class="info clearfix">
+                                        <li>
+                                            <a href="index.html#"><i class="fa-solid fa-folder"></i>
+                                                Adventure</a>
+                                        </li>
+                                    </ul>
+                                    <h5><a href="blog-single.html"> Embracing Self-Discovery on Your Journey</a>
+                                    </h5>
                                 </div>
                             </div>
-                            <div class="con"> <span class="category">
-                                    <a href="{{ route('web.comingsoon') }}">Design</a>
-                                </span>
-                                <h5><a href="{{ route('web.comingsoon') }}">Retro Lighting Design in The Hotels</a></h5>
+                        </div>
+                    </div><!-- .news-item .masonry-item -->
+
+                    <!--Block-->
+                    <div class="news-item masonry-item col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp"
+                        data-wow-delay="300ms" data-wow-duration="1500ms">
+                        <div class="news-block-one sm-height">
+                            <div class="inner-box">
+                                <div class="image-layer"
+                                    style="background-image: url('assets/images/resources/posts/post-4.jpg')">
+                                </div>
+                                <div class="over-box">
+                                    <ul class="info clearfix">
+                                        <li>
+                                            <a href="index.html#"><i class="fa-solid fa-folder"></i> History</a>
+                                        </li>
+                                    </ul>
+                                    <h5><a href="blog-single.html">Capturing Memories That Last a Lifetime</a>
+                                    </h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div><!-- .news-item .masonry-item -->
+
                 </div>
             </div>
         </div>
-    </section> --}}
-    <!-- Reservation & Booking Form -->
-    <section class="testimonials">
-        <div class="background bg-img bg-fixed section-padding pb-0"
-            data-background="{{ URL::asset('hotel/img/rooms/21.jpg') }}" data-overlay-dark="2">
-            <div class="container">
-                <div class="row">
-                    <!-- Reservation -->
-                    <div class="col-md-5 mb-30 mt-30">
-                        <p> @include('layouts.partials.stars')</p>
-                        <h5>Each of our guest rooms feature a private bath, wi-fi, cable television and include full
-                            breakfast.</h5>
-                        <div class="reservations mb-30">
-                            <div class="icon color-1"><span class="flaticon-call"></span></div>
-                            <div class="text">
-                                <p class="color-1">Reservation</p> <a class="color-1"
-                                    href="tel:+{!! $settings->salesPhoneNumber !!}">+{!! $settings->salesPhoneNumber !!}</a> <br>
-                                <a class="color-1" href="tel:{!! $settings->phone !!}">{!! $settings->phone !!}</a>
+    </div>
+
+    <!--Insta Feed Section-->
+    <div class="insta-section">
+        <!--Feed Row-->
+        <div class="insta-feed">
+            <div class="carousel-container">
+                <div class="carousel-box">
+                    <div class="insta-carousel">
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-1.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-1-thumb.jpg"
+                                            alt=""></a></span>
                             </div>
-                        </div>
-                        <!-- <p><i class="ti-check"></i><small>Call us, it's toll-free.</small></p> -->
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-2.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-2-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block m-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-3.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-3-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-4.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-4-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-5.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-5-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block xs-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-6.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-6-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-7.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-7-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-8.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-8-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-9.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-9-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block m-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-10.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-10-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-11.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-11-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-12.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-12-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-13.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-13-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-14.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-14-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-15.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-15-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
                     </div>
-                    <!-- Booking From -->
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Clients -->
-    {{-- <section class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="owl-carousel owl-theme">
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ URL::asset('hotel/img/clients/1.png') }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ URL::asset('hotel/img/clients/2.png') }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ URL::asset('hotel/img/clients/3.png') }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ URL::asset('hotel/img/clients/4.png') }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ URL::asset('hotel/img/clients/5.png') }}" alt=""></a>
-                        </div>
-                        <div class="clients-logo">
-                            <a href="#0"><img src="{{ URL::asset('hotel/img/clients/6.png') }}" alt=""></a>
-                        </div>
+
+        <!--Feed Row-->
+        <div class="insta-feed alternate">
+            <div class="carousel-container">
+                <div class="carousel-box">
+                    <div class="insta-carousel">
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-13.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-13-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-14.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-14-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-15.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-15-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block m-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-3.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-3-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-7.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-7-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-9.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-9-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-1.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-1-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-2.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-2-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block m-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-12.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-12-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block s-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-4.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-4-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-6.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-6-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
+                        <!--Block-->
+                        <div class="insta-block xs-h">
+                            <div class="image">
+                                <span class="img"><a href="assets/images/resources/instagram/insta-11.jpg"
+                                        class="lightbox-image" data-fancybox="insta-gallery"><img
+                                            src="assets/images/resources/instagram/insta-11-thumb.jpg"
+                                            alt=""></a></span>
+                            </div>
+                        </div><!-- .insta-block -->
+
                     </div>
                 </div>
             </div>
         </div>
-    </section> --}}
+    </div>
 @endsection

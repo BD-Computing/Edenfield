@@ -4,19 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Career;
-use App\Models\FoodMenu;
-use App\Models\LandingImage;
-use App\Models\Room;
-use App\Models\RoomType;
-use App\Models\Testimonial;
-use Carbon\Carbon;
-use Illuminate\Http\Request;
 
 class WebController extends Controller
 {
     public function index()
     {
-        return view('web.homepage', compact('roomTypes', 'landingImages'));
+        return view('web.homepage');
     }
 
 
