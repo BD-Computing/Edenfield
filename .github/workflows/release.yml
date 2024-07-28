@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
-      - run: npm install && npm run production
+      - run: npm install && npm run production && composer install
 
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
