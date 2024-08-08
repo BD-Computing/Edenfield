@@ -52,12 +52,12 @@
                             <div class="info">
                                 <h6>Experiences</h6>
                             </div>
-                            <h4>Car hire</h4>
-                            <p> Experience the freedom of exploring Kenya at your own pace with our reliable car hire
-                                services. Whether you need a vehicle for a day, a week, or longer, we offer a wide range of
-                                options to suit your needs. From compact cars to spacious SUVs, all our vehicles are
-                                well-maintained and equipped to ensure a comfortable and safe journey. Enjoy the flexibility
-                                and convenience of traveling on your terms with Venture Africa Safaris Limited.</p>
+                            <h4>Executive Car Hire</h4>
+                            <p> Experience the luxury and comfort of our Executive Car Hire services. Whether you need a
+                                vehicle for business travel, special events, or personal use, we offer a premium selection
+                                of executive cars to meet your needs. All our vehicles are well-maintained, stylish, and
+                                equipped with the latest amenities to ensure a smooth and enjoyable ride. Travel in style
+                                and make a statement with Venture Africa Safaris Limited.</p>
                             <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
                             </div>
                         </div>

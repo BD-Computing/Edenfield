@@ -307,7 +307,7 @@
                 <div class="auto-container">
                     <div class="content-box">
                         <div class="row clearfix">
-                            <div class="footer-column col-xl-4 col-lg-3 col-md-6 col-sm-12">
+                            <div class="footer-column col-xl-4 col-lg-4 col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
                                     <div class="footer-logo">
                                         <a href="index.html" title="Venture">
@@ -354,9 +354,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                                 <div class="row clearfix">
-                                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                    {{-- <div class="footer-column col-lg-6 col-md-6 col-sm-12">
                                         <div class="footer-widget links-widget">
                                             <h4>Top Destination</h4>
                                             <div class="links">
@@ -379,9 +379,9 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    <div class="footer-column col-lg-6 col-md-6 col-sm-12">
+                                    <div class="footer-column col-lg-12 col-md-12 col-sm-12">
                                         <div class="footer-widget links-widget">
                                             <h4>Useful Links</h4>
                                             <div class="links">
@@ -393,13 +393,13 @@
                                                         <a href="#">Company Profile</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Team Members</a>
+                                                        <a href="#">Services</a>
                                                     </li>
                                                     <li>
                                                         <a href="#">Support</a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Career</a>
+                                                        <a href="#">Contact Us</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -408,7 +408,7 @@
                                 </div>
                             </div>
 
-                            <div class="footer-column col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                            <div class="footer-column col-xl-4 col-lg-4 col-md-12 col-sm-12">
                                 <div class="footer-widget gallery-widget">
                                     <h4>Featured Tours</h4>
                                     <!--Logo-->
@@ -420,7 +420,8 @@
                                                         alt="Oman"></a>
                                             </div>
                                             <h6><a href="#">Adventure in Oman's Rimal Bani Wahiba</a></h6>
-                                            <div class="price">Starts from <span class="amount">$399</span></div>
+                                            <div class="price">Starts from <span class="amount">Kshs. 39900</span>
+                                            </div>
                                         </div>
                                         <div class="gallery-item">
                                             <div class="image">
@@ -429,7 +430,8 @@
                                                         alt=""></a>
                                             </div>
                                             <h6><a href="#">Unveiling the Serenity of the Maldives</a></h6>
-                                            <div class="price">Starts from <span class="amount">$459</span></div>
+                                            <div class="price">Starts from <span class="amount">Kshs. 45900</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
