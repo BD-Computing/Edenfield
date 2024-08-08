@@ -1,12 +1,11 @@
 @extends('layouts.web')
-
 @section('title')
     Services
 @endsection
 @section('content')
     <!-- Header Banner -->
     <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4"
-        data-background="{{ URL::asset('hotel/img/slider/3.jpg') }}">
+        data-background="{{ URL::asset('hotel/img/slider/3.jpg') }}" style="margin-top: 150px">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-left caption mt-90">
@@ -22,7 +21,7 @@
             <div class="row">
                 <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
                     <div class="img left">
-                        <a href="{{ route('web.restaurant') }}"><img src="{{ URL::asset('hotel/img/restaurant/1.jpg') }}"
+                        <a href="#"><img src="{{ URL::asset('hotel/img/restaurant/1.jpg') }}"
                                 alt=""></a>
                     </div>
                 </div>
@@ -32,61 +31,15 @@
                             <div class="info">
                                 <h6>Discover</h6>
                             </div>
-                            <h4>The Restaurant</h4>
-                            <p>Savor exquisite culinary delights at our restaurant, where expert chefs craft a diverse
-                                menu, blending international flavors with local ingredients for an unforgettable dining
-                                experience.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.restaurant') }}"><span>Learn More</span></a>
+                            <h4>Tours and Safaris</h4>
+                            <p>Discover the breathtaking beauty and diverse wildlife of Kenya with our expertly guided tours and safaris. Our customized itineraries cater to all types of travelers, whether you're seeking a thrilling adventure in the national parks, a serene beach getaway, or an immersive cultural experience. Our experienced guides are passionate about sharing their knowledge and ensuring you have an unforgettable journey. Embark on a memorable adventure with Venture Africa Safaris Limited and create lasting memories.</p>
+                            <div class="butn-dark"> <a href="#"><span>Learn More</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Modern</h6>
-                            </div>
-                            <h4>Fitness Center</h4>
-                            <p>Elevate your well-being at our state-of-the-art Fitness Center, equipped with cutting-edge
-                                equipment and expert trainers, ensuring a revitalizing stay.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/spa/2.jpg') }}"
-                                alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/spa/4.jpg') }}"
-                                alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Experiences</h6>
-                            </div>
-                            <h4>The Health Club</h4>
-                            <p>The hotel's Health Club offers a haven of well-being, featuring modern fitness equipment,
-                                rejuvenating spa services, and a tranquil ambiance for guests to nurture their physical and
-                                mental health.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> --}}
+
 
             <div class="row">
                 <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
@@ -95,12 +48,8 @@
                             <div class="info">
                                 <h6>Experiences</h6>
                             </div>
-                            <h4>Luxury Suites</h4>
-                            <p> Our 22 units which include Luxury Suites offer a kingly and comfortable experience within a
-                                peaceful and chilled neighbourhood.</p>
-                            <p> TJ’s offers the perfect base for you while you are in Eldoret City for a Business, Workshop,
-                                or
-                                Family trip. Located only three minutes from the CBD.</p>
+                            <h4>Car hire</h4>
+                            <p> Experience the freedom of exploring Kenya at your own pace with our reliable car hire services. Whether you need a vehicle for a day, a week, or longer, we offer a wide range of options to suit your needs. From compact cars to spacious SUVs, all our vehicles are well-maintained and equipped to ensure a comfortable and safe journey. Enjoy the flexibility and convenience of traveling on your terms with Venture Africa Safaris Limited.</p>
                             <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
                             </div>
                         </div>
@@ -113,17 +62,15 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="row">
+             <div class="row">
             <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
                 <div class="content">
                     <div class="cont text-left">
                         <div class="info">
                             <h6>Experiences</h6>
                         </div>
-                        <h4>The Health Club</h4>
-                        <p>The hotel's Health Club offers a haven of well-being, featuring modern fitness equipment,
-                            rejuvenating spa services, and a tranquil ambiance for guests to nurture their physical and
-                            mental health.</p>
+                        <h4>Airport transfers</h4>
+                        <p>Start and end your journey smoothly with our reliable airport transfer services. We provide timely and comfortable transportation to and from all major airports in Kenya. Whether you're arriving or departing, our professional drivers will ensure you reach your destination safely and on time. Avoid the hassle of navigating unfamiliar roads and let Venture Africa Safaris Limited take care of your airport transfers, so you can focus on enjoying your trip.</p>
                         <div class="butn-dark"> <a href="{{ route('web.spa') }}"><span>Learn More</span></a> </div>
                     </div>
                 </div>
@@ -134,9 +81,7 @@
                             alt=""></a>
                 </div>
             </div>
-        </div> --}}
+        </div>
         </div>
     </section>
-    <!-- Reservation & Booking Form -->
-    @include('web.rooms.booking')
 @endsection

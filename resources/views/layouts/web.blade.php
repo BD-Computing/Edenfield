@@ -112,6 +112,9 @@
                                         <li class="{{ Route::currentRouteName() == 'web.about' ? 'current' : '' }}">
                                             <a href="{{ route('web.about') }}">About</a>
                                         </li>
+                                        <li class="{{ Route::currentRouteName() == 'web.services' ? 'current' : '' }}">
+                                            <a href="{{ route('web.services') }}">Services</a>
+                                        </li>
                                         <li>
                                             <a href="#">News</a>
                                         </li>

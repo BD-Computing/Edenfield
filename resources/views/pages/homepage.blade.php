@@ -3,7 +3,6 @@
 @section('title')
     Homepage
 @endsection
-
 @section('content')
     <!-- Banner Section -->
     <div class="banner-section">
@@ -20,13 +19,13 @@
                                     <div class="bg-image">
                                         <img src="assets/images/background/bg-gradient-1.png" alt="" title="">
                                     </div>
-                                    <h3>Start Travelling Now</h3>
+                                    <h3>Start Traveling Now</h3>
                                     <h1><i class="d-icon"><img src="assets/images/elements/yellow-1.png" alt=""
                                                 title=""></i>Explore the
                                         Top Destination of Planet Earth</h1>
-                                    <p class="travilo-text">Embrace the journey; Travel with passion and purpose.
+                                    <p class="venture-text">Embrace the journey; Travel with passion and purpose.
                                     </p>
-                                    <div class="form-box site-form">
+                                    <!-- <div class="form-box site-form">
                                         <form method="post" action="index.html">
                                             <div class="row clearfix">
                                                 <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
@@ -67,7 +66,7 @@
                                             </button>
                                         </form>
                                     </div>
-                                    <p class="lower-text"><span>3200</span> tour packages waiting for you</p>
+                                    <p class="lower-text"><span>3200</span> tour packages waiting for you</p> -->
                                 </div>
                             </div>
                         </div>
@@ -96,9 +95,9 @@
                             <span><img src="assets/images/icons/intro-1.png" alt=""></span>
                         </div>
                         <h4>Most Popular Destinations</h4>
-                        <p class="travilo-text">Discover the world's most sought-after destinations, from
+                        <p class="venture-text">Discover the world's most sought-after destinations, from
                             breathtaking wonders to
-                            vibrant cityscapes. Unveil iconic landmarks, immerse in diverse cultures, and create
+                            vibrant cityscape. Unveil iconic landmarks, immerse in diverse cultures, and create
                             cherished memories
                             on your journey of a lifetime.</p>
                     </div>
@@ -110,7 +109,7 @@
                             <span><img src="assets/images/icons/intro-2.png" alt=""></span>
                         </div>
                         <h4>Budget Friendly Packages</h4>
-                        <p class="travilo-text">Travel doesn't have to break the bank! Explore our curated
+                        <p class="venture-text">Travel doesn't have to break the bank! Explore our curated
                             selection
                             of
                             budget-friendly packages, where you can experience incredible adventures without
@@ -125,7 +124,7 @@
                             <span><img src="assets/images/icons/intro-3.png" alt=""></span>
                         </div>
                         <h4>Satisfaction Guarranted</h4>
-                        <p class="travilo-text">Your satisfaction is our top priority. With meticulous planning and
+                        <p class="venture-text">Your satisfaction is our top priority. With meticulous planning and
                             personalized
                             service, we ensure your travel experiences exceed expectations. Book with confidence,
                             knowing that your
@@ -150,9 +149,9 @@
                             <img src="assets/images/elements/green-1.png" alt="">
                         </div>
                         <div class="title-box">
-                            <div class="subtitle">Let’s Explore the World</div>
+                            <div class="subtitle">Let's Explore the World</div>
                             <h2><span>We Make Your Travel More Enjoyable</span></h2>
-                            <p class="travilo-text">Embrace a worry-free travel experience with us as we strive to
+                            <p class="venture-text">Embrace a worry-free travel experience with us as we strive to
                                 make your journey more enjoyable. From seamless itineraries to handpicked
                                 accommodations, we take care of every detail, leaving you free to savor every moment
                                 and create unforgettable memories.</p>
@@ -178,7 +177,7 @@
                             </div>
                         </div>
                         <div class="lower-text">
-                            <div class="travilo-text">
+                            <div class="venture-text">
                                 <ul>
                                     <li>Personalized Itineraries: Tailored to your preferences and interests.</li>
                                     <li>Hand picked premium Accommodations that guarantee comfort and relaxation.
@@ -406,7 +405,7 @@
                             <img src="assets/images/elements/purple-1.png" alt="">
                         </div>
                         <div class="title-box">
-                            <div class="subtitle">Why Choose Travello</div>
+                            <div class="subtitle">Why Choose Venture Africa Safaris Limited</div>
                             <h2><span>We Let Your Sweet Memory Ever Unforgottable</span></h2>
                         </div>
                         <div class="features">
@@ -418,7 +417,7 @@
                                             <img src="assets/images/icons/f-icon-3.png" alt="">
                                         </div>
                                         <h4>Expert Travel Agent</h4>
-                                        <p class="travilo-text">Trust in the guidance of our seasoned travel
+                                        <p class="venture-text">Trust in the guidance of our seasoned travel
                                             agents,
                                             to curate your perfect journey.</p>
                                     </div>
@@ -430,7 +429,7 @@
                                             <img src="assets/images/icons/f-icon-4.png" alt="">
                                         </div>
                                         <h4>Easy Booking Options</h4>
-                                        <p class="travilo-text">With our user-friendly booking platform, planning
+                                        <p class="venture-text">With our user-friendly booking platform, planning
                                             your dream vacation becomes a breeze.</p>
                                     </div>
                                 </div><!-- .f-block-two -->
@@ -441,7 +440,7 @@
                                             <img src="assets/images/icons/f-icon-5.png" alt="">
                                         </div>
                                         <h4>World Class Service</h4>
-                                        <p class="travilo-text">Immerse yourself in a world of unparalleled
+                                        <p class="venture-text">Immerse yourself in a world of unparalleled
                                             service,
                                             for unforgettable travel experience.</p>
                                     </div>
@@ -453,7 +452,7 @@
                                             <img src="assets/images/icons/f-icon-6.png" alt="">
                                         </div>
                                         <h4>Total Secured Travel</h4>
-                                        <p class="travilo-text">Rest assured as we prioritize your safety and peace
+                                        <p class="venture-text">Rest assured as we prioritize your safety and peace
                                             of mind, your travel is fully protected.</p>
                                     </div>
                                 </div><!-- .f-block-two -->
