@@ -20,53 +20,55 @@
                                         <img src="assets/images/background/bg-gradient-1.png" alt="" title="">
                                     </div>
                                     <h3>Start Traveling Now</h3>
-                                    <h1><i class="d-icon"><img src="assets/images/elements/yellow-1.png" alt=""
-                                                title=""></i>Explore the
-                                        Top Destination of Planet Earth</h1>
+                                    <h1><i class="d-icon">
+                                            <img src="assets/images/elements/yellow-1.png" alt="" title="">
+                                        </i>
+                                        Explore the Top Destination of Planet Earth
+                                    </h1>
                                     <p class="venture-text">Embrace the journey; Travel with passion and purpose.
                                     </p>
                                     <!-- <div class="form-box site-form">
-                                        <form method="post" action="index.html">
-                                            <div class="row clearfix">
-                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="field-label">Destination</div>
-                                                    <div class="field-inner">
-                                                        <input type="text" name="field-name" value=""
-                                                            placeholder="Where to go?" required>
-                                                        <i class="alt-icon fa fa-map-marker-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="field-label">Check in</div>
-                                                    <div class="field-inner">
-                                                        <input class="datepicker" type="text" name="field-name"
-                                                            value="" placeholder="Check in" required>
-                                                        <i class="alt-icon fa fa-calendar-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="field-label">Check out</div>
-                                                    <div class="field-inner">
-                                                        <input class="datepicker" type="text" name="field-name"
-                                                            value="" placeholder="Check out" required>
-                                                        <i class="alt-icon fa fa-calendar-alt"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                                                    <div class="field-label">Guests</div>
-                                                    <div class="field-inner">
-                                                        <input type="text" name="field-name" value=""
-                                                            placeholder="Guests" required>
-                                                        <i class="alt-icon fa fa-user"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="theme-btn f-btn">
-                                                <span>Search <i class="fa-solid fa-search"></i></span>
-                                            </button>
-                                        </form>
-                                    </div>
-                                    <p class="lower-text"><span>3200</span> tour packages waiting for you</p> -->
+                                                                <form method="post" action="index.html">
+                                                                    <div class="row clearfix">
+                                                                        <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                                            <div class="field-label">Destination</div>
+                                                                            <div class="field-inner">
+                                                                                <input type="text" name="field-name" value=""
+                                                                                    placeholder="Where to go?" required>
+                                                                                <i class="alt-icon fa fa-map-marker-alt"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                                            <div class="field-label">Check in</div>
+                                                                            <div class="field-inner">
+                                                                                <input class="datepicker" type="text" name="field-name"
+                                                                                    value="" placeholder="Check in" required>
+                                                                                <i class="alt-icon fa fa-calendar-alt"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                                            <div class="field-label">Check out</div>
+                                                                            <div class="field-inner">
+                                                                                <input class="datepicker" type="text" name="field-name"
+                                                                                    value="" placeholder="Check out" required>
+                                                                                <i class="alt-icon fa fa-calendar-alt"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                                                                            <div class="field-label">Guests</div>
+                                                                            <div class="field-inner">
+                                                                                <input type="text" name="field-name" value=""
+                                                                                    placeholder="Guests" required>
+                                                                                <i class="alt-icon fa fa-user"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <button type="submit" class="theme-btn f-btn">
+                                                                        <span>Search <i class="fa-solid fa-search"></i></span>
+                                                                    </button>
+                                                                </form>
+                                                            </div>
+                                                            <p class="lower-text"><span>3200</span> tour packages waiting for you</p> -->
                                 </div>
                             </div>
                         </div>

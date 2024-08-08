@@ -39,13 +39,52 @@
 </head>
 
 <body>
+    <style>
+        .circle-container {
+            position: relative;
+            height: 70px;
+            width: 70px;
+        }
+
+        .circle-progress {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 5px solid #FFFFFF;
+            border-radius: 50%;
+        }
+
+        .circle-progress::before {
+            content: "";
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            border-top-color: #000000;
+            top: -5px;
+            left: -5px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
     <div class="page-wrapper">
         <!-- Preloader -->
         <div class="loader-wrap">
             <div class="preloader">
                 <div class="preloader-close">x</div>
                 <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
+                    {{-- <div class="animation-preloader">
                         <div class="txt-loading">
                             <span data-text-preloader="V" class="letters-loading">V</span>
                             <span data-text-preloader="E" class="letters-loading">E</span>
@@ -55,6 +94,9 @@
                             <span data-text-preloader="R" class="letters-loading">R</span>
                             <span data-text-preloader="E" class="letters-loading">E</span>
                         </div>
+                    </div> --}}
+                    <div class="circle-container">
+                        <div class="circle-progress"></div>
                     </div>
                 </div>
             </div>
@@ -72,7 +114,7 @@
                         <div class="logo-box">
                             <div class="logo">
                                 <a href="{{ route('web.homepage') }}" title="Logo">
-                                    <img src="images/logo.png" alt="Logo" title="Venture Logo">
+                                    <img src="images/logo.png" alt="Logo" title="Venture Africa Safaris Logo">
                                 </a>
                             </div>
                         </div>
@@ -200,7 +242,7 @@
                     <div class="clearfix">
                         @if (false)
                             <div class="link">
-                                <a href="contact.html" class="theme-btn btn-style-one"><span>Login / Signup</span></a>
+                                <a href="#" class="theme-btn btn-style-one"><span>Login / Signup</span></a>
                             </div>
                         @endif
                     </div>
@@ -232,7 +274,7 @@
                             <div class="text-col col-xl-6 col-lg-12 col-md-12 col-sm-12">
                                 <div class="inner">
                                     <div class="title-box">
-                                        <div class="subtitle">Let’s Explore the World</div>
+                                        <div class="subtitle">Let's Explore the World</div>
                                         <h2>Get Special Offers in Your Inbox</h2>
                                     </div>
                                 </div>
