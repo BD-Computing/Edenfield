@@ -1,6 +1,6 @@
 ## Venture Africa Safaris
 
-This is the official website and Web App for Venture Africa Safaris
+This is the official website for Venture Africa Safaris
 
 ## Website
 
