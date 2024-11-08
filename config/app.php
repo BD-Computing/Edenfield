@@ -175,8 +175,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Mckenziearts\Notify\LaravelNotifyServiceProvider::class,
-        \Safaricom\Mpesa\MpesaServiceProvider::class,
-        Darryldecode\Cart\CartServiceProvider::class,
 
     ],
 
@@ -233,8 +231,6 @@ return [
 
 
         // Custom
-        'Mpesa' => \Safaricom\Mpesa\MpesaServiceProvider::class,
-        'Cart' => Darryldecode\Cart\Facades\CartFacade::class
     ],
 
     'debug_blacklist' => [
