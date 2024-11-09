@@ -84,7 +84,7 @@
                                 destination safely and on time. Avoid the hassle of navigating unfamiliar roads and let
                                 Venture Africa Safaris Limited take care of your airport transfers, so you can focus on
                                 enjoying your trip.</p>
-                            <div class="butn-dark"> <a href="{{ route('spa') }}"><span>Learn More</span></a> </div>
+                            <div class="butn-dark"> <a href="{{ route('services') }}"><span>Learn More</span></a> </div>
                         </div>
                     </div>
                 </div>
