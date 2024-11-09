@@ -10,8 +10,7 @@
     <script src="//unpkg.com/alpinejs" defer></script>
     @livewireStyles()
     @yield('css')
-    {{-- 'resources/js/app.js', --}}
-    @vite(['resources/sass/app.scss'])
+    @vite(['resources/js/app.js', 'resources/sass/app.scss'])
 </head>
 
 <body>
@@ -77,8 +76,7 @@
                 <div>
                     <img src="images/logo.png" class="mr-5 h-6 sm:h-9" alt="logo" />
                     <p class="max-w-xs mt-4 text-sm text-gray-600">
-                        Your journey to the heart of Africa starts here. Explore breathtaking landscapes, witness iconic
-                        wildlife, and experience authentic cultural encounters.
+                        Your journey to the heart of Africa starts here.
                     </p>
                     <div class="flex mt-8 space-x-6 text-gray-600">
                         @if (!is_null($settings->facebook_link))
@@ -123,7 +121,6 @@
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                             <a class="hover:opacity-75" href="#"> About </a>
-                            <a class="hover:opacity-75" href="#"> Meet the Team </a>
                             <a class="hover:opacity-75" href="#"> History </a>
                             <a class="hover:opacity-75" href="#"> Careers </a>
                         </nav>
@@ -133,10 +130,8 @@
                             Services
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a class="hover:opacity-75" href="#"> 1on1 Coaching </a>
                             <a class="hover:opacity-75" href="#"> Company Review </a>
                             <a class="hover:opacity-75" href="#"> Accounts Review </a>
-                            <a class="hover:opacity-75" href="#"> HR Consulting </a>
                             <a class="hover:opacity-75" href="#"> SEO Optimisation </a>
                         </nav>
                     </div>
@@ -158,7 +153,6 @@
                             <a class="hover:opacity-75" href="#"> Privacy Policy </a>
                             <a class="hover:opacity-75" href="#"> Terms &amp; Conditions </a>
                             <a class="hover:opacity-75" href="#"> Returns Policy </a>
-                            <a class="hover:opacity-75" href="#"> Accessibility </a>
                         </nav>
                     </div>
                 </div>
