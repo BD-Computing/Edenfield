@@ -74,11 +74,17 @@
             class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
         </div>
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
-            <img class="mx-auto h-12" src="https://bdcomputinglimited.co.ke/assets/images/logo.png" alt="">
+            <img class="mx-auto h-12" src="images/logo.png" alt="">
             <figure class="mt-10">
                 <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-                    <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
-                        alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                    <p>“We’re thrilled to share our love for Kenya’s natural beauty and vibrant cultures with you. As your
+                        trusted guides to unforgettable experiences, we specialize in personalized safaris that bring you
+                        closer to Africa's breathtaking landscapes, majestic wildlife, and rich traditions. Whether you’re
+                        here for an exhilarating safari, a tranquil beach retreat, or an immersive cultural journey, we're
+                        here to make your dreams of Africa a reality.
+                        <br>
+                        Thank you for choosing to explore with us—let’s create memories that will last a lifetime!”
+                    </p>
                 </blockquote>
                 <figcaption class="mt-10">
                     <img class="mx-auto h-10 w-10 rounded-full"
@@ -89,7 +95,7 @@
                         <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
                             <circle cx="1" cy="1" r="1" />
                         </svg>
-                        <div class="text-gray-600">CEO of Workcation</div>
+                        <div class="text-gray-600">CEO of {{ $settings->companyName }}</div>
                     </div>
                 </figcaption>
             </figure>
