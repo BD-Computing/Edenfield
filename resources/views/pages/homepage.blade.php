@@ -25,7 +25,7 @@
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
                             Book a trip with us Today!
                         </h2>
-                        <p class="font-semibold text-gray-400 py-3">
+                        <p class="font-semibold text-gray-700 py-3">
                             Unforgettable journeys, Exceptional Experiences
                         </p>
                         <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
