@@ -16,7 +16,7 @@ class CreateSettingsTable extends Migration
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
             $table->string('appName')->default('Soko Suite');
-            $table->string('companyName')->default('TJs Boutique Hotel');
+            $table->string('companyName')->default('Venture Africa Safaris');
             $table->string('technicalEmail')->nullable();
             $table->string('supportEmail')->nullable();
             $table->string('salesEmail')->nullable();

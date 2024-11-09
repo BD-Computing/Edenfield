@@ -57,7 +57,7 @@
                 <div class="col-md-12 map animate-box" data-animate-effect="fadeInUp">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7977.608207072757!2d36.791751399999995!3d-1.29192015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a3592ee333%3A0xed299e4ee4174d72!2sHurlingham%20Estate%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1731103128721!5m2!1sen!2ske"
-                        width="100%" height="6000" style="border:0;" allowfullscreen="" loading="lazy"
+                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
