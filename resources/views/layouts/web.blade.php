@@ -19,8 +19,8 @@
             <div class="container mx-auto max-w-7xl px-4">
                 <div class="flex items-center justify-between py-4">
                     <div>
-                        <a href="{{ route('homepage') }}" class="">
-                            <img class="h-[50px]" src="images/logo.png" alt="" />
+                        <a href="{{ route('homepage') }}">
+                            <img class="h-[50px]" src="images/logo.png" alt="logo" />
                         </a>
                     </div>
 
