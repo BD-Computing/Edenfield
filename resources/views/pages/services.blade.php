@@ -90,7 +90,7 @@
                 </div>
                 <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
                     <div class="img">
-                        <a href="spa-wellness.html"><img src="{{ URL::asset('hotel/img/spa/4.jpg') }}" alt=""></a>
+                        <a href="#"><img src="{{ URL::asset('hotel/img/spa/4.jpg') }}" alt=""></a>
                     </div>
                 </div>
             </div>
