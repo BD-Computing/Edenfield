@@ -17,6 +17,7 @@ Route::group(['as' => ''], function () {
     Route::get('/', [WebController::class, 'index'])->name('homepage');
     Route::get('/about', [WebController::class, 'about'])->name('about');
     Route::get('/services', [WebController::class, 'services'])->name('services');
+    Route::get('/careers', [WebController::class, 'services'])->name('careers');
     Route::get('/contact', [WebController::class, 'contact'])->name('contact');
     Route::get('/coming-soon', [WebController::class, 'comingsoon'])->name('comingsoon');
     Route::get('/error-page', [WebController::class, 'errorpage'])->name('errorpage');
