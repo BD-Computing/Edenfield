@@ -48,8 +48,8 @@
             <div class="mx-auto max-w-2xl lg:mx-0">
                 <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Who we are</h2>
                 <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">At Venture Africa Safaris, we
-                    believe in the magic of Africa’s wilderness and the power of authentic travel experiences. Founded with
-                    a passion for exploration, our agency is dedicated to showcasing Kenya’s unparalleled beauty—from the
+                    believe in the magic of Africa's wilderness and the power of authentic travel experiences. Founded with
+                    a passion for exploration, our agency is dedicated to showcasing Kenya's unparalleled beauty—from the
                     sweeping savannas of the Maasai Mara to the white sands of the Kenyan coast and beyond. With us, every
                     journey is crafted to connect you with nature, wildlife, and local cultures in a meaningful way.
                 </p>
