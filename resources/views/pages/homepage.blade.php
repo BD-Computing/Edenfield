@@ -37,7 +37,7 @@
                         <div
                             class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-black  sm:grid-cols-2 md:flex lg:gap-x-10">
                             <a href="#"
-                                class="text-gray-800 text-sm font-semibold border border-[var(--secondary)] px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] tilt-shake">
+                                class="text-gray-800 text-sm font-semibold border border-[var(--secondary)] px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] happy-jump">
                                 Get Started
                                 <span aria-hidden="true" class="ml-4">&rarr;</span>
                             </a>
