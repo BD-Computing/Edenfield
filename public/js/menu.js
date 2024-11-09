@@ -7,7 +7,6 @@ if (year && currYear) {
 }
 
 // toggle hamburger menu
-
 const menuBtn = document.getElementById("mobileMenuBtn");
 let menuOpen = false;
 menuBtn.addEventListener("click", () => {

@@ -4,7 +4,7 @@
     Contact Us
 @endsection
 @section('content')
-    <div class="relative isolate overflow-hidden bg-gray-900 ">
+    <div class="relative isolate overflow-hidden bg-[var(--primary)] ">
         <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
             aria-hidden="true">
             <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[var(--primary)] to-[var(--secondary)] opacity-20"
@@ -25,8 +25,9 @@
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
                             Book a trip with us Today!
                         </h2>
-                        <p class="font-semibold text-gray-400 py-3">Unforgettable journeys, Exceptional
-                            Experiences</p>
+                        <p class="font-semibold text-gray-400 py-3">
+                            Unforgettable journeys, Exceptional Experiences
+                        </p>
                         <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
                             Your journey to the heart of Africa starts here. Explore breathtaking landscapes, witness iconic
                             wildlife, and experience authentic cultural encounters.
