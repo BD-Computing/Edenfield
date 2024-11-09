@@ -28,16 +28,9 @@ Route::get('/about', [WebController::class, 'about'])->name('web.about');
 Route::get('/services', [WebController::class, 'services'])->name('web.services');
 Route::get('/spa', [WebController::class, 'spa'])->name('web.spa');
 Route::get('/facilities', [WebController::class, 'facilities'])->name('web.facilities');
-Route::get('/gallery', [WebController::class, 'gallery'])->name('web.gallery');
-Route::get('/team', [WebController::class, 'team'])->name('web.team');
-Route::get('/pricing', [WebController::class, 'pricing'])->name('web.pricing');
-Route::get('/careers', [WebController::class, 'careers'])->name('web.careers');
-Route::get('careers/{id}', [WebController::class, 'career'])->name('web.career');
-Route::get('/faq', [WebController::class, 'faq'])->name('web.faq');
 Route::get('/contact', [WebController::class, 'contact'])->name('web.contact');
 Route::get('/coming-soon', [WebController::class, 'comingsoon'])->name('web.comingsoon');
 Route::get('/error-page', [WebController::class, 'errorpage'])->name('web.errorpage');
-Route::get('/news', [WebController::class, 'news'])->name('web.news');
 Route::get('/post', [WebController::class, 'post'])->name('web.post');
 
 Route::get('validate', [MpesaAPIController::class, 'mpesaValidate'])->name('validate');
