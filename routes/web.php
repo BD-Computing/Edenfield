@@ -25,6 +25,7 @@ Route::group(['as' => ''], function () {
     Route::get('cookie', [WebController::class, 'cookie'])->name('cookie');
     Route::get('refund', [WebController::class, 'refund'])->name('refund');
 });
+
 // Admin
 Route::group(['as' => 'admin.', 'prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
