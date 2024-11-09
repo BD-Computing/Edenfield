@@ -152,25 +152,23 @@
 
     <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-center text-lg/8 font-semibold text-gray-900">
-                Trusted by the world's most innovative teams
-            </h2>
+            <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's leaders and companies</h2>
             <div
                 class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
                 <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor"
+                    src="https://images.seeklogo.com/logo-png/53/1/safaricom-logo-png_seeklogo-530479.png" alt="Transistor"
                     width="158" height="48">
                 <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform"
-                    width="158" height="48">
+                    src="https://kicc.co.ke/wp-content/uploads/2023/07/Untitled-1.png" alt="Reform" width="158"
+                    height="48">
                 <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple"
-                    width="158" height="48">
+                    src="https://images.africanfinancials.com/ke-coop-logo-min.png" alt="Tuple" width="158"
+                    height="48">
                 <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                    src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal"
+                    src="https://www.tveta.go.ke/wp-content/uploads/2021/08/TVETA-Logo-August-2019.png" alt="SavvyCal"
                     width="158" height="48">
                 <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                    src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic"
+                    src="https://kabarak.ac.ke/images/logos/Kabarak_University_Extended_logo_910x256.png" alt="Statamic"
                     width="158" height="48">
             </div>
         </div>
