@@ -121,7 +121,7 @@
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
                             <a class="hover:opacity-75" href="#"> About </a>
-                            <a class="hover:opacity-75" href="#"> History </a>
+                            <a class="hover:opacity-75" href="#"> Services </a>
                             <a class="hover:opacity-75" href="#"> Careers </a>
                         </nav>
                     </div>
