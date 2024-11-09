@@ -1,7 +1,7 @@
 @extends('layouts.web')
 
 @section('title')
-    Contact Us
+    Home
 @endsection
 @section('content')
     <div class="relative isolate overflow-hidden bg-[var(--primary)] ">
