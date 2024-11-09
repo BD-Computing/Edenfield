@@ -1,10 +1,6 @@
-require('./bootstrap');
+import Alpine from "alpinejs";
+import "flowbite";
+Alpine.start();
 
-
-(function () {
-
-    $("#cart").on("click", function () {
-        $(".shopping-cart").fadeToggle("fast");
-    });
-
-})();
+// If you want Alpine's instance to be available globally
+window.Alpine = Alpine;

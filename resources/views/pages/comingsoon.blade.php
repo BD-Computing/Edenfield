@@ -67,7 +67,7 @@
                 </div>
                 <div class="row text-center">
                     <div class="go-back col-md-12">
-                        <a href="{{ route('web.homepage') }}"> <span><i class="ti-arrow-left"
+                        <a href="{{ route('homepage') }}"> <span><i class="ti-arrow-left"
                                     aria-hidden="true"></i></span>&nbsp; Back To Home </a>
                     </div>
                 </div>

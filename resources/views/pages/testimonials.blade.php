@@ -1,1 +1,1 @@
-@livewire('web.testimonials')
+@livewire('testimonials')

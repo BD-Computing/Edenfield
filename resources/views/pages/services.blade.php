@@ -3,97 +3,132 @@
     Services
 @endsection
 @section('content')
-    <!-- Header Banner -->
-    <div class="banner-header section-padding valign bg-img bg-fixed" data-overlay-dark="4"
-        data-background="{{ URL::asset('hotel/img/slider/3.jpg') }}" style="margin-top: 150px">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-left caption mt-90">
-                    <h5>Discover</h5>
-                    <h1>Our Services</h1>
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-8 lg:pt-4">
+                    <div class="lg:max-w-lg">
+                        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">A better
+                            workflow</p>
+                        <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                            d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Push to deploy.
+                                </dt>
+                                <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                            d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    SSL certificates.
+                                </dt>
+                                <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+                                    cupidatat commodo.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path
+                                            d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                                        <path fill-rule="evenodd"
+                                            d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Database backups.
+                                </dt>
+                                <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
+                                    sit morbi lobortis.</dd>
+                            </div>
+                        </dl>
+                    </div>
                 </div>
+                <img src="https://images.unsplash.com/photo-1598608146103-2eec9e333618?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Product screenshot"
+                    class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                    width="2432" height="1442">
             </div>
         </div>
     </div>
-    <!-- Services -->
-    <section class="services section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 p-0 animate-box" data-animate-effect="fadeInLeft">
-                    <div class="img left">
-                        <a href="#"><img src="{{ URL::asset('hotel/img/restaurant/1.jpg') }}" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 bg-cream valign animate-box" data-animate-effect="fadeInRight">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Discover</h6>
-                            </div>
-                            <h4>Tours and Safaris</h4>
-                            <p>Discover the breathtaking beauty and diverse wildlife of Kenya with our expertly guided tours
-                                and safaris. Our customized itineraries cater to all types of travelers, whether you're
-                                seeking a thrilling adventure in the national parks, a serene beach getaway, or an immersive
-                                cultural experience. Our experienced guides are passionate about sharing their knowledge and
-                                ensuring you have an unforgettable journey. Embark on a memorable adventure with Venture
-                                Africa Safaris Limited and create lasting memories.</p>
-                            <div class="butn-dark"> <a href="#"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Product screenshot"
+                    class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-mr-4 lg:-ml-[350px] md:-ml-[350px]"
+                    width="2432" height="1442">
+                <div class="lg:pr-8 lg:pt-4">
+                    <div class="lg:max-w-lg">
+                        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">A better
+                            workflow</p>
+                        <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                            d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Push to deploy.
+                                </dt>
+                                <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
+                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path fill-rule="evenodd"
+                                            d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    SSL certificates.
+                                </dt>
+                                <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
+                                    cupidatat commodo.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
+                                        fill="currentColor" aria-hidden="true" data-slot="icon">
+                                        <path
+                                            d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
+                                        <path fill-rule="evenodd"
+                                            d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    Database backups.
+                                </dt>
+                                <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
+                                    sit morbi lobortis.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
 
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Experiences</h6>
-                            </div>
-                            <h4>Executive Car Hire</h4>
-                            <p> Experience the luxury and comfort of our Executive Car Hire services. Whether you need a
-                                vehicle for business travel, special events, or personal use, we offer a premium selection
-                                of executive cars to meet your needs. All our vehicles are well-maintained, stylish, and
-                                equipped with the latest amenities to ensure a smooth and enjoyable ride. Travel in style
-                                and make a statement with Venture Africa Safaris Limited.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/rooms/16.jpg') }}"
-                                alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 bg-cream p-0 order2 valign animate-box" data-animate-effect="fadeInLeft">
-                    <div class="content">
-                        <div class="cont text-left">
-                            <div class="info">
-                                <h6>Experiences</h6>
-                            </div>
-                            <h4>Airport transfers</h4>
-                            <p>Start and end your journey smoothly with our reliable airport transfer services. We provide
-                                timely and comfortable transportation to and from all major airports in Kenya. Whether
-                                you're arriving or departing, our professional drivers will ensure you reach your
-                                destination safely and on time. Avoid the hassle of navigating unfamiliar roads and let
-                                Venture Africa Safaris Limited take care of your airport transfers, so you can focus on
-                                enjoying your trip.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.spa') }}"><span>Learn More</span></a> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
-                    <div class="img">
-                        <a href="spa-wellness.html"><img src="{{ URL::asset('hotel/img/spa/4.jpg') }}" alt=""></a>
-                    </div>
-                </div>
             </div>
         </div>
-    </section>
+    </div>
 @endsection
