@@ -1,5 +1,8 @@
 // Variables
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
     --primary: #f59e1b;
@@ -14,6 +17,3 @@
     --light-bg: #f8fafa;
     --background: #fefcf7;
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

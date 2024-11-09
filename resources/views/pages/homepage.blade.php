@@ -23,9 +23,9 @@
                 <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            Book a trip with us Today
+                            Book a trip with us Today!
                         </h2>
-                        <p class="font-semibold text-[var(--secondary)] py-3">Unforgettable journeys, Exceptional
+                        <p class="font-semibold text-gray-400 py-3">Unforgettable journeys, Exceptional
                             Experiences</p>
                         <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
                             Your journey to the heart of Africa starts here. Explore breathtaking landscapes, witness iconic
@@ -63,8 +63,6 @@
                 </div>
             </div>
         </div>
-
-
     </div>
 
     <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
