@@ -1,10 +1,10 @@
-## TJ's Boutique Hotel
+## Venture Africa Safaris
 
-This is the official website and Web App for TJ's Boutique Hotel
+This is the official website for Venture Africa Safaris
 
 ## Website
 
-www.tjsboutiquehotel.co.ke
+www.ventureafricasafaris.com
 
 <!-- Automate Deployments -->
 
