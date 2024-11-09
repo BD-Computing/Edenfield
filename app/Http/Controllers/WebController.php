@@ -22,50 +22,6 @@ class WebController extends Controller
         return view('pages.services');
     }
 
-
-    public function restaurant()
-    {
-        return view('pages.restaurant', compact('menus'));
-    }
-
-    public function rooms()
-    {
-
-        return view('pages.rooms.rooms');
-    }
-
-    public function availability($id)
-    {
-
-        return view('pages.rooms.booking', compact('id'));
-    }
-
-
-    public function room_details($id)
-    {
-        return view('pages.rooms.room-details', compact('id'));
-    }
-
-    public function facilities()
-    {
-        return view('pages.facilities');
-    }
-
-    public function gallery()
-    {
-        return view('pages.gallery');
-    }
-
-    public function team()
-    {
-        return view('pages.team');
-    }
-
-    public function pricing()
-    {
-        return view('pages.pricing');
-    }
-
     public function careers()
     {
         $careers = Career::findAll();
@@ -77,16 +33,19 @@ class WebController extends Controller
         $career = Career::findById($id);
         return view('pages.career', compact('career'));
     }
-    public function faq()
-    {
-        return view('pages.faq');
-    }
 
     public function contact()
     {
         return view('pages.contact');
     }
-
+    public function privacy()
+    {
+        return view('legal.privacy');
+    }
+    public function cookie()
+    {
+        return view('legal.cookie');
+    }
     // others
     public function errorpage()
     {
@@ -95,15 +54,5 @@ class WebController extends Controller
     public function comingsoon()
     {
         return view('pages.comingsoon');
-    }
-
-    public function news()
-    {
-        return view('pages.news');
-    }
-
-    public function post()
-    {
-        return view('pages.post');
     }
 }

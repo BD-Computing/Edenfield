@@ -1,4 +1,4 @@
-@extends('layouts.new-web')
+@extends('layouts.web')
 
 @section('title')
     Contact Us

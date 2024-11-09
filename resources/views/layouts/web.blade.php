@@ -2,481 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <!-- Responsive -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $settings->companyName }} | @yield('title')</title>
-
     <link rel="shortcut icon" href="{{ URL::asset('images/favicon.png') }}" type="image/x-icon" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-    <!-- Stylesheets -->
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/lib/bootstrap/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/style.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/responsive.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('assets/css/custom-animate.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('css/app.css') }}" rel="stylesheet">
+    <script src="//unpkg.com/alpinejs" defer></script>
     @livewireStyles()
     @yield('css')
+    @vite(['resources/js/app.js', 'resources/sass/app.scss'])
 </head>
 
 <body>
-    <style>
-        .circle-container {
-            position: relative;
-            height: 70px;
-            width: 70px;
-        }
+    <div class="bg-gray-100 font-sans w-full m-0">
+        <div class="bg-white shadow">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-between py-4">
+                    <div>
+                        <a href="{{ route('homepage') }}" class="">
+                            <img class="h-[50px]" src="images/logo.png" alt="" />
+                        </a>
+                    </div>
 
-        .circle-progress {
-            position: absolute;
-            height: 70px;
-            width: 70px;
-            border-radius: 50%;
-            border: 5px solid #FFFFFF;
-            border-radius: 50%;
-        }
+                    <div class="hidden sm:flex sm:items-center">
+                        <a href="{{ route('homepage') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4 {{ Route::currentRouteName() == 'homepage' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Home
+                        </a>
+                        <a href="{{ route('about') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4 {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}">About</a>
+                        <a href="{{ route('services') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4 {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Services</a>
+                    </div>
 
-        .circle-progress::before {
-            content: "";
-            position: absolute;
-            height: 70px;
-            width: 70px;
-            border-radius: 50%;
-            border: 5px solid transparent;
-            border-top-color: #000000;
-            top: -5px;
-            left: -5px;
-            animation: spin 1s linear infinite;
-        }
+                    <div class="hidden sm:flex sm:items-center">
+                        <a href="{{ route('contact') }}"
+                            class="text-gray-800 text-sm font-semibold border px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] {{ Route::currentRouteName() == 'contact' ? '!border-[var(--primary)] !text-[var(--primary)]' : '' }}">
+                            Contact Us</a>
+                    </div>
 
-        @keyframes spin {
-            0% {
-                transform: rotate(0deg);
-            }
+                    <div class="sm:hidden cursor-pointer">
+                        <i class="bi bi-list text-2xl" id="mobileMenuBtn"></i>
+                    </div>
+                </div>
 
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-    <div class="page-wrapper">
-        <!-- Preloader -->
-        <div class="loader-wrap">
-            <div class="preloader">
-                <div class="preloader-close">x</div>
-                <div id="handle-preloader" class="handle-preloader">
-                    {{-- <div class="animation-preloader">
-                        <div class="txt-loading">
-                            <span data-text-preloader="V" class="letters-loading">V</span>
-                            <span data-text-preloader="E" class="letters-loading">E</span>
-                            <span data-text-preloader="N" class="letters-loading">N</span>
-                            <span data-text-preloader="T" class="letters-loading">T</span>
-                            <span data-text-preloader="U" class="letters-loading">U</span>
-                            <span data-text-preloader="R" class="letters-loading">R</span>
-                            <span data-text-preloader="E" class="letters-loading">E</span>
+                <div class="hidden md:hidden bg-white border-t-2 py-2" id="mobileMenu">
+                    <div class="flex flex-col">
+                        <a href="#"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">Home</a>
+                        <a href="#"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">About
+                            Us</a>
+                        <a href="#"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">Services</a>
+
+                        <div class="flex justify-between items-center border-t-2 pt-2">
+                            {{-- <a href="#"
+                                class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4">Sign in</a> --}}
+                            <a href="#"
+                                class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)]">Contact
+                                Us</a>
                         </div>
-                    </div> --}}
-                    <div class="circle-container">
-                        <div class="circle-progress"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Preloader End -->
+    </div>
 
-        <!-- Main Header-->
-        <header class="main-header">
-            <!-- Header Upper -->
-            <div class="header-upper">
-                <div class="auto-container">
-                    <!-- Main Box -->
-                    <div class="main-box clearfix">
-                        <!--Logo-->
-                        <div class="logo-box">
-                            <div class="logo">
-                                <a href="{{ route('web.homepage') }}" title="Logo">
-                                    <img src="images/logo.png" alt="Logo" title="Venture Africa Safaris Logo">
-                                </a>
-                            </div>
-                        </div>
+    @yield('content')
 
-                        <div class="nav-box clearfix">
-                            <!--Nav Outer-->
-                            <div class="nav-outer clearfix">
-                                <nav class="main-menu">
-                                    <ul class="navigation clearfix">
-                                        <li class="{{ Route::currentRouteName() == 'web.homepage' ? 'current' : '' }}">
-                                            <a href="{{ route('web.homepage') }}">Home</a>
+    <footer class="bg-gradient-to-r from-gray-100 via-[#f0e4b0] to-gray-100">
+        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <div>
+                    <img src="images/logo.png" class="mr-5 h-6 sm:h-9" alt="logo" />
+                    <p class="max-w-xs mt-4 text-sm text-gray-600">
+                        Your journey to the heart of Africa starts here.
+                    </p>
+                    <div class="flex mt-8 space-x-6 text-gray-600">
+                        @if (!is_null($settings->facebook_link))
+                            <a class="hover:opacity-75" href="{{ $settings->facebook_link }}" target="_blank"
+                                rel="noreferrer">
+                                <span class="sr-only"> Facebook </span>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd"
+                                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                        clipRule="evenodd" />
+                                </svg>
+                            </a>
+                        @endif
+                        @if (!is_null($settings->instagram_link))
+                            <a class="hover:opacity-75" href="{{ $settings->instagram_link }}" target="_blank"
+                                rel="noreferrer">
+                                <span class="sr-only"> Instagram </span>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fillRule="evenodd"
+                                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                        clipRule="evenodd" />
+                                </svg>
+                            </a>
+                        @endif
 
-                                        </li>
-                                        @if (false)
-                                            <li class="dropdown">
-                                                <a href="tour-list.html">Tours</a>
-                                                <ul>
-                                                    <li>
-                                                        <a href="tour-list.html">Tours List</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="tour-packages.html">Tour Packages</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="tour-single.html">Tour Details</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="activities.html">Activities</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="activity-single.html">Activity Details</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        @endif
-
-                                        <li class="{{ Route::currentRouteName() == 'web.about' ? 'current' : '' }}">
-                                            <a href="{{ route('web.about') }}">About</a>
-                                        </li>
-                                        <li class="{{ Route::currentRouteName() == 'web.services' ? 'current' : '' }}">
-                                            <a href="{{ route('web.services') }}">Services</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">News</a>
-                                        </li>
-                                        <li class="{{ Route::currentRouteName() == 'web.contact' ? 'current' : '' }}">
-                                            <a href="{{ route('web.contact') }}">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav><!-- .main-menu -->
-                            </div>
-                            <!--Nav Outer End-->
-                        </div>
-
-                        <!-- Hidden Nav Toggler -->
-                        <div class="nav-toggler">
-                            <button class="hidden-bar-opener">
-                                <span class="icon">
-                                    <img src="{{ URL::asset('assets/images/icons/menu-icon.svg') }}" alt="">
-                                </span>
-                            </button>
-                        </div>
-
-                        <div class="links-box clearfix">
-                            @if (false)
-                                <div class="link login">
-                                    <a href="#">Login / Signup</a>
-                                </div>
-                            @endif
-                            <div class="link social">
-                                <ul class="social-links clearfix">
-                                    <li>
-                                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="link call-to">
-                                <a href="tel:+{{ $settings->phone }}">
-                                    <i class="icon fa-solid fa-phone"></i> Call Us
-                                    <span class="nmbr">+{{ $settings->phone }}</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Header Upper -->
-        </header>
-        <!--End Main Header -->
-
-        <!--Menu Backdrop-->
-        <div class="menu-backdrop"></div>
-
-        <!-- Hidden Navigation Bar -->
-        <div class="hidden-bar">
-            <!-- Hidden Bar Wrapper -->
-            <div class="hidden-bar-wrapper">
-                <div class="hidden-bar-closer">
-                    <span class="icon">
-                        <svg class="icon-close" role="presentation" viewBox="0 0 16 14">
-                            <path d="M15 0L1 14m14 0L1 0" stroke="currentColor" fill="none" fill-rule="evenodd">
-                            </path>
-                        </svg>
-                    </span>
-                </div>
-                <div class="nav-logo-box">
-                    <!-- logo will be copied here ! -->
-                </div>
-
-                <!-- .Side-menu -->
-                <nav class="side-menu">
-                    <!-- main-menu will be copied here! -->
-                </nav><!-- .side-menu -->
-
-                <div class="links-box clearfix">
-                    <div class="clearfix">
-                        @if (false)
-                            <div class="link">
-                                <a href="#" class="theme-btn btn-style-one"><span>Login / Signup</span></a>
-                            </div>
+                        @if (!is_null($settings->twitter_link))
+                            <a class="hover:opacity-75" href="{{ $settings->twitter_link }}" target="_blank"
+                                rel="noreferrer">
+                                <span class="sr-only"> Twitter </span>
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                                </svg>
+                            </a>
                         @endif
                     </div>
                 </div>
-            </div>
-            <!-- / Hidden Bar Wrapper -->
-        </div>
-        <!-- / Hidden Bar -->
-
-        <div class="row mb-20" style="margin-bottom: 20px">
-            @yield('content')
-        </div>
-
-        <!--Subscribe Section-->
-        <div class="subscribe-section">
-            <div class="auto-container">
-                <div class="outer-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="bg-grad-left">
-                        <img src="assets/images/background/bg-gradient-13.png" alt="" title="">
+                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                    <div>
+                        <p class="font-medium">
+                            Company
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <a class="hover:opacity-75" href="#"> About </a>
+                            <a class="hover:opacity-75" href="#"> Services </a>
+                            <a class="hover:opacity-75" href="#"> Careers </a>
+                        </nav>
                     </div>
-                    <div class="bg-grad-right">
-                        <img src="assets/images/background/bg-gradient-14.png" alt="" title="">
+                    <div>
+                        <p class="font-medium">
+                            Services
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <a class="hover:opacity-75" href="#"> Company Review </a>
+                            <a class="hover:opacity-75" href="#"> Accounts Review </a>
+                            <a class="hover:opacity-75" href="#"> SEO Optimisation </a>
+                        </nav>
                     </div>
-                    <div class="content-box">
-                        <div class="bg-layer"
-                            style="background-image: url('assets/images/resources/featured/banner-7.jpg');">
-                        </div>
-                        <div class="row clearfix">
-                            <div class="text-col col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                                <div class="inner">
-                                    <div class="title-box">
-                                        <div class="subtitle">Let's Explore the World</div>
-                                        <h2>Get Special Offers in Your Inbox</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-col col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                                <div class="inner">
-                                    <div class="form-box subscribe-form">
-                                        <form method="post" action="contact.html">
-                                            <div class="form-group">
-                                                <div class="field-inner">
-                                                    <input type="email" name="email" value=""
-                                                        placeholder="Submit your email" required>
-                                                </div>
-                                                <button type="submit" class="theme-btn">
-                                                    <i class="icon fa fa-paper-plane"></i>
-                                                </button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div>
+                        <p class="font-medium">
+                            Helpful Links
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <a class="hover:opacity-75" href="#"> Contact </a>
+                            <a class="hover:opacity-75" href="#"> FAQs </a>
+                            <a class="hover:opacity-75" href="#"> Live Chat </a>
+                        </nav>
+                    </div>
+                    <div>
+                        <p class="font-medium">
+                            Legal
+                        </p>
+                        <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
+                            <a class="hover:opacity-75" href="#"> Privacy Policy </a>
+                            <a class="hover:opacity-75" href="#"> Terms &amp; Conditions </a>
+                            <a class="hover:opacity-75" href="#"> Returns Policy </a>
+                        </nav>
                     </div>
                 </div>
             </div>
+            <p class="mt-8 text-xs text-gray-800">
+                &copy; <span id="year"></span> {{ $settings->companyName }} - Developed By <a
+                    href="https://bdcomputinglimited.co.ke/" target="_blank" rel="noopener noreferrer"
+                    class="hover:text-[var(--secondary)] hover:underline">
+                    BD Computing Limited
+                </a>
+            </p>
         </div>
-        <!--Main Footer-->
-        <footer class="main-footer">
-            <div class="upper-section">
-                <div class="auto-container">
-                    <div class="content-box">
-                        <div class="row clearfix">
-                            <div class="footer-column col-xl-4 col-lg-4 col-md-6 col-sm-12">
-                                <div class="footer-widget about-widget">
-                                    <div class="footer-logo">
-                                        <a href="index.html" title="Venture">
-                                            <img src="images/logo.png" alt="" title="Venture">
-                                        </a>
-                                    </div>
-                                    <div class="footer-info">
-                                        <ul class="info">
-                                            <li class="address">
-                                                <a href="#"><i class="icon fa fa-map-marker-alt"></i>
-                                                    {{ $settings->boxAddress }}
-                                                    {{ $settings->code }} -
-                                                    {{ $settings->officeAddress }}
-                                                    {{ $settings->town }}, <br>
-                                                    {{ $settings->country }}
-                                                </a>
-                                            </li>
-                                            <li class="phone">
-                                                <a href="tel:{{ $settings->phone }}"><i
-                                                        class="icon fa-solid fa-phone"></i>{{ $settings->phone }}</a>
-                                            </li>
-                                            <li class="email">
-                                                <a href="mailto:{{ $settings->email }}"><i
-                                                        class="icon fa fa-envelope"></i>
-                                                    {{ $settings->email }}</a>
-                                            </li>
-                                        </ul>
-                                        <ul class="social-links clearfix">
-                                            <li>
-                                                <a href="#" class="facebook"><i
-                                                        class="fab fa-facebook-f"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="linkedin"><i
-                                                        class="fab fa-linkedin-in"></i></a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
-                                <div class="row clearfix">
-                                    {{-- <div class="footer-column col-lg-6 col-md-6 col-sm-12">
-                                        <div class="footer-widget links-widget">
-                                            <h4>Top Destination</h4>
-                                            <div class="links">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">New York</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">London</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Rome</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Mascot</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Dhaka</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div> --}}
-
-                                    <div class="footer-column col-lg-12 col-md-12 col-sm-12">
-                                        <div class="footer-widget links-widget">
-                                            <h4>Useful Links</h4>
-                                            <div class="links">
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">About Us</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Company Profile</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Services</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Support</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Contact Us</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="footer-column col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                                <div class="footer-widget gallery-widget">
-                                    <h4>Featured Tours</h4>
-                                    <!--Logo-->
-                                    <div class="gallery">
-                                        <div class="gallery-item">
-                                            <div class="image">
-                                                <a href="#"><img
-                                                        src="assets/images/resources/thumbnails/oman-thumb.jpg"
-                                                        alt="Oman"></a>
-                                            </div>
-                                            <h6><a href="#">Adventure in Oman's Rimal Bani Wahiba</a></h6>
-                                            <div class="price">Starts from <span class="amount">Kshs. 39900</span>
-                                            </div>
-                                        </div>
-                                        <div class="gallery-item">
-                                            <div class="image">
-                                                <a href="#"><img
-                                                        src="assets/images/resources/thumbnails/maldives-thumb.jpg"
-                                                        alt=""></a>
-                                            </div>
-                                            <h6><a href="#">Unveiling the Serenity of the Maldives</a></h6>
-                                            <div class="price">Starts from <span class="amount">Kshs. 45900</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="f-bottom">
-                <div class="auto-container">
-                    <div class="inner clearfix">
-                        <div class="copyright">All rights researved <strong>{{ $settings->companyName }}</strong>
-                            &copy; 2024</div>
-                        <div class="bottom-links">
-                            <ul class="clearfix">
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li> <a href="#">Privacy Policy</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
-    <!--End pagewrapper-->
-
-    <!--Scroll to top-->
-    <div class="scroll-to-top scroll-to-target" data-target="html">
-        <span class="icon">
-            <img src="{{ URL::asset('assets/images/icons/arrow-up.svg') }}" alt="" title="Go To Top"></span>
-    </div>
-
-    <script src="{{ URL::asset('assets/js/lib/jquery.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/popper.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/bootstrap/bootstrap.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/jquery-ui.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/jquery.fancybox.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/isotope.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/slick.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/appear.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/lib/wow.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/custom-script.js') }}"></script>
-    {{-- <script src="{{ URL::asset('js/app.js') }}"></script> --}}
-    @livewireScripts()
+    </footer>
+    @if ($settings->whatsappNumber)
+        <div class="absolute rise-shake"
+            style="width: 60px; height: 70px; position: fixed; right: 15px !important;  bottom: 13px; z-index: 999">
+            <a href="https://wa.me/+{!! $settings->whatsappNumber !!}" target="_blank">
+                <i class="bi bi-whatsapp text-4xl text-green-500"></i>
+        </div>
+    @endif
+    <script type="text/javascript" src="{{ URL::asset('js/menu.js') }}" defer></script>
 </body>
 
 </html>

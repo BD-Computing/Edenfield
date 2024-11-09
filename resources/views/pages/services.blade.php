@@ -58,14 +58,14 @@
                                 of executive cars to meet your needs. All our vehicles are well-maintained, stylish, and
                                 equipped with the latest amenities to ensure a smooth and enjoyable ride. Travel in style
                                 and make a statement with Venture Africa Safaris Limited.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.comingsoon') }}"><span>Learn More</span></a>
+                            <div class="butn-dark"> <a href="{{ route('comingsoon') }}"><span>Learn More</span></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 p-0 order1 animate-box" data-animate-effect="fadeInRight">
                     <div class="img">
-                        <a href="{{ route('web.comingsoon') }}"><img src="{{ URL::asset('hotel/img/rooms/16.jpg') }}"
+                        <a href="{{ route('comingsoon') }}"><img src="{{ URL::asset('hotel/img/rooms/16.jpg') }}"
                                 alt=""></a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                                 destination safely and on time. Avoid the hassle of navigating unfamiliar roads and let
                                 Venture Africa Safaris Limited take care of your airport transfers, so you can focus on
                                 enjoying your trip.</p>
-                            <div class="butn-dark"> <a href="{{ route('web.spa') }}"><span>Learn More</span></a> </div>
+                            <div class="butn-dark"> <a href="{{ route('spa') }}"><span>Learn More</span></a> </div>
                         </div>
                     </div>
                 </div>
