@@ -1,6 +1,19 @@
 // Variables
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
+:root {
+    --primary: #f59e1b;
+    --secondary: #543111;
+    --accent: #ffd978;
+    --error: #f44900;
+    --dark: #13263c;
+    --light: whitesmoke;
+    --border: #e2e2e2;
+    --text: #484848;
+    --white: #ffffff;
+    --light-bg: #f8fafa;
+    --background: #fefcf7;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
