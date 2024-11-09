@@ -23,7 +23,8 @@
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            <span class="pacifico text-[var(--secondary)] text-7xl">Book a trip</span> <br> with us Today!
+                            <span class="pacifico text-[var(--secondary)] text-4xl md:text-7xl">Book a trip</span> <br> with
+                            us Today!
                         </h2>
                         <p class="font-semibold text-gray-700 py-3">
                             Unforgettable journeys, Exceptional Experiences
@@ -37,7 +38,7 @@
                         <div
                             class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-black  sm:grid-cols-2 md:flex lg:gap-x-10">
                             <a href="#"
-                                class="text-gray-800 text-sm font-semibold border border-[var(--secondary)] px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] happy-jump">
+                                class="text-gray-800 text-sm font-semibold border border-[var(--secondary)] px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] happy-jump w-max">
                                 Get Started
                                 <span aria-hidden="true" class="ml-4">&rarr;</span>
                             </a>
