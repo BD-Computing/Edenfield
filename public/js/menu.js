@@ -7,19 +7,25 @@ if (year && currYear) {
 }
 
 // toggle hamburger menu
+
+const menuBtn = document.getElementById("mobileMenuBtn");
 let menuOpen = false;
-const mobileMenuBtn = document.getElementById("mobileMenuBtn");
-if (mobileMenuBtn) {
-    mobileMenuBtn.addEventListener("click", toggleMenu(), true);
-}
-const mobileMenu = document.getElementById("mobileMenu");
-console.log(mobileMenuBtn);
-
-function toggleMenu() {
-    console.log("Clicked");
-    menuOpen = !menuOpen;
-    console.log({ menuOpen });
+menuBtn.addEventListener("click", () => {
     const mobileMenu = document.getElementById("mobileMenu");
+    if (!menuOpen) {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("block");
+        // change the icon
+        menuBtn.classList.remove("bi-list");
+        menuBtn.classList.add("bi-x");
+        menuOpen = true;
+    } else {
+        mobileMenu.classList.remove("block");
+        mobileMenu.classList.add("hidden");
 
-    console.log({ mobileMenu });
-}
+        // change the icon
+        menuBtn.classList.remove("bi-x");
+        menuBtn.classList.add("bi-list");
+        menuOpen = false;
+    }
+});
