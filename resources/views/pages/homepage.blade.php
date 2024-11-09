@@ -20,7 +20,7 @@
         <div class="inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
             style="background-image: url(https://images.unsplash.com/photo-1513699227473-7ae8d4545d4e?q=80&w=1736&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
             <div class="h-[100%] bg-gradient-to-r from-yellow-50 from-40% to-transparent top-0 left-0 py-24 sm:py-32">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8 ">
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
                             Book a trip with us Today!
@@ -74,8 +74,7 @@
             class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
         </div>
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
-            <img class="mx-auto h-12" src="https://tailwindui.com/plus/img/logos/workcation-logo-indigo-600.svg"
-                alt="">
+            <img class="mx-auto h-12" src="https://bdcomputinglimited.co.ke/assets/images/logo.png" alt="">
             <figure class="mt-10">
                 <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
                     <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente
@@ -147,7 +146,8 @@
 
     <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's most innovative teams
+            <h2 class="text-center text-lg/8 font-semibold text-gray-900">
+                Trusted by the world's most innovative teams
             </h2>
             <div
                 class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
@@ -180,10 +180,10 @@
                     <div class="mt-6 flex max-w-md gap-x-4">
                         <label for="email-address" class="sr-only">Email address</label>
                         <input id="email-address" name="email" type="email" autocomplete="email" required
-                            class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm/6"
+                            class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-[var(--primary)] sm:text-sm/6"
                             placeholder="Enter your email">
                         <button type="submit"
-                            class="flex-none rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Subscribe</button>
+                            class="flex-none rounded-md bg-[var(--primary)] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[var(--secondary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--primary)]">Subscribe</button>
                     </div>
                 </div>
                 <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">

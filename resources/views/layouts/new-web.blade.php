@@ -167,7 +167,7 @@
         </div>
     </footer>
     @if ($settings->whatsappNumber)
-        <div class="absolute"
+        <div class="absolute rise-shake"
             style="width: 60px; height: 70px; position: fixed; right: 15px !important;  bottom: 13px; z-index: 999">
             <a href="https://wa.me/+{!! $settings->whatsappNumber !!}" target="_blank">
                 <i class="bi bi-whatsapp text-4xl text-green-500"></i>
