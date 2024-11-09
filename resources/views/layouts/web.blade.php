@@ -47,18 +47,18 @@
 
                 <div class="hidden md:hidden bg-white border-t-2 py-2" id="mobileMenu">
                     <div class="flex flex-col">
-                        <a href="#"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">Home</a>
-                        <a href="#"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">About
+                        <a href="{{ route('homepage') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'homepage' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Home</a>
+                        <a href="{{ route('about') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}">About
                             Us</a>
-                        <a href="#"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">Services</a>
+                        <a href="{{ route('services') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Services</a>
 
                         <div class="flex justify-between items-center border-t-2 pt-2">
-                            {{-- <a href="#"
+                            {{-- <a href="{{ route('homepage') }}"
                                 class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4">Sign in</a> --}}
-                            <a href="#"
+                            <a href="{{ route('contact') }}"
                                 class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)]">Contact
                                 Us</a>
                         </div>
