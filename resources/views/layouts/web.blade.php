@@ -47,19 +47,19 @@
 
                 <div class="hidden md:hidden bg-white border-t-2 py-2" id="mobileMenu">
                     <div class="flex flex-col">
-                        <a href="#"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">Home</a>
-                        <a href="#"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">About
+                        <a href="{{ route('homepage') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'homepage' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Home</a>
+                        <a href="{{ route('about') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}">About
                             Us</a>
-                        <a href="#"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1">Services</a>
+                        <a href="{{ route('services') }}"
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Services</a>
 
                         <div class="flex justify-between items-center border-t-2 pt-2">
                             {{-- <a href="#"
                                 class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4">Sign in</a> --}}
-                            <a href="#"
-                                class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)]">Contact
+                            <a href="{{ route('contact') }}"
+                                class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] {{ Route::currentRouteName() == 'contact' ? '!border-[var(--primary)] !text-[var(--primary)]' : '' }}">Contact
                                 Us</a>
                         </div>
                     </div>
@@ -120,8 +120,12 @@
                             Company
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a class="hover:opacity-75" href="#"> About </a>
-                            <a class="hover:opacity-75" href="#"> Services </a>
+                            <a class="hover:opacity-75" href="{{ route('about') }}"
+                                {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}>
+                                About </a>
+                            <a class="hover:opacity-75" href="{{ route('services') }}"
+                                {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}>
+                                Services </a>
                             <a class="hover:opacity-75" href="#"> Careers </a>
                         </nav>
                     </div>
@@ -140,7 +144,8 @@
                             Helpful Links
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a class="hover:opacity-75" href="#"> Contact </a>
+                            <a class="hover:opacity-75" href="{{ route('contact') }}">
+                                Contact </a>
                             <a class="hover:opacity-75" href="#"> FAQs </a>
                             <a class="hover:opacity-75" href="#"> Live Chat </a>
                         </nav>
