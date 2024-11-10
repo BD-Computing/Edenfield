@@ -10,51 +10,53 @@
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
                         <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">A better
-                            workflow</p>
-                        <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
-                        <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Tours and
+                            Safaris</p>
+                        <p class="mt-5 text-lg/8 text-gray-600">
+                            Discover Kenya's stunning landscapes and diverse wildlife with our guided tours and safaris.
+                            From thrilling national park adventures to serene beach escapes and cultural immersions, our
+                            custom itineraries cater to every traveler. Let Venture Africa Safaris create
+                            unforgettable memories.
+                        </p>
+                        <dl class="mt-7 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path fill-rule="evenodd"
-                                            d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Push to deploy.
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+
+                                    Expertly Guided Tours
                                 </dt>
-                                <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                                <dd class="inline">Discover Kenya's wildlife and landscapes with experienced, passionate
+                                    guides.</dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path fill-rule="evenodd"
-                                            d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    SSL certificates.
+                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+
+                                    Immersive Cultural Experiences
                                 </dt>
-                                <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-                                    cupidatat commodo.</dd>
+                                <dd class="inline">Connect with local communities and traditions for a deeper cultural
+                                    appreciation.</dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path
-                                            d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                                        <path fill-rule="evenodd"
-                                            d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Database backups.
+                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Professional and Reliable Service.
                                 </dt>
-                                <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
-                                    sit morbi lobortis.</dd>
+                                <dd class="inline">Count on our team to provide seamless, well-organized, and enriching
+                                    experiences.</dd>
+                            </div>
+
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Immersive Cultural Experiences
+                                </dt>
+                                <dd class="inline">Connect with local communities and traditions for a deeper cultural
+                                    appreciation.</dd>
                             </div>
                         </dl>
                     </div>
@@ -78,56 +80,113 @@
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
                         <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
-                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">A better
-                            workflow</p>
-                        <p class="mt-6 text-lg/8 text-gray-600">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</p>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Airport
+                            transfers</p>
+                        <p class="mt-6 text-lg/8 text-gray-600">
+                            Enjoy seamless airport transfers with our reliable service. Our professional drivers ensure
+                            timely, comfortable travel to and from Kenya's major airports, so you relax and enjoy.
+
+
+                        </p>
                         <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path fill-rule="evenodd"
-                                            d="M5.5 17a4.5 4.5 0 0 1-1.44-8.765 4.5 4.5 0 0 1 8.302-3.046 3.5 3.5 0 0 1 4.504 4.272A4 4 0 0 1 15 17H5.5Zm3.75-2.75a.75.75 0 0 0 1.5 0V9.66l1.95 2.1a.75.75 0 1 0 1.1-1.02l-3.25-3.5a.75.75 0 0 0-1.1 0l-3.25 3.5a.75.75 0 1 0 1.1 1.02l1.95-2.1v4.59Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Push to deploy.
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Seamless Transfers.
                                 </dt>
-                                <dd class="inline">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit
-                                    perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.</dd>
+                                <dd class="inline">Smoothly start and end your journey with our reliable airport transfers.
+                                </dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path fill-rule="evenodd"
-                                            d="M10 1a4.5 4.5 0 0 0-4.5 4.5V9H5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6a2 2 0 0 0-2-2h-.5V5.5A4.5 4.5 0 0 0 10 1Zm3 8V5.5a3 3 0 1 0-6 0V9h6Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    SSL certificates.
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Timely, Comfortable Service
                                 </dt>
-                                <dd class="inline">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-                                    cupidatat commodo.</dd>
+                                <dd class="inline">Reach your destination on time with our comfortable, professional
+                                    transport.</dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20"
-                                        fill="currentColor" aria-hidden="true" data-slot="icon">
-                                        <path
-                                            d="M4.632 3.533A2 2 0 0 1 6.577 2h6.846a2 2 0 0 1 1.945 1.533l1.976 8.234A3.489 3.489 0 0 0 16 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234Z" />
-                                        <path fill-rule="evenodd"
-                                            d="M4 13a2 2 0 1 0 0 4h12a2 2 0 1 0 0-4H4Zm11.24 2a.75.75 0 0 1 .75-.75H16a.75.75 0 0 1 .75.75v.01a.75.75 0 0 1-.75.75h-.01a.75.75 0 0 1-.75-.75V15Zm-2.25-.75a.75.75 0 0 0-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 0 0 .75-.75V15a.75.75 0 0 0-.75-.75h-.01Z"
-                                            clip-rule="evenodd" />
-                                    </svg>
-                                    Database backups.
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Coverage Across Major Airports
                                 </dt>
-                                <dd class="inline">Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
-                                    sit morbi lobortis.</dd>
+                                <dd class="inline">Serving all major airports in Kenya for convenient travel.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Focus on Your Trip
+                                </dt>
+                                <dd class="inline">Avoid road hassles and let us handle the logistics while you enjoy.</dd>
                             </div>
                         </dl>
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
+
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div
+                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                <div class="lg:pr-8 lg:pt-4">
+                    <div class="lg:max-w-lg">
+                        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+                        <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                            Executive Car Hire</p>
+                        <p class="mt-6 text-lg/8 text-gray-600">Travel in luxury with our Executive Car Hire services.
+                            Choose from premium, stylish cars equipped with top amenities, perfect for business, events, or
+                            personal travel.</p>
+                        <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Luxury Travel Experience
+                                </dt>
+                                <dd class="inline">Enjoy top-tier comfort and elegance with our executive car selection.
+                                </dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Ideal for Any Occasion
+                                </dt>
+                                <dd class="inline">Perfect for business trips, special events, or personal use.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Premium Amenities
+                                </dt>
+                                <dd class="inline">Well-maintained vehicles equipped with the latest features for a smooth
+                                    ride.</dd>
+                            </div>
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
+                                    Make a Lasting Impression
+                                </dt>
+                                <dd class="inline">Arrive in style and make a statement with Venture Africa Safaris
+                                    Limited.</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Product screenshot"
+                    class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                    width="2432" height="1442">
             </div>
         </div>
     </div>

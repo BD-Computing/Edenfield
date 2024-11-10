@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-            style="background-image: url(https://images.unsplash.com/photo-1513699227473-7ae8d4545d4e?q=80&w=1736&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)">
+            style="background-image: url(https://images.unsplash.com/photo-1513699227473-7ae8d4545d4e?q=80&w=1736&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: cover; background-position: center;background-repeat: no-repeat">
             <div class="h-[100%] bg-gradient-to-r from-yellow-50 from-40% to-transparent top-0 left-0 py-24 sm:py-32">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
