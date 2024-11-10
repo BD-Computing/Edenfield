@@ -23,7 +23,8 @@
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            Book a trip with us Today!
+                            <span class="pacifico text-[var(--secondary)] text-4xl md:text-7xl">Book a trip</span> <br> with
+                            us Today!
                         </h2>
                         <p class="font-semibold text-gray-700 py-3">
                             Unforgettable journeys, Exceptional Experiences
@@ -36,10 +37,11 @@
                     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
                         <div
                             class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-black  sm:grid-cols-2 md:flex lg:gap-x-10">
-                            <a href="#">Open roles <span aria-hidden="true">&rarr;</span></a>
-                            <a href="#">Internship program <span aria-hidden="true">&rarr;</span></a>
-                            <a href="#">Our values <span aria-hidden="true">&rarr;</span></a>
-                            <a href="#">Meet our leadership <span aria-hidden="true">&rarr;</span></a>
+                            <a href="#"
+                                class="text-gray-800 text-sm font-semibold border border-[var(--secondary)] px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] happy-jump w-max">
+                                Get Started
+                                <span aria-hidden="true" class="ml-4">&rarr;</span>
+                            </a>
                         </div>
 
                         <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">

@@ -19,8 +19,8 @@
             <div class="container mx-auto max-w-7xl px-4">
                 <div class="flex items-center justify-between py-4">
                     <div>
-                        <a href="{{ route('homepage') }}" class="">
-                            <img class="h-[50px]" src="images/logo.png" alt="" />
+                        <a href="{{ route('homepage') }}">
+                            <img class="h-[50px]" src="images/logo.png" alt="logo" />
                         </a>
                     </div>
 
@@ -56,10 +56,10 @@
                             class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mb-1 {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Services</a>
 
                         <div class="flex justify-between items-center border-t-2 pt-2">
-                            {{-- <a href="#"
+                            {{-- <a href="{{ route('homepage') }}"
                                 class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4">Sign in</a> --}}
                             <a href="{{ route('contact') }}"
-                                class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] {{ Route::currentRouteName() == 'contact' ? '!border-[var(--primary)] !text-[var(--primary)]' : '' }}">Contact
+                                class="text-gray-800 text-sm font-semibold border px-4 py-1 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)]">Contact
                                 Us</a>
                         </div>
                     </div>
