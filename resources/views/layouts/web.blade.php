@@ -26,12 +26,12 @@
 
                     <div class="hidden sm:flex sm:items-center">
                         <a href="{{ route('homepage') }}"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4 {{ Route::currentRouteName() == 'homepage' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Home
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-8 {{ Route::currentRouteName() == 'homepage' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Home
                         </a>
                         <a href="{{ route('about') }}"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4 {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}">About</a>
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-8 {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}">About</a>
                         <a href="{{ route('services') }}"
-                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-4 {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Services</a>
+                            class="text-gray-800 text-sm font-semibold hover:text-[var(--primary)] mr-8 {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}">Services</a>
                     </div>
 
                     <div class="hidden sm:flex sm:items-center">

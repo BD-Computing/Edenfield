@@ -1,7 +1,8 @@
 // Variables
 @import "bootstrap-icons/font/bootstrap-icons.css";
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,10 +20,12 @@
     --light-bg: #f8fafa;
     --background: #fefcf7;
 }
-.pacifico {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
+
+* {
+    font-family: "Varela Round", sans-serif;
+}
+.cursive {
+    // font-family: "Sacramento", cursive;
 }
 .tilt-shake {
     animation: tilt-shaking 0.3s infinite;

@@ -9,7 +9,7 @@
                 class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
-                        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+                        <h2 class="text-base/7 font-semibold text-[var(--secondary)]">We offer</h2>
                         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">Tours and
                             Safaris</p>
                         <p class="mt-5 text-lg/8 text-gray-600">
@@ -21,17 +21,18 @@
                         <dl class="mt-7 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
 
                                     Expertly Guided Tours
                                 </dt>
-                                <dd class="inline">Discover Kenya's wildlife and landscapes with experienced, passionate
-                                    guides.</dd>
+                                <dd class="inline">
+                                    Discover Kenya's wildlife and landscapes with experienced, passionate guides.
+                                </dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
 
                                     Immersive Cultural Experiences
@@ -41,7 +42,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Professional and Reliable Service.
                                 </dt>
@@ -51,7 +52,7 @@
 
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Immersive Cultural Experiences
                                 </dt>
@@ -79,7 +80,7 @@
                     width="2432" height="1442">
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
-                        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+                        <h2 class="text-base/7 font-semibold text-[var(--secondary)]">We offer</h2>
                         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                             Airport
                             transfers</p>
@@ -92,7 +93,7 @@
                         <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Seamless Transfers.
                                 </dt>
@@ -101,7 +102,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Timely, Comfortable Service
                                 </dt>
@@ -110,7 +111,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Coverage Across Major Airports
                                 </dt>
@@ -118,7 +119,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Focus on Your Trip
                                 </dt>
@@ -138,7 +139,7 @@
                 class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div class="lg:pr-8 lg:pt-4">
                     <div class="lg:max-w-lg">
-                        <h2 class="text-base/7 font-semibold text-indigo-600">Deploy faster</h2>
+                        <h2 class="text-base/7 font-semibold text-[var(--secondary)]">We offer</h2>
                         <p class="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                             Executive Car Hire</p>
                         <p class="mt-6 text-lg/8 text-gray-600">Travel in luxury with our Executive Car Hire services.
@@ -147,7 +148,7 @@
                         <dl class="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Luxury Travel Experience
                                 </dt>
@@ -156,7 +157,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Ideal for Any Occasion
                                 </dt>
@@ -164,7 +165,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Premium Amenities
                                 </dt>
@@ -173,7 +174,7 @@
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                    <i class="bi bi-check2-circle   absolute left-1 top-1 h-5 w-5 text-[var(--secondary)]"
                                         viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon"></i>
                                     Make a Lasting Impression
                                 </dt>

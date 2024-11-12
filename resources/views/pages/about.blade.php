@@ -4,31 +4,6 @@
     About Us
 @endsection
 @section('content')
-    <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's leaders and institutions
-            </h2>
-            <div
-                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://images.seeklogo.com/logo-png/53/1/safaricom-logo-png_seeklogo-530479.png" alt="Transistor"
-                    width="158" height="48">
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://kicc.co.ke/wp-content/uploads/2023/07/Untitled-1.png" alt="Reform" width="158"
-                    height="48">
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://images.africanfinancials.com/ke-coop-logo-min.png" alt="Tuple" width="158"
-                    height="48">
-                <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                    src="https://www.tveta.go.ke/wp-content/uploads/2021/08/TVETA-Logo-August-2019.png" alt="SavvyCal"
-                    width="158" height="48">
-                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                    src="https://kabarak.ac.ke/images/logos/Kabarak_University_Extended_logo_910x256.png" alt="Statamic"
-                    width="158" height="48">
-            </div>
-        </div>
-    </div>
-
     <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
         {{-- <img src="https://images.unsplash.com/photo-1596005554384-d293674c91d7?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center"> --}}
@@ -64,7 +39,30 @@
             </div>
         </div>
     </div>
-
+    <div class="bg-white py-14 md:py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's leaders and institutions
+            </h2>
+            <div
+                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://images.seeklogo.com/logo-png/53/1/safaricom-logo-png_seeklogo-530479.png" alt="Transistor"
+                    width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://kicc.co.ke/wp-content/uploads/2023/07/Untitled-1.png" alt="Reform" width="158"
+                    height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://images.africanfinancials.com/ke-coop-logo-min.png" alt="Tuple" width="158"
+                    height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                    src="https://www.tveta.go.ke/wp-content/uploads/2021/08/TVETA-Logo-August-2019.png" alt="SavvyCal"
+                    width="158" height="48">
+                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                    src="https://kabarak.ac.ke/images/logos/Kabarak_University_Extended_logo_910x256.png" alt="Statamic"
+                    width="158" height="48">
+            </div>
+        </div>
+    </div>
     <div class="bg-white py-5 sm:py-5">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div

@@ -23,28 +23,19 @@
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            <span class="pacifico text-[var(--secondary)] text-4xl md:text-7xl">Book a trip</span> <br> with
+                            <span class="cursive text-[var(--secondary)] text-4xl md:text-7xl">Book a trip</span> <br> with
                             us Today!
                         </h2>
                         <p class="font-semibold text-gray-700 py-3">
                             Unforgettable journeys, Exceptional Experiences
                         </p>
-                        <p class="mt-8 text-pretty text-lg font-medium text-gray-600 sm:text-xl/8">
+                        <p class="mt-8 text-pretty text-md font-regular text-gray-600 md:text-md w-[100%] md:w-[80%]">
                             Your journey to the heart of Africa starts here. Explore breathtaking landscapes, witness iconic
                             wildlife, and experience authentic cultural encounters.
                         </p>
                     </div>
                     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                        <div
-                            class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-black  sm:grid-cols-2 md:flex lg:gap-x-10">
-                            <a href="#"
-                                class="text-gray-800 text-sm font-semibold border border-[var(--secondary)] px-4 py-2 rounded-lg hover:text-[var(--primary)] hover:border-[var(--primary)] happy-jump w-max">
-                                Get Started
-                                <span aria-hidden="true" class="ml-4">&rarr;</span>
-                            </a>
-                        </div>
-
-                        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                        <dl class="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-2 w-full md:w-[50%]">
                             <div class="flex flex-col-reverse gap-1">
                                 <dt class="text-base/7 text-black">Worldwide Visits</dt>
                                 <dd class="text-4xl font-semibold tracking-tight text-gray-800">12+</dd>
@@ -67,92 +58,7 @@
             </div>
         </div>
     </div>
-
-    <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div
-            class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
-        </div>
-        <div
-            class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
-        </div>
-        <div class="mx-auto max-w-2xl lg:max-w-4xl">
-            <img class="mx-auto h-12" src="images/logo.png" alt="">
-            <figure class="mt-10">
-                <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
-                    <p>“We’re thrilled to share our love for Kenya’s natural beauty and vibrant cultures with you. As your
-                        trusted guides to unforgettable experiences, we specialize in personalized safaris that bring you
-                        closer to Africa's breathtaking landscapes, majestic wildlife, and rich traditions. Whether you’re
-                        here for an exhilarating safari, a tranquil beach retreat, or an immersive cultural journey, we're
-                        here to make your dreams of Africa a reality.
-                        <br>
-                        Thank you for choosing to explore with us—let’s create memories that will last a lifetime!”
-                    </p>
-                </blockquote>
-                <figcaption class="mt-10">
-                    <img class="mx-auto h-10 w-10 rounded-full"
-                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                        alt="">
-                    <div class="mt-4 flex items-center justify-center space-x-3 text-base">
-                        <div class="font-semibold text-gray-900">Judith Black</div>
-                        <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
-                            <circle cx="1" cy="1" r="1" />
-                        </svg>
-                        <div class="text-gray-600">CEO of {{ $settings->companyName }}</div>
-                    </div>
-                </figcaption>
-            </figure>
-        </div>
-    </section>
-    <div class="bg-white py-24 sm:py-32">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:mx-0">
-                <h2 class="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">From the blog
-                </h2>
-                <p class="mt-2 text-lg/8 text-gray-600">Learn how to grow your business with our expert advice.</p>
-            </div>
-            <div
-                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-
-                @foreach ([1, 1, 1] as $item)
-                    <article class="flex max-w-xl flex-col items-start justify-between">
-                        <div class="flex items-center gap-x-4 text-xs">
-                            <time datetime="2020-03-16" class="text-gray-500">Mar 16, 2020</time>
-                            <a href="#"
-                                class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
-                        </div>
-                        <div class="group relative">
-                            <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                                <a href="#">
-                                    <span class="absolute inset-0"></span>
-                                    Boost your conversion rate
-                                </a>
-                            </h3>
-                            <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates
-                                culpa
-                                eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed
-                                exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
-                        </div>
-                        <div class="relative mt-8 flex items-center gap-x-4">
-                            <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                                alt="" class="h-10 w-10 rounded-full bg-gray-50">
-                            <div class="text-sm/6">
-                                <p class="font-semibold text-gray-900">
-                                    <a href="#">
-                                        <span class="absolute inset-0"></span>
-                                        Michael Foster
-                                    </a>
-                                </p>
-                                <p class="text-gray-600">Co-Founder / CTO</p>
-                            </div>
-                        </div>
-                    </article>
-                @endforeach
-            </div>
-
-        </div>
-    </div>
-
-    <div class="bg-white py-24 sm:py-32">
+    <div class="bg-white py-24 md:py-20">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's leaders and institutions
             </h2>
@@ -177,6 +83,112 @@
         </div>
     </div>
 
+    <div class="bg-white py-24 md:py-20">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="text-pretty  font-semibold tracking-tight text-gray-900 text-lg md:text-3xl">
+                    What we offer
+                </h2>
+                <p class="mt-2 text-gray-600 text-md md:text-lg/8">We offer a wide range of services as listed below</p>
+            </div>
+            <div
+                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   sm:mt-4 sm:pt-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div
+                    class="flex max-w-xl flex-col items-start justify-between  bg-[var(--background)] px-5 py-5 rounded-xl">
+                    <div class="pt-1">
+                        <img src="https://images.unsplash.com/photo-1598608146103-2eec9e333618?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="rounded-lg">
+                    </div>
+                    <div class="group relative">
+                        <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Tours and Safaris
+                            </a>
+                        </h3>
+                        <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+                            Discover Kenya's stunning landscapes and diverse wildlife with our guided tours and safaris.
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="flex max-w-xl flex-col items-start justify-between  bg-[var(--background)] px-5 py-5 rounded-xl">
+                    <div class="pt-1">
+                        <img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="rounded-lg">
+                    </div>
+                    <div class="group relative">
+                        <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Airport transfers
+                            </a>
+                        </h3>
+                        <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+                            Enjoy seamless airport transfers with our reliable service.
+                        </p>
+                    </div>
+                </div>
+
+                <div
+                    class="flex max-w-xl flex-col items-start justify-between  bg-[var(--background)] px-5 py-5 rounded-xl">
+                    <div class="pt-1">
+                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="" class="rounded-lg">
+                    </div>
+                    <div class="group relative">
+                        <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                            <a href="#">
+                                <span class="absolute inset-0"></span>
+                                Executive Car Hire
+                            </a>
+                        </h3>
+                        <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
+                            Get well-maintained vehicles equipped with the latest features for a smooth ride.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div
+            class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20">
+        </div>
+        <div
+            class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center">
+        </div>
+        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+            <img class="mx-auto h-12" src="images/logo.png" alt="">
+            <figure class="mt-10">
+                <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                    <p>“We're thrilled to share our love for Kenya's natural beauty and vibrant cultures with you. As your
+                        trusted guides to unforgettable experiences, we specialize in personalized safaris that bring you
+                        closer to Africa's breathtaking landscapes, majestic wildlife, and rich traditions. Whether you're
+                        here for an exhilarating safari, a tranquil beach retreat, or an immersive cultural journey, we're
+                        here to make your dreams of Africa a reality.
+                        <br>
+                        Thank you for choosing to explore with us—let's create memories that will last a lifetime!”
+                    </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                    <img class="mx-auto h-10 w-10 rounded-full"
+                        src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                        alt="">
+                    <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                        <div class="font-semibold text-gray-900">Judith Black</div>
+                        <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                            <circle cx="1" cy="1" r="1" />
+                        </svg>
+                        <div class="text-gray-600">CEO of {{ $settings->companyName }}</div>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
     <div class="relative isolate overflow-hidden bg-gray-900 py-16 sm:py-24 lg:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
