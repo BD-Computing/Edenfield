@@ -120,8 +120,12 @@
                             Company
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a class="hover:opacity-75" href="#"> About </a>
-                            <a class="hover:opacity-75" href="#"> Services </a>
+                            <a class="hover:opacity-75" href="{{ route('about') }}"
+                                {{ Route::currentRouteName() == 'about' ? '!text-[var(--primary)]' : 'text-gray-800' }}>
+                                About </a>
+                            <a class="hover:opacity-75" href="{{ route('services') }}"
+                                {{ Route::currentRouteName() == 'services' ? '!text-[var(--primary)]' : 'text-gray-800' }}>
+                                Services </a>
                             <a class="hover:opacity-75" href="#"> Careers </a>
                         </nav>
                     </div>
@@ -140,7 +144,8 @@
                             Helpful Links
                         </p>
                         <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                            <a class="hover:opacity-75" href="#"> Contact </a>
+                            <a class="hover:opacity-75" href="{{ route('contact') }}">
+                                Contact </a>
                             <a class="hover:opacity-75" href="#"> FAQs </a>
                             <a class="hover:opacity-75" href="#"> Live Chat </a>
                         </nav>
