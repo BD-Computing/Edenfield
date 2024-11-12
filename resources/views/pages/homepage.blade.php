@@ -35,7 +35,7 @@
                         </p>
                     </div>
                     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                        <dl class="mt-10 grid grid-cols-2 gap-8 md:mt-14 md:grid-cols-2 w-full md:w-[50%]">
+                        <dl class="mt-10 grid grid-cols-2 gap-8 md:mt-14 md:grid-cols-2 w-[80%] md:w-[50%]">
                             <div class="flex flex-col-reverse gap-1">
                                 <dt class="text-base/7 text-black">Worldwide Visits</dt>
                                 <dd class="text-4xl font-semibold tracking-tight text-gray-800">12+</dd>
@@ -164,7 +164,7 @@
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
             <img class="mx-auto h-12" src="images/logo.png" alt="">
             <figure class="mt-10">
-                <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                <blockquote class="text-center md:text-xl/8 font-semibold text-gray-900">
                     <p>“We're thrilled to share our love for Kenya's natural beauty and vibrant cultures with you. As your
                         trusted guides to unforgettable experiences, we specialize in personalized safaris that bring you
                         closer to Africa's breathtaking landscapes, majestic wildlife, and rich traditions. Whether you're
@@ -178,7 +178,7 @@
                     <img class="mx-auto h-10 w-10 rounded-full"
                         src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt="">
-                    <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                    <div class="mt-4 flex items-center justify-center space-x-3 text-base flex-col md:flex-row">
                         <div class="font-semibold text-gray-900">Judith Black</div>
                         <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
                             <circle cx="1" cy="1" r="1" />
