@@ -114,7 +114,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="grid grid-cols-2 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
                     <div>
                         <p class="font-medium">
                             Company
@@ -173,7 +173,7 @@
     </footer>
     @if ($settings->whatsappNumber)
         <div class="absolute rise-shake"
-            style="width: 60px; height: 70px; position: fixed; right: 15px !important;  bottom: 13px; z-index: 999">
+            style="width: 60px; height: 50px; position: fixed; right: 5px !important;  bottom: 5px; z-index: 999">
             <a href="https://wa.me/+{!! $settings->whatsappNumber !!}" target="_blank">
                 <i class="bi bi-whatsapp text-4xl text-green-500"></i>
         </div>
