@@ -26,7 +26,7 @@
                             <span class="cursive text-[var(--secondary)] text-4xl md:text-7xl">Book a trip</span> <br> with
                             us Today!
                         </h2>
-                        <p class="font-semibold text-gray-700 py-3">
+                        <p class="font-semibold text-gray-700 py-3 text-sm md:text-md">
                             Unforgettable journeys, Exceptional Experiences
                         </p>
                         <p class="mt-8 text-pretty text-md font-regular text-gray-600 md:text-md w-[100%] md:w-[80%]">
@@ -35,7 +35,7 @@
                         </p>
                     </div>
                     <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                        <dl class="mt-10 grid grid-cols-1 gap-8 md:mt-14 md:grid-cols-2 w-full md:w-[50%]">
+                        <dl class="mt-10 grid grid-cols-2 gap-8 md:mt-14 md:grid-cols-2 w-full md:w-[50%]">
                             <div class="flex flex-col-reverse gap-1">
                                 <dt class="text-base/7 text-black">Worldwide Visits</dt>
                                 <dd class="text-4xl font-semibold tracking-tight text-gray-800">12+</dd>
