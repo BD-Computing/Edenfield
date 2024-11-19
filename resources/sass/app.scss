@@ -3,13 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-    --primary: #f59e1b;
-    --secondary: #543111;
+    --primary: #028ab0;
+    --secondary: #d12219;
     --accent: #ffd978;
     --error: #f44900;
     --dark: #13263c;
@@ -22,7 +23,7 @@
 }
 
 * {
-    font-family: "Varela Round", sans-serif;
+    font-family: "Quicksand", "Varela Round", sans-serif;
 }
 .cursive {
     // font-family: "Sacramento", cursive;

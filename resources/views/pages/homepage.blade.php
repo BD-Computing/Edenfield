@@ -18,41 +18,23 @@
             </div>
         </div>
         <div class="inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-            style="background-image: url(https://images.unsplash.com/photo-1513699227473-7ae8d4545d4e?q=80&w=1736&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); background-size: cover; background-position: center;background-repeat: no-repeat">
+            style="background-image: url({{ URL::asset('images/controller.jpg') }}); background-size: cover; background-position: center;background-repeat: no-repeat">
             <div class="h-[100%] bg-gradient-to-r from-yellow-50 from-40% to-transparent top-0 left-0 py-24 sm:py-32">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            <span class="cursive text-[var(--secondary)] text-4xl md:text-7xl">Book a trip</span> <br> with
-                            us Today!
+                            <span class="cursive text-[var(--secondary)] text-4xl md:text-7xl">Book a session</span>
+                            <br>
+                            with us Today!
                         </h2>
                         <p class="font-semibold text-gray-700 py-3 text-sm md:text-md">
-                            Unforgettable journeys, Exceptional Experiences
+                            A Premium Podcasting Experience
                         </p>
                         <p class="mt-8 text-pretty text-md font-regular text-gray-600 md:text-md w-[100%] md:w-[80%]">
-                            Your journey to the heart of Africa starts here. Explore breathtaking landscapes, witness iconic
-                            wildlife, and experience authentic cultural encounters.
+                            Our full-service video and podcasting studio is ready to make your next project shine.
+                            With an in-house video engineer ready to assist you, we provide crisp audio and stunning video
+                            in every recording session
                         </p>
-                    </div>
-                    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-                        <dl class="mt-10 grid grid-cols-2 gap-8 md:mt-14 md:grid-cols-2 w-[80%] md:w-[50%]">
-                            <div class="flex flex-col-reverse gap-1">
-                                <dt class="text-base/7 text-black">Worldwide Visits</dt>
-                                <dd class="text-4xl font-semibold tracking-tight text-gray-800">12+</dd>
-                            </div>
-                            <div class="flex flex-col-reverse gap-1">
-                                <dt class="text-base/7 text-black">Trips completed</dt>
-                                <dd class="text-4xl font-semibold tracking-tight text-gray-800">300+</dd>
-                            </div>
-                            <div class="flex flex-col-reverse gap-1">
-                                <dt class="text-base/7 text-black">Orders per week</dt>
-                                <dd class="text-4xl font-semibold tracking-tight text-gray-800">40</dd>
-                            </div>
-                            <div class="flex flex-col-reverse gap-1">
-                                <dt class="text-base/7 text-black">Discounts</dt>
-                                <dd class="text-4xl font-semibold tracking-tight text-gray-800">Unlimited</dd>
-                            </div>
-                        </dl>
                     </div>
                 </div>
             </div>
@@ -63,22 +45,27 @@
             <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's leaders and institutions
             </h2>
             <div
-                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-7">
                 <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://images.seeklogo.com/logo-png/53/1/safaricom-logo-png_seeklogo-530479.png" alt="Transistor"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCWrlXXZd0euyIPGbe-yBDYtjb5N99Oi_7NA&s"
+                    alt="Range Rover Centre" width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="{{ URL::asset('images/peptang.png') }}" alt="Peptang" width="158" height="48">
+                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                    src="https://www.maridadymotors.com/assets/front/images/MRDLOGO.jpg" alt="Maridady Motors"
                     width="158" height="48">
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://kicc.co.ke/wp-content/uploads/2023/07/Untitled-1.png" alt="Reform" width="158"
-                    height="48">
-                <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
-                    src="https://images.africanfinancials.com/ke-coop-logo-min.png" alt="Tuple" width="158"
-                    height="48">
                 <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
-                    src="https://www.tveta.go.ke/wp-content/uploads/2021/08/TVETA-Logo-August-2019.png" alt="SavvyCal"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsPdpzupiC2vJvVzLKcy-lvUVHeVKK4mr6Xg&s"
+                    alt="My Space" width="158" height="48">
+                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                    src="https://rexeroofing.com/rexeloads/uploads/2019/03/site-icon-rexe-roofing.png" alt="Rexe Roofing"
                     width="158" height="48">
                 <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
-                    src="https://kabarak.ac.ke/images/logos/Kabarak_University_Extended_logo_910x256.png" alt="Statamic"
-                    width="158" height="48">
+                    src="https://unga-group.com/wp-content/uploads/2023/03/logo1@10x-8-1-e1680252125793.png"
+                    alt="Unga Group" width="158" height="48">
+                <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                    src="https://i0.wp.com/pbs.twimg.com/profile_images/970551830697660416/g0K61B3W_400x400.jpg?resize=231%2C231&ssl=1"
+                    alt="I Choose Life Africa" width="158" height="48">
             </div>
         </div>
     </div>
@@ -92,27 +79,24 @@
                 <p class="mt-2 text-gray-600 text-md md:text-lg/8">We offer a wide range of services as listed below</p>
             </div>
             <div
-                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16   sm:mt-4 sm:pt-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                <div
-                    class="flex max-w-xl flex-col items-start justify-between  bg-[var(--background)] px-5 py-5 rounded-xl">
+                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  sm:mt-4 sm:pt-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+                <div class="flex max-w-xl flex-col items-start justify-between  shadow-md px-5 py-5 rounded-xl">
                     <div class="pt-1">
-                        <img src="https://images.unsplash.com/photo-1598608146103-2eec9e333618?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="" class="rounded-lg">
+                        <img src="{{ URL::asset('images/studio.jpg') }}" alt="" class="rounded-lg">
                     </div>
                     <div class="group relative">
                         <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
                             <a href="#">
                                 <span class="absolute inset-0"></span>
-                                Tours and Safaris
+                                A Premium Podcasting Experience
                             </a>
                         </h3>
                         <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                            Discover Kenya's stunning landscapes and diverse wildlife with our guided tours and safaris.
+                            Fully Equipped studios with multiple set locations for 4+ guests
                         </p>
                     </div>
                 </div>
-                <div
-                    class="flex max-w-xl flex-col items-start justify-between  bg-[var(--background)] px-5 py-5 rounded-xl">
+                <div class="flex max-w-xl flex-col items-start justify-between  shadow-md px-5 py-5 rounded-xl">
                     <div class="pt-1">
                         <img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="" class="rounded-lg">
@@ -130,8 +114,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="flex max-w-xl flex-col items-start justify-between  bg-[var(--background)] px-5 py-5 rounded-xl">
+                <div class="flex max-w-xl flex-col items-start justify-between  shadow-md px-5 py-5 rounded-xl">
                     <div class="pt-1">
                         <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt="" class="rounded-lg">

@@ -1,4 +1,4 @@
-name: 🚀 Deploy app to https://www.venturesafricasafaris.com on push to main
+name: 🚀 Deploy app to https://www.edenfieldmedia.co.ke on push to main
 
 on:
   push:
