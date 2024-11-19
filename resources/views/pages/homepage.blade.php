@@ -1,10 +1,10 @@
 @extends('layouts.web')
-
 @section('title')
     Home
 @endsection
+
 @section('content')
-    <div class="relative isolate overflow-hidden bg-[var(--primary)] ">
+    <div class="relative isolate overflow-hidden bg-[var(--primary)] h-[80%]">
         <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
             aria-hidden="true">
             <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[var(--primary)] to-[var(--secondary)] opacity-20"
@@ -18,19 +18,19 @@
             </div>
         </div>
         <div class="inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-            style="background-image: url({{ URL::asset('images/controller.jpg') }}); background-size: cover; background-position: center;background-repeat: no-repeat">
-            <div class="h-[100%] bg-gradient-to-r from-yellow-50 from-40% to-transparent top-0 left-0 py-24 sm:py-32">
+            style="background-image: url({{ URL::asset('images/soundwave.jpg') }}); background-size: cover; background-position: center;background-repeat: no-repeat">
+            <div class="h-[100%] bg-gradient-to-r from-transparent from-40% to-transparent top-0 left-0 py-24 md:py-80">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            <span class="cursive text-[var(--secondary)] text-4xl md:text-7xl">Book a session</span>
+                            <span class="cursive text-white text-4xl md:text-7xl">Book a session</span>
                             <br>
                             with us Today!
                         </h2>
-                        <p class="font-semibold text-gray-700 py-3 text-sm md:text-md">
+                        <p class="font-semibold text-gray-100 py-3 text-sm md:text-md">
                             A Premium Podcasting Experience
                         </p>
-                        <p class="mt-8 text-pretty text-md font-regular text-gray-600 md:text-md w-[100%] md:w-[80%]">
+                        <p class="mt-8 text-pretty text-md font-regular text-gray-100 md:text-md w-[100%] md:w-[80%]">
                             Our full-service video and podcasting studio is ready to make your next project shine.
                             With an in-house video engineer ready to assist you, we provide crisp audio and stunning video
                             in every recording session
@@ -98,36 +98,35 @@
                 </div>
                 <div class="flex max-w-xl flex-col items-start justify-between  shadow-md px-5 py-5 rounded-xl">
                     <div class="pt-1">
-                        <img src="https://images.unsplash.com/photo-1542296332-2e4473faf563?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="" class="rounded-lg">
+                        <img src="{{ URL::asset('images/setup-1.jpg') }}" alt="" class="rounded-lg">
                     </div>
                     <div class="group relative">
                         <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
                             <a href="#">
                                 <span class="absolute inset-0"></span>
-                                Airport transfers
+                                Full Video and Content Studio
                             </a>
                         </h3>
                         <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                            Enjoy seamless airport transfers with our reliable service.
+                            Our studio is meticulously crafted with content creation in mind
                         </p>
                     </div>
                 </div>
 
                 <div class="flex max-w-xl flex-col items-start justify-between  shadow-md px-5 py-5 rounded-xl">
                     <div class="pt-1">
-                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="" class="rounded-lg">
+                        <img src="{{ URL::asset('images/mic.jpg') }}" alt="" class="rounded-lg">
                     </div>
                     <div class="group relative">
                         <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
                             <a href="#">
                                 <span class="absolute inset-0"></span>
-                                Executive Car Hire
+                                Equipment and Studio
                             </a>
                         </h3>
                         <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                            Get well-maintained vehicles equipped with the latest features for a smooth ride.
+                            Equipped with state-of-the-art technology, our studio has a wide range of equipment essential
+                            for high-quality content production.
                         </p>
                     </div>
                 </div>
