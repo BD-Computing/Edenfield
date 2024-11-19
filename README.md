@@ -4,7 +4,7 @@ This is the official website for Venture Africa Safaris
 
 ## Website
 
-www.ventureafricasafaris.com
+www.edenfieldmedia.co.ke
 
 <!-- Automate Deployments -->
 
