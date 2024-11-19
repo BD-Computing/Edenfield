@@ -5,10 +5,11 @@
 @section('content')
     <div class="grid sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-7xl bg-white my-5">
         <div>
-            <h1 class="text-gray-800 text-3xl font-extrabold">Let's Talk</h1>
-            <p class="text-sm text-gray-500 mt-4">Have questions, need help planning, or ready to book your dream safari?
-                We'd love to hear from you! Reach out to us by phone, email, or fill out the contact form below. Our team is
-                here to make your adventure as smooth and memorable as possible.
+            <h1 class="text-gray-800 text-3xl font-extrabold">Ready to record your podcast?</h1>
+            <p class="text-sm text-gray-500 mt-4">
+                Get in touch with our expert team today to find out more about our podcast
+                and other production services. Alternatively, you can get started right away by booking your podcast
+                recording slot at our {{ $settings->companyName }} studio today.
             </p>
             <p class="text-sm text-gray-500 mt-4 font-bold">
                 Let's start planning your journey to Africa!
@@ -19,7 +20,7 @@
                 <ul class="mt-4">
                     <li class="flex items-center">
                         <div class="bg-[#e6e6e6cf] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#f59e1b'
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#028ab0'
                                 viewBox="0 0 479.058 479.058">
                                 <path
                                     d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 0 1 5.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"
@@ -38,8 +39,7 @@
                 <h2 class="text-gray-800 text-base font-bold">Socials</h2>
                 <div class="flex mt-8 space-x-6 text-gray-600">
                     @if (!is_null($settings->facebook_link))
-                        <a class="hover:opacity-75 rise-shake" href="{{ $settings->facebook_link }}" target="_blank"
-                            rel="noreferrer">
+                        <a class="hover:opacity-75 " href="{{ $settings->facebook_link }}" target="_blank" rel="noreferrer">
                             <span class="sr-only"> Facebook </span>
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path fillRule="evenodd"
@@ -49,7 +49,7 @@
                         </a>
                     @endif
                     @if (!is_null($settings->instagram_link))
-                        <a class="hover:opacity-75 rise-shake" href="{{ $settings->instagram_link }}" target="_blank"
+                        <a class="hover:opacity-75 " href="{{ $settings->instagram_link }}" target="_blank"
                             rel="noreferrer">
                             <span class="sr-only"> Instagram </span>
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -61,8 +61,7 @@
                     @endif
 
                     @if (!is_null($settings->twitter_link))
-                        <a class="hover:opacity-75 rise-shake" href="{{ $settings->twitter_link }}" target="_blank"
-                            rel="noreferrer">
+                        <a class="hover:opacity-75 " href="{{ $settings->twitter_link }}" target="_blank" rel="noreferrer">
                             <span class="sr-only"> Twitter </span>
                             <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                 <path
