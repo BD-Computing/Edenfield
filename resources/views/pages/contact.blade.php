@@ -12,7 +12,7 @@
                 recording slot at our {{ $settings->companyName }} studio today.
             </p>
             <p class="text-sm text-gray-500 mt-4 font-bold">
-                Let's start planning your journey to Africa!
+                Contact us today to discuss your project and take the first step toward achieving your goals!
             </p>
 
             <div class="mt-12">
