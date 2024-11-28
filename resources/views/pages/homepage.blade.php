@@ -4,27 +4,33 @@
 @endsection
 
 @section('content')
-    <div class="relative isolate overflow-hidden bg-[var(--primary)] h-[80%]">
+    <div class="relative isolate overflow-hidden bg-[#B27526] h-[80%]">
         <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
             aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[var(--primary)] to-[var(--secondary)] opacity-20"
+            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#B27526] to-[var(--secondary)] opacity-20"
                 style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
             </div>
         </div>
         <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
             aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[var(--primary)] to-[var(--secondary)] opacity-20"
+            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#B27526] to-[var(--secondary)] opacity-20"
                 style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
             </div>
         </div>
         <div class="inset-0 -z-10 h-full w-full object-cover object-right md:object-center"
-            style="background-image: url({{ URL::asset('images/soundwave.jpg') }}); background-size: cover; background-position: center;background-repeat: no-repeat">
+            style="background-image: url({{ URL::asset('images/soundwave.jpg') }}); background-size: cover; background-position: center top;background-repeat: no-repeat">
             <div class="h-[100%] bg-gradient-to-r from-transparent from-40% to-transparent top-0 left-0 py-24 md:py-80">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
+
                         <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            <span class="cursive text-white text-4xl md:text-7xl">Book a session</span>
+                            <span class="animated-text first  text-4xl md:text-7xl">Book a
+                                session</span>
+                            <span class="animated-text second   text-4xl md:text-7xl">Book a
+                                session</span>
                             <br>
+                        </h2>
+                        <h2 class="text-2xl mt-3 font-semibold text-white tracking-tight text-[var(--primary)] md:text-5xl">
                             with us Today!
                         </h2>
                         <p class="font-semibold text-gray-100 py-3 text-sm md:text-md">
@@ -238,20 +244,18 @@
             <figure class="mt-10">
                 <blockquote class="text-center md:text-xl/8 font-semibold text-gray-900">
                     <p>
-                        Turn your vision into reality with {{ $settings->companyName }} Studios, your comprehensive
-                        solution for
-                        everything from initial idea development and branding to podcast production and marketing.
-                        {{ $settings->companyName }} Studios is your ally in manifesting your creative aspirations
-                        across the full
-                        range of creative processes.
+                        At Edenfield Media LTD we ride on the principles of creative excellence and a customer-centric
+                        approach in service delivery.
+                        Our goal is to turn your creative vision to a reality masterpiece
+                        & be your trusted ally in breathing life to your creative aspiration from Inception to completion.
+
                     </p>
                 </blockquote>
                 <figcaption class="mt-10">
-                    <img class="mx-auto h-10 w-10 rounded-full"
-                        src="https://pbs.twimg.com/profile_images/1803527942829469697/112RBOYx_400x400.jpg"
+                    <img class="mx-auto h-10 w-10 rounded-full" src="{{ URL::asset('images/gerald.jpeg') }}"
                         alt="CEO">
                     <div class="mt-4 flex items-center justify-center space-x-3 text-base flex-col md:flex-row">
-                        <div class="font-semibold text-gray-900">Brian Koech</div>
+                        <div class="font-semibold text-gray-900">Gerald Bitok</div>
                         <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
                             <circle cx="1" cy="1" r="1" />
                         </svg>

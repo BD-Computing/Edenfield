@@ -14,11 +14,8 @@
                 <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-5xl">About Us</h2>
                 <p class="mt-8 text-pretty text-lg font-medium text-gray-900 sm:text-xl/relaxed">
                     Welcome to {{ $settings->companyName }}, your trusted partner in podcast production and media
-                    marketing.
-                    Based in the
-                    heart of Nairobi, Kenya, we are passionate about empowering brands, businesses, and creatives to
-                    share
-                    their stories and connect with their audiences effortlessly.
+                    marketing. Based in the heart of Nairobi, Kenya, we are passionate about empowering brands, businesses,
+                    and creatives to share their stories and connect with their audiences effortlessly.
                 </p>
             </div>
         </div>
@@ -106,10 +103,10 @@
         </div>
     </div>
     <!--
-                                                                                                                                                                                                                                                                                                                                              Heads up! 👋
+                                                                                                                                                                                                                                                                                                                                                                  Heads up! 👋
 
-                                                                                                                                                                                                                                                                                                                                              This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-                                                                                                                                                                                                                                                                                                                                            -->
+                                                                                                                                                                                                                                                                                                                                                                  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
+                                                                                                                                                                                                                                                                                                                                                                -->
 
     <section
         class="mb-5 relative bg-[url(https://images.unsplash.com/photo-1598941101837-e3fdd6d94b24?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat">
@@ -121,8 +118,7 @@
             <div class="max-w-xl text-left ltr:sm:text-left rtl:sm:text-right">
                 <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
                     Why Choose
-
-                    <strong class="block font-extrabold text-rose-500">{{ $settings->companyName }} </strong>
+                    <strong class="block font-extrabold text-rose-500">Us </strong>
                 </h1>
                 <ol class="py-10 text-white text-lg/relaxed">
                     <li>Cutting-edge technology to ensure the best sound quality.</li>
