@@ -34,13 +34,26 @@
                             with us Today!
                         </h2>
                         <p class="font-semibold text-gray-100 py-3 text-sm md:text-md">
-                            A Premium Podcasting Experience
+                            Revolutionize Creative content production and distribution with quality being our driving force.
                         </p>
                         <p class="mt-8 text-pretty text-md font-regular text-gray-100 md:text-md w-[100%] md:w-[80%]">
                             Our full-service video and podcasting studio is ready to make your next project shine.
                             With an in-house video engineer ready to assist you, we provide crisp audio and stunning video
                             in every recording session
                         </p>
+                        <div class="mt-5 h-[50px]">
+
+                            <a class="mt-5 bg-[var(--primary)] text-white py-2 px-5 rounded-full w-fit  flex items-center justify-start hover:bg-[var(--secondary)]"
+                                href="{{ route('contact') }}">
+                                <span class="rise-shake absolute">
+                                    <i class="bi bi-telephone-fill "></i>
+                                </span>
+                                <span class="ml-[20px]">
+                                    Get Started
+                                </span>
+                            </a>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -146,8 +159,8 @@
                 <h2 class="text-3xl font-bold sm:text-4xl">What makes us special</h2>
 
                 <p class="mt-4 text-gray-300">
-                    Our mission is to empower businesses and brands by simplifying podcasting, allowing you to focus on what
-                    you do best.
+                    We aim to tell stories your way ,in your brand tone as well as empower to bring out the very best in
+                    what you do.
                 </p>
             </div>
 
@@ -171,9 +184,11 @@
                             services in Kenya.</h2>
 
                         <p class="mt-1 text-sm text-gray-300">
-                            We give businesses and brands a voice by providing a comprehensive podcasting service tailored
-                            to your specific needs, covering everything from podcast audio and video recording to producing,
-                            editing, and uploading of your finished podcasts.
+                            We give businesses and brands a voice by providing a comprehensive service tailored to your
+                            specific
+                            needs, covering everything from audio&video recording to producing, editing, and distributing to
+                            all
+                            renowned global platforms.
                         </p>
                     </div>
                 </div>
@@ -196,9 +211,8 @@
                         <h2 class="text-lg font-bold">Full-service podcast production studio</h2>
 
                         <p class="mt-1 text-sm text-gray-300">
-                            Everything you need to get your podcast up and running, all in one place. At
-                            {{ $settings->companyName }}
-                            Studios, we provide podcast filming, producing and post-production services, as standard.
+                            Everything you need to get your podcast up and running, all in one place. At EdenField Media we
+                            provide podcast filming, producing and post-production services, as standard
                         </p>
                     </div>
                 </div>
@@ -218,14 +232,16 @@
                     </span>
 
                     <div>
-                        <h2 class="text-lg font-bold">Our fully customisable podcast studio</h2>
+                        <h2 class="text-lg font-bold">Our fully-customisable podcast studio</h2>
 
                         <p class="mt-1 text-sm text-gray-300">
-                            Our {{ $settings->companyName }} podcast studio is completely customisable based on your unique
-                            needs. We offer a
+                            Our EdenField Media podcast studio is completely customisable based on your unique needs. We
+                            offer a
                             wide selection of podcast sets which can be tailored to your preferences, with customisable
-                            lighting options, varying backgrounds and furniture setups, and you can include your own
-                            personalised items to ensure it fits your specific branding.
+                            lighting
+                            options, varying backgrounds and furniture setups, and you can include your own personalised
+                            items to
+                            ensure it fits your specific branding.
                         </p>
                     </div>
                 </div>

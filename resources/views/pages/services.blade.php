@@ -40,6 +40,7 @@
     </div>
 
 
+
     <div class="overflow-hidden bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="block">
@@ -102,6 +103,74 @@
                             enhance your campaigns.</li>
                         <li><span class="font-bold">Influencer Partnerships:</span> Connect with influencers to elevate your
                             brand visibility.</li>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="block">
+                <img alt="Audio/Visual Production"
+                    src="https://images.unsplash.com/photo-1529220182440-a217aedfe80d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72" />
+
+                <div class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+                    <strong class="font-medium">Audio/Visual Production</strong>
+
+                    <span class="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
+
+                    <p class="mt-0.5 opacity-50 sm:mt-0">Service</p>
+                </div>
+                <div class="flex flex-col items-center my-5">
+                    <ol>
+                        <li><span class="font-bold">Videography:</span> - Documentaries , cooperate events coverage, content
+                            production, conferences e.t.c</li>
+                        <li><span class="font-bold">Photography:</span> - events,parties,out door activities etc</li>
+                        <li><span class="font-bold">Live Streaming:</span>
+                            - Shows , webinars,seminars, conferences, trainings,events .
+                        </li>
+                        <li><span class="font-bold">Audio Recording:</span> - Podcast Production, voice over recording.</li>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overflow-hidden bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="block">
+                <img alt="Creative services"
+                    src="https://images.unsplash.com/photo-1529220182440-a217aedfe80d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="h-56 w-full rounded-bl-3xl rounded-tr-3xl object-cover sm:h-64 lg:h-72" />
+
+                <div class="mt-4 sm:flex sm:items-center sm:justify-center sm:gap-4">
+                    <strong class="font-medium">Creative services</strong>
+
+                    <span class="hidden sm:block sm:h-px sm:w-8 sm:bg-yellow-500"></span>
+
+                    <p class="mt-0.5 opacity-50 sm:mt-0">Service</p>
+                </div>
+                <div class="flex flex-col items-center my-5">
+                    <ol>
+                        <li><span class="font-bold">Creative Design Service:</span> - Still & motion graphics, print
+                            graphics.</li>
+                        <li><span class="font-bold capitalize">Media Marketing:</span> - Social Media Management (content
+                            strategy preparation of content
+                            calendars,Schedule posts and engagement metric utilizing analytics tools , influencer
+                            partnership).</li>
+                        <li><span class="font-bold capitalize">Content Distribution:</span>- Give assistance on how and
+                            where to post your content as well as ways to
+                            monitize content.
+                        </li>
+                        <li><span class="font-bold">Audio Recording:</span> - Podcast Production, voice over recording.</li>
                         </li>
                     </ol>
                 </div>

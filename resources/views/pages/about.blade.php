@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="bg-white py-24 md:py-20">
+    <div class="bg-white py-10 md:py-14 ">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <h2 class="text-center text-lg/8 font-semibold text-gray-900">Trusted by the world's leaders and institutions
             </h2>
@@ -50,11 +50,12 @@
             </div>
         </div>
     </div>
+    <div class="mx-auto max-w-7xl border-t border-gray-200 my-5 border-dashed"></div>
 
-    <div class="bg-white py-5 sm:py-5">
+    <div class="bg-white">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div
-                class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16  py-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8  py-5 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                 <div class="flex max-w-2xl flex-col items-start justify-between">
                     <div class="group relative">
                         <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
@@ -77,6 +78,7 @@
                             best: creating amazing content and building your brand.
                         </p>
                     </div>
+
                 </div>
                 <div class="flex max-w-2xl flex-col items-start justify-between">
                     <div class="group relative">
@@ -102,12 +104,40 @@
             </div>
         </div>
     </div>
-    <!--
-                                                                                                                                                                                                                                                                                                                                                                  Heads up! 👋
 
-                                                                                                                                                                                                                                                                                                                                                                  This component comes with some `rtl` classes. Please remove them if they are not needed in your project.
-                                                                                                                                                                                                                                                                                                                                                                -->
+    <div class="mx-auto max-w-7xl border-t border-gray-200 my-5 border-dashed"></div>
 
+
+    <div class="bg-white py-5">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <div class="group relative">
+                <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
+                    Core Values
+                </h3>
+                <p class="mt-5 line-clamp-7 text-sm/6 text-gray-600">
+                    <strong>Integrity</strong> - we are committed to upholding ethical principles and transparency, we stand
+                    on the guiding values of doing the right thing over personal value
+                </p>
+                <p class="mt-5 line-clamp-7 text-sm/6 text-gray-600">
+                    <strong>Creativity</strong> - Every project whether big or small we accord the highest form of attention
+                    and creativity, to us it's about elevating audio/Visual Production by encouraging innovative thinking
+                    and pushing boundaries.
+                </p>
+                <p class="mt-5 line-clamp-7 text-sm/6 text-gray-600">
+                    <strong>Customer Experience</strong> - client satisfaction is at the heart of what we do . We aim to
+                    forge a one of kind
+                    experience from the very first time you engage with us. Clear , open and candid communication is what
+                    we thrive on.
+                </p>
+                <p class="mt-5 line-clamp-7 text-sm/6 text-gray-600">
+                    <strong>Professionalism, Diversity and inclusivity</strong> - We value people from all walks
+                    of life thus ensuring that each
+                    person we cross paths with feels valued and is met with utmost professionalism from our team all with
+                    Pursuit of excellence and exceeding expectations in mind.
+                </p>
+            </div>
+        </div>
+    </div>
     <section
         class="mb-5 relative bg-[url(https://images.unsplash.com/photo-1598941101837-e3fdd6d94b24?q=80&w=1473&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-cover bg-center bg-no-repeat">
         <div
@@ -124,7 +154,7 @@
                     <li>Cutting-edge technology to ensure the best sound quality.</li>
                     <li>A passionate team dedicated to bringing your vision to life.</li>
                     <li>Customized solutions to meet your unique needs.</li>
-                    <li>A vibrant and professional atmosphere in Nairobi’s creative hub.</li>
+                    <li>A vibrant and professional atmosphere in Nairobi's creative hub.</li>
                 </ol>
                 <p class="mt-4 max-w-lg text-white sm:text-lg/relaxed">
                     Whether you're a seasoned podcaster or just starting out, {{ $settings->companyName }} is here to make
