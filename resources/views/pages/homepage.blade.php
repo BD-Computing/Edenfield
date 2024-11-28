@@ -23,10 +23,10 @@
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     <div class="mx-auto max-w-2xl lg:mx-0">
 
-                        <h2 class="text-2xl font-semibold tracking-tight text-[var(--primary)] md:text-5xl">
-                            <span class="animated-text first  text-4xl md:text-7xl">Book a
+                        <h2 class="text-3xl md:text-6xl font-semibold tracking-tight text-[var(--primary)] ">
+                            <span class="animated-text first">Book a
                                 session</span>
-                            <span class="animated-text second   text-4xl md:text-7xl">Book a
+                            <span class="animated-text second">Book a
                                 session</span>
                             <br>
                         </h2>
