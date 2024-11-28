@@ -23,7 +23,7 @@ class Setting extends Model
                 'salesEmail' => 'sales@edenfieldmedia.co.ke',
                 'supportEmail' => 'info@edenfieldmedia.co.ke',
                 'whatsappNumber' => '254779800010',
-                'salesPhoneNumber' => '254714604531',
+                'salesPhoneNumber' => '254779800010',
                 'phone' => '254714604531',
                 'boxAddress' => '6040',
                 'code' => '00100',
